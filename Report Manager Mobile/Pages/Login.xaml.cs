@@ -70,13 +70,31 @@ public partial class Login : ContentPage
     }
 
 
-    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
         SaveCredentialsCheckbx.IsChecked = !SaveCredentialsCheckbx.IsChecked;
+
+        //bypass
+        await UserBox.TranslateTo(-500, 0, 300);
+        UserBox.IsVisible = false;
+        LoginBox.IsVisible = true;
+        await LoginBox.TranslateTo(0, 0, 300);
     }
 
-    private void LoginBtn_Clicked(object sender, EventArgs e)
+    private async void LoginBtn_Clicked(object sender, EventArgs e)
     {
-        DisplayAlert(AppResource.AppDisplayName, $"Name: {data}", AppResource.OkButton);
+        //if(UserPass.Text == "1505")
+        //{
+        //    Navigation.PushAsync(new HomePage());
+        //}
+        //else
+        //{
+        //    DisplayAlert(AppResource.AppDisplayName, AppResource.AccountError, AppResource.OkButton);
+        //}
+        ActiveIndicatorLogin.IsVisible = true;
+        ActiveIndicatorLogin.IsRunning = true;
+        await Task.Delay(1000);
+        await Navigation.PushModalAsync(new HomePage());
+
     }
 }

@@ -1,8 +1,8 @@
 namespace Report_Manager_Mobile.Pages;
 
-public partial class Pass : ContentPage
+public partial class HomePage : TabbedPage
 {
-	public Pass()
+	public HomePage()
 	{
 		InitializeComponent();
 	}

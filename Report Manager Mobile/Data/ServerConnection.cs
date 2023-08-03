@@ -13,7 +13,7 @@ namespace Report_Manager_Mobile.Data
 
         public ServerConnection()
         {
-            connection.ConnectionString = @"Server=179.111.22.137;Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
+            connection.ConnectionString = @"Server=172.23.171.83;Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
             //connection.ConnectionString = @"Server=localhost;Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
 
         }

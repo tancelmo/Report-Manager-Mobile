@@ -32,7 +32,7 @@
                     Placeholder="{x:Static lang:AppResource.User}" 
                     IsSpellCheckEnabled="False"
                     Keyboard="Email"
-                    FontSize="18"/>
+                    FontSize="15"/>
                     <Button
                     x:Name="NextBtn"
                     Text="{x:Static lang:AppResource.LoginNext}"
@@ -51,7 +51,7 @@
                         Placeholder="{x:Static lang:AppResource.Password}"
                         IsPassword="True"
                         Keyboard="Numeric"
-                        FontSize="18" />
+                        FontSize="15" />
                     
                     <Button
                         x:Name="LoginBtn"
@@ -63,9 +63,6 @@
                         Clicked="LoginBtn_Clicked"/>
                 </StackLayout>
                 
-
-                
-
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <CheckBox x:Name="SaveCredentialsCheckbx" />
                     <Label VerticalTextAlignment="Center" Text="{x:Static lang:AppResource.SaveCredentials}">

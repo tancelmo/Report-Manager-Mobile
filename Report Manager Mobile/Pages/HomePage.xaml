@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Report_Manager_Mobile.Pages.HomePage"
+            xmlns:local="clr-namespace:Report_Manager_Mobile.Pages"
+            Title="HomePage"
+            >
+
+    <local:ServicesPage IconImageSource="accept.png" />
+    <local:ServicesPage />
+    <local:ServicesPage />
+    <!--<VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>-->
+</TabbedPage>

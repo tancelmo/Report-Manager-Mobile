@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.png" Color="#0073B8" BaseSize="227,68"/>
+		<MauiSplashScreen Include="Resources\Splash\splash.png" Color="#0073B8" />
 		
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -49,6 +49,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\accell.png" />
+	  <None Remove="Resources\Images\accept.png" />
 	  <None Remove="Resources\Images\capa.jpg" />
 	</ItemGroup>
 
@@ -73,10 +74,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Pass.xaml">
+	  <MauiXaml Update="Pages\ServicesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

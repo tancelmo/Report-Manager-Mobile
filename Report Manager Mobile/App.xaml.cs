@@ -1,4 +1,6 @@
-﻿namespace Report_Manager_Mobile;
+﻿using Report_Manager_Mobile.Pages;
+
+namespace Report_Manager_Mobile;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new Login();
 	}
 }
