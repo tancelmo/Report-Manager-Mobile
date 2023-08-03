@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Report_Manager_Mobile.Pages.Login"
+             xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
+             Title="Login">
+    <Grid>
+        <Image Source="capa.jpg" 
+               Aspect="AspectFill" />
+
+        <Border HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="300"
+                BackgroundColor="White">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10" />
+            </Border.StrokeShape>
+            <VerticalStackLayout Margin="25">
+                
+                <Image Source="accell.png" 
+                       WidthRequest="200"
+                       Margin="0,10,0,20"/>
+
+                <Label
+                    x:Name="Test"
+                    Text="{x:Static lang:AppResource.AppDisplayName}"
+                    FontSize="20"
+                    Padding="10"
+                    HorizontalOptions="Center" />
+                <VerticalStackLayout x:Name="UserBox" >
+                    <Entry 
+                    x:Name="UserEntry"
+                    Placeholder="{x:Static lang:AppResource.User}" 
+                    IsSpellCheckEnabled="False"
+                    Keyboard="Email"
+                    FontSize="18"/>
+                    <Button
+                    x:Name="NextBtn"
+                    Text="{x:Static lang:AppResource.LoginNext}"
+                    FontSize="18"
+                    Margin="10"
+                    WidthRequest="250"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <StackLayout 
+                    x:Name="LoginBox"
+                    IsVisible="False"
+                    TranslationX="500">
+                    <Entry
+                        x:Name="UserPass"
+                        Placeholder="{x:Static lang:AppResource.Password}"
+                        IsPassword="True"
+                        Keyboard="Numeric"
+                        FontSize="18" />
+                    
+                    <Button
+                        x:Name="LoginBtn"
+                        Text="{x:Static lang:AppResource.Login}"
+                        FontSize="18"
+                        Margin="10"
+                        WidthRequest="250"
+                        HorizontalOptions="Center" 
+                        Clicked="LoginBtn_Clicked"/>
+                </StackLayout>
+                
+
+                
+
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <CheckBox x:Name="SaveCredentialsCheckbx" />
+                    <Label VerticalTextAlignment="Center" Text="{x:Static lang:AppResource.SaveCredentials}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout>
+
+                <Label
+                    TextColor="Blue"
+                    Margin="10"
+                    Text="Forgot Password?"
+                    HorizontalOptions="Center"/>
+
+                <ActivityIndicator
+                    x:Name="ActiveIndicatorLogin"
+                    IsVisible="False"/>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>
