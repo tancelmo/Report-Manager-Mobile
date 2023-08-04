@@ -4,11 +4,15 @@
             x:Class="Report_Manager_Mobile.Pages.HomePage"
             xmlns:local="clr-namespace:Report_Manager_Mobile.Pages"
             Title="HomePage"
+            BarBackground="#0073B8"
+            BarTextColor="White"
             >
 
-    <local:ServicesPage IconImageSource="accept.png" />
-    <local:ServicesPage />
-    <local:ServicesPage />
+    <local:ServicesPage Title="Doc P"/>
+    <local:ServicesPage Title="Emitidas"/>
+    <local:ServicesPage Title="Info" />
+    <local:ServicesPage Title="" IconImageSource="settings.png" />
+    
     <!--<VerticalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"

@@ -2,9 +2,98 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Report_Manager_Mobile.Pages.ServicesPage"
-             Title="Services Page">
+             Title="Doc"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}">
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Margin="0,0,0,20">
+            <Editor x:Name="SearchBar"
+                    Margin="20,20,20,0"
+                    HeightRequest="100"
+                    Placeholder="Search by Installation"/>
+            <Frame Margin="20,20,20,0" 
+               BorderColor="#d6d6d6"
+               Background="#f1f1f1"    
+               CornerRadius="5"
+               Padding="8">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+                
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
+                <StackLayout>
+                    <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
+                   FontSize="15"
+                   FontAttributes="Bold" />
+                    <BoxView Color="#d6d6d6"
+                         HeightRequest="2"
+                         HorizontalOptions="Fill" />
+
+                    <Label Text="Instalação: 40045448700 NS: 777000122254" Margin="0,5,0,0"/>
+
+                    <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
+                    <Label Text='Equipamento: MED ROTATIVO G250 400M3/H 4" FL 150#' />
+                    <Label Text="SN: FR400 - O23F0000000018R"/> 
+                    <HorizontalStackLayout HorizontalOptions="End">
+                        <Image Source="accept.png"
+                           HorizontalOptions="End"
+                           WidthRequest="20"/>
+                        <Label Text="Concluído" 
+                               FontSize="16"
+                               Margin="5,0"
+                               TextColor="#4bae4f"
+                               VerticalTextAlignment="Center"
+                               FontAttributes="Bold"/>
+                    </HorizontalStackLayout>
+                    
+                </StackLayout>
+            </Frame>
+            <Frame Margin="20,20,20,0" 
+                
+               BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+               CornerRadius="5"
+               Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
+                <StackLayout>
+                    <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
+                   FontSize="15"
+                   FontAttributes="Bold" />
+                    <BoxView Color="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+                         HeightRequest="2"
+                         HorizontalOptions="Fill" />
+
+                    <Label Text="Instalação: 400454487"/>
+                    <Label Text="NS: 777000122254"/>
+                    <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
+                    <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    <HorizontalStackLayout HorizontalOptions="End">
+                        <Image Source="cancel.png"
+                           HorizontalOptions="End"
+                           WidthRequest="20"/>
+                        <Label Text="Não Executado" 
+                               FontSize="16"
+                               Margin="5,0"
+                               TextColor="Red"
+                               VerticalTextAlignment="Center"
+                               FontAttributes="Bold"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </Frame>
             <Frame Margin="20,20,20,0" 
                 
                BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
@@ -37,7 +126,7 @@
                     <Border BackgroundColor="Green"
                             HorizontalOptions="End"
                             Padding="12,2">
-                        
+
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="5" />
                         </Border.StrokeShape>
@@ -46,10 +135,22 @@
                 </StackLayout>
             </Frame>
             <Frame Margin="20,20,20,0" 
-               BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}" 
+                
                BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
                CornerRadius="5"
                Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
                 <StackLayout>
                     <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
                    FontSize="15"
@@ -62,21 +163,34 @@
                     <Label Text="NS: 777000122254"/>
                     <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
                     <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
-                    <Border BackgroundColor="Red"
+                    <Border BackgroundColor="Green"
                             HorizontalOptions="End"
                             Padding="12,2">
+
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="5" />
                         </Border.StrokeShape>
-                        <Label Text="Cancelado"/>
+                        <Label Text="Aberto"/>
                     </Border>
                 </StackLayout>
             </Frame>
             <Frame Margin="20,20,20,0" 
-               BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}" 
+                
                BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
                CornerRadius="5"
                Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
                 <StackLayout>
                     <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
                    FontSize="15"
@@ -89,13 +203,34 @@
                     <Label Text="NS: 777000122254"/>
                     <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
                     <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    <Border BackgroundColor="Green"
+                            HorizontalOptions="End"
+                            Padding="12,2">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="5" />
+                        </Border.StrokeShape>
+                        <Label Text="Aberto"/>
+                    </Border>
                 </StackLayout>
             </Frame>
             <Frame Margin="20,20,20,0" 
-               BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}" 
+                
                BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
                CornerRadius="5"
                Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
                 <StackLayout>
                     <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
                    FontSize="15"
@@ -108,13 +243,34 @@
                     <Label Text="NS: 777000122254"/>
                     <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
                     <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    <Border BackgroundColor="Green"
+                            HorizontalOptions="End"
+                            Padding="12,2">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="5" />
+                        </Border.StrokeShape>
+                        <Label Text="Aberto"/>
+                    </Border>
                 </StackLayout>
             </Frame>
             <Frame Margin="20,20,20,0" 
-               BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}" 
+                
                BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
                CornerRadius="5"
                Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
                 <StackLayout>
                     <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
                    FontSize="15"
@@ -127,8 +283,130 @@
                     <Label Text="NS: 777000122254"/>
                     <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
                     <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    <Border BackgroundColor="Green"
+                            HorizontalOptions="End"
+                            Padding="12,2">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="5" />
+                        </Border.StrokeShape>
+                        <Label Text="Aberto"/>
+                    </Border>
                 </StackLayout>
             </Frame>
+            <Frame Margin="20,20,20,0" 
+                
+               BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+               CornerRadius="5"
+               Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
+                <StackLayout>
+                    <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
+                   FontSize="15"
+                   FontAttributes="Bold" />
+                    <BoxView Color="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+                         HeightRequest="2"
+                         HorizontalOptions="Fill" />
+
+                    <Label Text="Instalação: 400454487"/>
+                    <Label Text="NS: 777000122254"/>
+                    <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
+                    <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    
+                </StackLayout>
+            </Frame>
+            <Frame Margin="20,20,20,0" 
+                
+               BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+               CornerRadius="5"
+               Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
+                <StackLayout>
+                    <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
+                   FontSize="15"
+                   FontAttributes="Bold" />
+                    <BoxView Color="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+                         HeightRequest="2"
+                         HorizontalOptions="Fill" />
+
+                    <Label Text="Instalação: 400454487"/>
+                    <Label Text="NS: 777000122254"/>
+                    <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
+                    <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    <Border BackgroundColor="Green"
+                            HorizontalOptions="End"
+                            Padding="12,2">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="5" />
+                        </Border.StrokeShape>
+                        <Label Text="Aberto"/>
+                    </Border>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="20,20,20,0" 
+                
+               BorderColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+               CornerRadius="5"
+               Padding="8">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0.0" Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray950}}" />
+                        <GradientStop Offset="1.0" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray600}}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Frame.Shadow>
+                    <Shadow Brush="Green"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8"/>
+                </Frame.Shadow>
+                <StackLayout>
+                    <Label Text="RODERO PINTURA ELETROSTATICA LTDA"
+                   FontSize="15"
+                   FontAttributes="Bold" />
+                    <BoxView Color="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource White}}"
+                         HeightRequest="2"
+                         HorizontalOptions="Fill" />
+
+                    <Label Text="Instalação: 400454487"/>
+                    <Label Text="NS: 777000122254"/>
+                    <Label Text="Endereço: R MTRO MANOEL DA SILVA -  JARDIM SANTA GENEBRA - CAMPINAS CEP: 13080-190"/>
+                    <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                    <Border BackgroundColor="Green"
+                            HorizontalOptions="End"
+                            Padding="12,2">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="5" />
+                        </Border.StrokeShape>
+                        <Label Text="Aberto"/>
+                    </Border>
+                </StackLayout>
+            </Frame>
+
         </VerticalStackLayout>
     </ScrollView>
     
