@@ -8,15 +8,9 @@
             BarTextColor="White"
             >
 
-    <local:ServicesPage Title="Doc P"/>
+    <local:ServicesPage Title="Disponiveis"/>
     <local:ServicesPage Title="Emitidas"/>
     <local:ServicesPage Title="Info" />
     <local:ServicesPage Title="" IconImageSource="settings.png" />
-    
-    <!--<VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>-->
+
 </TabbedPage>

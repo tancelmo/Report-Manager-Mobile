@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Report_Manager_Mobile.Pages.Create"
+             Title="Create">
+    <VerticalStackLayout Margin="20">
+        <Label 
+            Text="Adress"/>
+        <Entry Placeholder="Adress"/>
+        <Label 
+            Text="Adress"/>
+        <Entry Placeholder="Adress"/>
+        <Label 
+            Text="Adress"/>
+        <Entry Placeholder="Adress"/>
+        <Label Text="Avaliação de Risco" FontSize="24" HorizontalOptions="Center"/>
+        <HorizontalStackLayout>
+            <CheckBox />
+            <Label 
+                Text="27 - O abrigo do CRM foi fechado (se for o caso)?" VerticalTextAlignment="Center"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <CheckBox />
+            <Label 
+                Text="29 - Feito contato com a sala de rádio informando a finalização da atividade após troca de PTZ?" VerticalTextAlignment="Center"/>
+        </HorizontalStackLayout>
+
+
+        <Editor x:Name="EditorMail" HeightRequest="100"/>
+
+        <Button Text="Próximo" Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+    
+</ContentPage>

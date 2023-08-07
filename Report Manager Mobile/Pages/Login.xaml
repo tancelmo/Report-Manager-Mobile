@@ -5,7 +5,7 @@
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              Title="Login">
     <Grid>
-        <Image Source="capa.jpg" 
+        <Image x:Name="LoginBG" Source="bg_low.jpg"
                Aspect="AspectFill" />
 
         <Border HorizontalOptions="Center"
@@ -80,7 +80,7 @@
 
                 <ActivityIndicator
                     x:Name="ActiveIndicatorLogin"
-                    IsVisible="False"/>
+                    IsVisible="True"/>
             </VerticalStackLayout>
         </Border>
     </Grid>

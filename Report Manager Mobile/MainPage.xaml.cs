@@ -2,7 +2,6 @@
 
 public partial class MainPage : Page
 {
-	int count = 0;
 
 	public MainPage()
 	{
