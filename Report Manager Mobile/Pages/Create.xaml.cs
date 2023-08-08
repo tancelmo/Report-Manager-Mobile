@@ -9,9 +9,14 @@ public partial class Create : ContentPage
 	public Create()
 	{
 		InitializeComponent();
-        
+
+        FacilityEntry.Text = Globals.Facility;
+        SNEntry.Text = Globals.ServiceNote;
         CostumerEntry.Text = Globals.Costumer;
         EquipmentEntry.Text = Globals.Equipment;
+        MeterSNEntry.Text = Globals.EquipmentSN;
+        AdressEntry.Text = Globals.Adress;
+        TypePicker.SelectedItem = Globals.EquipmentType;
 
     }
 
@@ -24,7 +29,7 @@ public partial class Create : ContentPage
         {
             var message = new EmailMessage
             {
-                Subject = "NS 7770022154 INST B14447899 ACCELL SOLUCOES PARA ENERGIA E AGUA",
+                Subject = Globals.Costumer + " INST " + Globals.Facility + " NS" + Globals.ServiceNote,
                 Body = EditorMail.Text,
                 To = contacts,
                 Cc = contacts,

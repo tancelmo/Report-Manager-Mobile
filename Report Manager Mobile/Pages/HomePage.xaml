@@ -5,13 +5,11 @@
             xmlns:local="clr-namespace:Report_Manager_Mobile.Pages"
             Title="HomePage"
             BarBackground="#0073B8"
-            BarTextColor="White"
-            >
-    
+            BarTextColor="White">
 
-    <local:ServicesPage Title="Disponiveis"/>
-    <local:ServicesPage Title="Emitidas"/>
-    <local:ServicesPage Title="Info" />
-    <local:ServicesPage Title="" IconImageSource="settings.png" />
+
+    <local:ServicesPage Title="Disponiveis" IconImageSource="settings96.svg"/>
+    <local:ServicesPage Title="Emitidas" IconImageSource="settings96.svg"/>
+    <local:ServicesPage Title="Options" IconImageSource="settings96.svg" />
 
 </TabbedPage>

@@ -1,20 +1,13 @@
 using MySqlConnector;
 using Report_Manager_Mobile.Data;
+using Report_Manager_Mobile.Helpers;
 using Report_Manager_Mobile.Resources.Languages;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Globalization;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Report_Manager_Mobile.Pages;
 
 public partial class ServicesPage : ContentPage
 {
-
-    public string connectionString = @"Server=192.168.15.33;Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
-   
     public ServicesPage()
 	{
 		InitializeComponent();
@@ -24,11 +17,6 @@ public partial class ServicesPage : ContentPage
 
     }
 
-    private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
-    {
-        await Navigation.PushModalAsync(new Create());
-
-    }
 
     private List<ScheduleData> GetSchedules()
     {
@@ -37,9 +25,9 @@ public partial class ServicesPage : ContentPage
         {
             var query = "select * from schedule";
 
-            var scheduleData1 = new List<ScheduleData>();
+            var scheduleData = new List<ScheduleData>();
 
-            using (var connection = new MySqlConnection(connectionString))
+            using (var connection = new MySqlConnection(Globals.connectionString))
             {
                 connection.Open();
 
@@ -53,16 +41,13 @@ public partial class ServicesPage : ContentPage
 
                             order.Facility = reader.GetString(2);
                             order.ServiceNote = "NS 77703322644";
-                                order.Costumer = reader.GetString(4);
-                            
-                                order.Equipment = reader.GetString(7);
-                            
-                                order.EquipmentSN = reader.GetString(6) + " - " + reader.GetString(5);
-                            
-                                order.Adress = reader.GetString(12) + " - " + reader.GetString(12) + " - " + reader.GetString(11);
-                            
+                            order.Costumer = reader.GetString(4);
+                            order.Equipment = reader.GetString(7);
+                            order.EquipmentSN = reader.GetString(5);
+                            order.EquipmentType = reader.GetString(6);
+                            order.Adress = reader.GetString(12) + " - " + reader.GetString(12) + " - " + reader.GetString(11);
 
-                            scheduleData1.Add(order);
+                            scheduleData.Add(order);
 
                         }
 
@@ -72,19 +57,20 @@ public partial class ServicesPage : ContentPage
                 connection.Close();
 
             }
-            Debug.WriteLine("############################### - " + scheduleData1.Count);
-            return scheduleData1;
+            return scheduleData;
             
 
 
         }
         catch (Exception ex)
         {
-            Debug.WriteLine("############################### - " + ex.ToString());
             DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
+
+            Debug.WriteLine("70001############################### - " + ex.ToString());
             //Loadinglbl.Text = "Failed to loading data.";
             //Loadinglbl.Foreground = new SolidColorBrush(Colors.Red);
             return null;
+
         }
         //return new List<ScheduleData> 
         //{
@@ -140,6 +126,7 @@ public partial class ServicesPage : ContentPage
         Globals.Adress = Data.Adress;
         Globals.Equipment = Data.Equipment;
         Globals.ServiceNote = Data.ServiceNote;
+        Globals.EquipmentType = Data.EquipmentType;
         Globals.EquipmentSN = Data.EquipmentSN;
         Globals.Facility = Data.Facility;
 
@@ -148,6 +135,9 @@ public partial class ServicesPage : ContentPage
 
     private void Search_TextChanged(object sender, TextChangedEventArgs e)
     {
-        collectionData.FindByName(Search.Text);
+        //ConfigFile configFile = new ConfigFile(Globals.ConfigFilePath);
+
+        //DisplayAlert(AppResource.AppDisplayName, configFile.Read("AccentColor", "General"), AppResource.OkButton);
     }
+    
 }

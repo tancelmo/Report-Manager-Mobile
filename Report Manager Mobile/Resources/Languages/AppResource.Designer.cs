@@ -70,11 +70,29 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adress.
+        /// </summary>
+        internal static string Adress {
+            get {
+                return ResourceManager.GetString("Adress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Report Manager Mobile.
         /// </summary>
         internal static string AppDisplayName {
             get {
                 return ResourceManager.GetString("AppDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RISK ASSESSMENT AND ACTIVITIES.
+        /// </summary>
+        internal static string ARA {
+            get {
+                return ResourceManager.GetString("ARA", resourceCulture);
             }
         }
         
@@ -88,11 +106,29 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Costumer.
+        /// </summary>
+        internal static string Costumer {
+            get {
+                return ResourceManager.GetString("Costumer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
         internal static string ErrorCaption {
             get {
                 return ResourceManager.GetString("ErrorCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Facility.
+        /// </summary>
+        internal static string Facility {
+            get {
+                return ResourceManager.GetString("Facility", resourceCulture);
             }
         }
         
@@ -111,6 +147,24 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string LoginNext {
             get {
                 return ResourceManager.GetString("LoginNext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meter.
+        /// </summary>
+        internal static string Meter {
+            get {
+                return ResourceManager.GetString("Meter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Serial Number.
+        /// </summary>
+        internal static string MeterSN {
+            get {
+                return ResourceManager.GetString("MeterSN", resourceCulture);
             }
         }
         
@@ -147,6 +201,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string SaveCredentials {
             get {
                 return ResourceManager.GetString("SaveCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NS.
+        /// </summary>
+        internal static string ServiceNote {
+            get {
+                return ResourceManager.GetString("ServiceNote", resourceCulture);
             }
         }
         

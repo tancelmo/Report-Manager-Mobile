@@ -2,20 +2,173 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Report_Manager_Mobile.Pages.Create"
+             xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              Title="Create">
     <VerticalStackLayout Margin="20">
+        <HorizontalStackLayout>
+            <VerticalStackLayout>
+                <Label 
+            Text="{x:Static lang:AppResource.Facility}"/>
+                <Entry x:Name="FacilityEntry" Placeholder="{x:Static lang:AppResource.Facility}"/>
+
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label 
+            Text="{x:Static lang:AppResource.ServiceNote}"/>
+                <Entry x:Name="SNEntry" Placeholder="{x:Static lang:AppResource.ServiceNote}"/>
+
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
         <Label 
-            Text="Costumer"/>
-        <Entry Placeholder="Costumer"
+            Text="{x:Static lang:AppResource.Costumer}"/>
+        <Entry Placeholder="{x:Static lang:AppResource.Costumer}"
                x:Name="CostumerEntry"/>
         <Label 
-            Text="Equipment"/>
-        <Entry Placeholder="Equipment"
+            Text="{x:Static lang:AppResource.Meter}"/>
+        <Entry Placeholder="{x:Static lang:AppResource.Meter}"
                x:Name="EquipmentEntry"/>
+        
+        
+        <HorizontalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Type"/>
+                <Picker x:Name="TypePicker" Title="Meter type" >
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>CR016</x:String>
+                            <x:String>CR025</x:String>
+                            <x:String>BR040</x:String>
+                            <x:String>CR040</x:String>
+                            <x:String>CR065</x:String>
+                            <x:String>CR100</x:String>
+                            <x:String>CR160</x:String>
+                            <x:String>CR250</x:String>
+                            <x:String>CR400</x:String>
+                            <x:String>CR650</x:String>
+                            <x:String>CT100</x:String>
+                            <x:String>CT160</x:String>
+                            <x:String>CT250</x:String>
+                            <x:String>CT400</x:String>
+                            <x:String>CT650</x:String>
+                            <x:String>CT10C</x:String>
+                            <x:String>CT16C</x:String>
+                            <x:String>CT25C</x:String>
+                            <x:String>CT40C</x:String>
+                            <x:String>IR016</x:String>
+                            <x:String>IR025</x:String>
+                            <x:String>IR040</x:String>
+                            <x:String>IR065</x:String>
+                            <x:String>IR100</x:String>
+                            <x:String>IR160</x:String>
+                            <x:String>IR250</x:String>
+                            <x:String>IR400</x:String>
+                            <x:String>IR650</x:String>
+                            <x:String>IT100</x:String>
+                            <x:String>IT160</x:String>
+                            <x:String>IT250</x:String>
+                            <x:String>IT400</x:String>
+                            <x:String>IT650</x:String>
+                            <x:String>IT10C</x:String>
+                            <x:String>IT16C</x:String>
+                            <x:String>IT25C</x:String>
+                            <x:String>IT40C</x:String>
+                            <x:String>DR016</x:String>
+                            <x:String>DR025</x:String>
+                            <x:String>DR040</x:String>
+                            <x:String>DR065</x:String>
+                            <x:String>DR100</x:String>
+                            <x:String>DR160</x:String>
+                            <x:String>DR250</x:String>
+                            <x:String>DR400</x:String>
+                            <x:String>DT100</x:String>
+                            <x:String>DT160</x:String>
+                            <x:String>DT250</x:String>
+                            <x:String>DT400</x:String>
+                            <x:String>DT650</x:String>
+                            <x:String>DT10C</x:String>
+                            <x:String>DT16C</x:String>
+                            <x:String>DT25C</x:String>
+                            <x:String>DT40C</x:String>
+                            <x:String>GR016</x:String>
+                            <x:String>GR025</x:String>
+                            <x:String>GR040</x:String>
+                            <x:String>GR065</x:String>
+                            <x:String>GR100</x:String>
+                            <x:String>GR160</x:String>
+                            <x:String>GR250</x:String>
+                            <x:String>GR400</x:String>
+                            <x:String>GR650</x:String>
+                            <x:String>MR016</x:String>
+                            <x:String>MR025</x:String>
+                            <x:String>MR040</x:String>
+                            <x:String>MR065</x:String>
+                            <x:String>MR100</x:String>
+                            <x:String>MR160</x:String>
+                            <x:String>MR250</x:String>
+                            <x:String>MR400</x:String>
+                            <x:String>FR016</x:String>
+                            <x:String>FR025</x:String>
+                            <x:String>FR040</x:String>
+                            <x:String>FR065</x:String>
+                            <x:String>FR100</x:String>
+                            <x:String>FR160</x:String>
+                            <x:String>FR250</x:String>
+                            <x:String>FR400</x:String>
+                            <x:String>FT065</x:String>
+                            <x:String>FT100</x:String>
+                            <x:String>FT160</x:String>
+                            <x:String>FT250</x:String>
+                            <x:String>FT400</x:String>
+                            <x:String>FT650</x:String>
+                            <x:String>FT10C</x:String>
+                            <x:String>FT16C</x:String>
+                            <x:String>FT25C</x:String>
+                            <x:String>FT40C</x:String>
+                            <x:String>TR016</x:String>
+                            <x:String>TR025</x:String>
+                            <x:String>TR040</x:String>
+                            <x:String>TR065</x:String>
+                            <x:String>TR100</x:String>
+                            <x:String>TR160</x:String>
+                            <x:String>TR250</x:String>
+                            <x:String>TR400</x:String>
+                            <x:String>CT65C</x:String>
+                            <x:String>AR016</x:String>
+                            <x:String>AR025</x:String>
+                            <x:String>AR040</x:String>
+                            <x:String>AR065</x:String>
+                            <x:String>AR100</x:String>
+                            <x:String>AR160</x:String>
+                            <x:String>AR250</x:String>
+                            <x:String>AR400</x:String>
+                            <x:String>AT065</x:String>
+                            <x:String>AT100</x:String>
+                            <x:String>AT160</x:String>
+                            <x:String>AT250</x:String>
+                            <x:String>AT400</x:String>
+                            <x:String>AT650</x:String>
+                            <x:String>AT10C</x:String>
+                            <x:String>AT16C</x:String>
+                            <x:String>AT25C</x:String>
+                            <x:String>AT40C</x:String>
+                            <x:String>AT65C</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label 
+            Text="{x:Static lang:AppResource.MeterSN}"/>
+                <Entry Placeholder="{x:Static lang:AppResource.MeterSN}"
+               x:Name="MeterSNEntry"/>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        
         <Label 
-            Text="Adress"/>
-        <Entry Placeholder="Adress"/>
-        <Label Text="Avaliação de Risco" FontSize="24" HorizontalOptions="Center"/>
+            Text="{x:Static lang:AppResource.Adress}"/>
+        <Entry x:Name="AdressEntry" Placeholder="{x:Static lang:AppResource.Adress}"/>
+        <Label Margin="0,20,0,0" Text="{x:Static lang:AppResource.ARA}" FontSize="18" HorizontalOptions="Center"/>
         <HorizontalStackLayout>
             <CheckBox />
             <Label 
@@ -24,7 +177,7 @@
 
         <HorizontalStackLayout>
             <CheckBox />
-            <Label 
+            <Label
                 
                
                 Text="29 - Feito contato com a sala de rádio informando a finalização da atividade após troca de PTZ?" VerticalTextAlignment="Center"/>

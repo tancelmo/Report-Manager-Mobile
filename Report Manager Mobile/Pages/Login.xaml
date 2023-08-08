@@ -5,7 +5,7 @@
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              Title="Login">
     <Grid>
-        <Image x:Name="LoginBG" Source="bg_low.jpg"
+        <Image x:Name="LoginBG" Source="bg.jpg"
                Aspect="AspectFill" />
 
         <Border HorizontalOptions="Center"

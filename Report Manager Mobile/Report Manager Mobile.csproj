@@ -58,10 +58,11 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\accell.png" />
 	  <None Remove="Resources\Images\accept.png" />
-	  <None Remove="Resources\Images\bg_low.jpg" />
+	  <None Remove="Resources\Images\bg.jpg" />
 	  <None Remove="Resources\Images\cancel.png" />
 	  <None Remove="Resources\Images\capa.jpg" />
 	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\settings96.svg" />
 	</ItemGroup>
 
 	<ItemGroup>

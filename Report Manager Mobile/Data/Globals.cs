@@ -8,6 +8,11 @@ namespace Report_Manager_Mobile.Data
 {
     public static class Globals
     {
+        public static string connectionString = @"Server=172.23.171.59;Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
+
+        public static string ConfigFilePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Settings\\Config.ini";
+
+        public static string ConfigPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Settings";
         public static string Costumer { get; set; }
 
         public static string Facility { get; set; }
@@ -17,6 +22,8 @@ namespace Report_Manager_Mobile.Data
         public static string Adress { get; set; }
 
         public static string Equipment { get; set; }
+
+        public static string EquipmentType { get; set; }
 
         public static string EquipmentSN { get; set; }
     }
