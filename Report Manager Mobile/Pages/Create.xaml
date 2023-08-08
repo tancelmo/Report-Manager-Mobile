@@ -5,11 +5,13 @@
              Title="Create">
     <VerticalStackLayout Margin="20">
         <Label 
-            Text="Adress"/>
-        <Entry Placeholder="Adress"/>
+            Text="Costumer"/>
+        <Entry Placeholder="Costumer"
+               x:Name="CostumerEntry"/>
         <Label 
-            Text="Adress"/>
-        <Entry Placeholder="Adress"/>
+            Text="Equipment"/>
+        <Entry Placeholder="Equipment"
+               x:Name="EquipmentEntry"/>
         <Label 
             Text="Adress"/>
         <Entry Placeholder="Adress"/>
@@ -23,13 +25,15 @@
         <HorizontalStackLayout>
             <CheckBox />
             <Label 
+                
+               
                 Text="29 - Feito contato com a sala de rádio informando a finalização da atividade após troca de PTZ?" VerticalTextAlignment="Center"/>
         </HorizontalStackLayout>
 
 
         <Editor x:Name="EditorMail" HeightRequest="100"/>
 
-        <Button Text="Próximo" Clicked="Button_Clicked"/>
+        <Button Text="Próximo" FontSize="18" Clicked="Button_Clicked"/>
 
     </VerticalStackLayout>
     

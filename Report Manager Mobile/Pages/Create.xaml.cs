@@ -1,3 +1,4 @@
+using Report_Manager_Mobile.Data;
 using Report_Manager_Mobile.Resources.Languages;
 using System.Diagnostics;
 
@@ -8,7 +9,11 @@ public partial class Create : ContentPage
 	public Create()
 	{
 		InitializeComponent();
-	}
+        
+        CostumerEntry.Text = Globals.Costumer;
+        EquipmentEntry.Text = Globals.Equipment;
+
+    }
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
@@ -42,7 +47,7 @@ public partial class Create : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert(AppResource.WarnignCaption, "UE", AppResource.OkButton);
+            await DisplayAlert(AppResource.WarnignCaption, ex.Message + "UE", AppResource.OkButton);
             // Some other exception occurred
         }
     }

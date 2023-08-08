@@ -101,7 +101,8 @@ public partial class Login : ContentPage
         ActiveIndicatorLogin.IsRunning = true;
         await Task.Delay(100);
         await Navigation.PushModalAsync(new HomePage());
-        Navigation.RemovePage(this);
+        //Navigation.RemovePage(this);
+        //await Shell.Current.GoToAsync("HomePage");
         ActiveIndicatorLogin.IsRunning = false;
 
     }
