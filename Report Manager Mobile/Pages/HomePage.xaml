@@ -7,11 +7,9 @@
             BarBackground="#0073B8"
             BarTextColor="White"
             >
-    <NavigationPage.HasBackButton>
-        <x:Boolean>False</x:Boolean>
-    </NavigationPage.HasBackButton>
+    
 
-<local:ServicesPage Title="Disponiveis"/>
+    <local:ServicesPage Title="Disponiveis"/>
     <local:ServicesPage Title="Emitidas"/>
     <local:ServicesPage Title="Info" />
     <local:ServicesPage Title="" IconImageSource="settings.png" />

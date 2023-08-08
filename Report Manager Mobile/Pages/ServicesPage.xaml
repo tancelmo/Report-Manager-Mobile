@@ -21,46 +21,59 @@
         </Style>
     </ContentPage.Resources>
 
-    <CollectionView x:Name="collectionData" Margin="20" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="No data avaliable">
-        
-        <CollectionView.ItemTemplate>
-            
-            <DataTemplate>
-                
-                <Border
+
+
+
+
+    <Grid>
+        <SearchBar Placeholder="Search" x:Name="Search" TextChanged="Search_TextChanged" HorizontalOptions="Center"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            <CollectionView x:Name="collectionData" Grid.Row="1" Margin="20" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="No data avaliable">
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <Border
                     Margin="5"  
                     StrokeShape="RoundRectangle 8"
                     Padding="8">
-                    
-                    
-                    <StackLayout>
-                        <Label Text="{Binding Costumer}"
+
+
+                            <StackLayout>
+                                <Label Text="{Binding Costumer}"
                             FontSize="15"
                             FontAttributes="Bold" />
-                        <BoxView Color="#d6d6d6"
+                                <BoxView Color="#d6d6d6"
                                  HeightRequest="2"
-                                 HorizontalOptions="Fill" />     
+                                 HorizontalOptions="Fill" />
 
-                        <Label Text="{Binding Facility}" Margin="0,5,0,0"/>
-                        <Label Text="{Binding ServiceNote}"/>
-                        <Label Text="{Binding Adress}"/>
-                        <Label Text="{Binding Equipment}" />
-                        <Label Text="{Binding EquipmentSN}"/>
-                        <HorizontalStackLayout HorizontalOptions="End">
-                            <Image Source="accept.png"
+                                <Label Text="{Binding Facility}" Margin="0,5,0,0"/>
+                                <Label Text="{Binding ServiceNote}"/>
+                                <Label Text="{Binding Adress}"/>
+                                <Label Text="{Binding Equipment}" />
+                                <Label Text="{Binding EquipmentSN}"/>
+                                <HorizontalStackLayout HorizontalOptions="End">
+                                    <Image Source="accept.png"
                                     HorizontalOptions="End"
                                     WidthRequest="20"/>
-                            <Label Text="Concluído" 
+                                    <Label Text="Concluído" 
                                         FontSize="16"
                                         Margin="5,0"
                                         TextColor="#4bae4f"
                                         VerticalTextAlignment="Center"
                                         FontAttributes="Bold"/>
-                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
 
-                    </StackLayout>
-                </Border>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                            </StackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+    </Grid>
+
 </ContentPage>

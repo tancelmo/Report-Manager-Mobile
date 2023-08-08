@@ -143,7 +143,11 @@ public partial class ServicesPage : ContentPage
         Globals.EquipmentSN = Data.EquipmentSN;
         Globals.Facility = Data.Facility;
 
-        await Navigation.PushModalAsync(new Create());
-        
+        await Navigation.PushModalAsync(new Create());        
+    }
+
+    private void Search_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        collectionData.FindByName(Search.Text);
     }
 }

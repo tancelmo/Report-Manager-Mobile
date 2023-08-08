@@ -10,4 +10,9 @@ public partial class HomePage : TabbedPage
 		InitializeComponent();
 		
 	}
+    protected override bool OnBackButtonPressed()
+    {
+        return false;
+    }
+
 }
