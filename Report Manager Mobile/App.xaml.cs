@@ -7,7 +7,8 @@ public partial class App : Application
 {
 	public App()
 	{
-		InitializeComponent();
+        Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjYzMTc3OEAzMjMyMmUzMDJlMzBhcXFMc051cUY2Y1VVOHowOW1KRG9IdlZ0RWN5bWlKdUtNYjhkVDZ6aWpVPQ==");
+        InitializeComponent();
 		StartUp.CreateFilesIfNotExist();
 		
         MainPage = new Login();

@@ -187,6 +187,7 @@
         <Editor x:Name="EditorMail" HeightRequest="100"/>
 
         <Button Text="Próximo" FontSize="18" Clicked="Button_Clicked"/>
+        <Button Text="Send" FontSize="18" Clicked="Button_Clicked_1"/>
 
     </VerticalStackLayout>
     

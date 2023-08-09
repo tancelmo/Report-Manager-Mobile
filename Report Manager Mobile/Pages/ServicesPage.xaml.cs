@@ -138,6 +138,7 @@ public partial class ServicesPage : ContentPage
         //ConfigFile configFile = new ConfigFile(Globals.ConfigFilePath);
 
         //DisplayAlert(AppResource.AppDisplayName, configFile.Read("AccentColor", "General"), AppResource.OkButton);
+
     }
     
 }

@@ -10,7 +10,10 @@
 
         <Border HorizontalOptions="Center"
                 VerticalOptions="Center"
-                WidthRequest="300">
+                WidthRequest="300"
+                
+                Opacity=".8"
+                >
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10" />
             </Border.StrokeShape>

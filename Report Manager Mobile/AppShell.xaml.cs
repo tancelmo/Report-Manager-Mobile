@@ -1,4 +1,4 @@
-﻿using Report_Manager_Mobile.Pages;
+﻿	using Report_Manager_Mobile.Pages;
 
 namespace Report_Manager_Mobile;
 
