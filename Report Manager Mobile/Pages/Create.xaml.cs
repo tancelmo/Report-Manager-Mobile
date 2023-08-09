@@ -104,7 +104,7 @@ public partial class Create : ContentPage
 
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
-        string root = "/data/user/0/Android/data/com.companyname.report_manager_mobile/files/";
+        string root = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
         Debug.WriteLine(FileSystem.Current.AppDataDirectory);
         Debug.WriteLine(root + "/RPMANAGER");
 
@@ -122,7 +122,7 @@ public partial class Create : ContentPage
                 //Bcc = contacts
             };
             var fn = Globals.Costumer + ".pdf";
-            var file = root + "/Download/Reports/" + fn;
+            var file = Path.Combine(root + "/Reports", fn);
 
 
             message.Attachments.Add(new EmailAttachment(file));
