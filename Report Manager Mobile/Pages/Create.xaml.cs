@@ -11,6 +11,11 @@ using Color = Syncfusion.Drawing.Color;
 using PointF = Syncfusion.Drawing.PointF;
 using SizeF = Syncfusion.Drawing.SizeF;
 using Report_Manager_Mobile.Services;
+#if ANDROID
+using Android.Content;
+using Android.OS;
+using Java.IO;
+#endif
 
 namespace Report_Manager_Mobile.Pages;
 
@@ -30,7 +35,7 @@ public partial class Create : ContentPage
 
     }
 
-    private async void Button_Clicked(object sender, EventArgs e)
+    private void Button_Clicked(object sender, EventArgs e)
     {
         //var contacts = new List<string>();
         //contacts.Add("tadasilv@accellsolutions.com");
@@ -68,7 +73,7 @@ public partial class Create : ContentPage
         CreatePDF_Click();
 
     }
-    private async void CreatePDF_Click()
+    private void CreatePDF_Click()
     {
         //Create a new PDF document.
         PdfDocument document = new PdfDocument();
@@ -83,7 +88,7 @@ public partial class Create : ContentPage
         PdfStandardFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
 
         //Draw string. 
-        graphics.DrawString(Globals.Costumer + "\n" + Globals.Equipment, font, PdfBrushes.Olive, new Syncfusion.Drawing.PointF(10, 10));
+        graphics.DrawString(CostumerEntry.Text + "\n" + EquipmentEntry.Text, font, PdfBrushes.Olive, new Syncfusion.Drawing.PointF(10, 10));
 
         //Saves the PDF to the memory stream.
         using MemoryStream ms = new();
@@ -104,12 +109,22 @@ public partial class Create : ContentPage
 
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
-        string root = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-        Debug.WriteLine(FileSystem.Current.AppDataDirectory);
-        Debug.WriteLine(root + "/RPMANAGER");
+
+#if ANDROID
+        string root = null;
+        if (Android.OS.Environment.IsExternalStorageEmulated)
+        {
+            root = Android.App.Application.Context!.GetExternalFilesDir(Android.OS.Environment.DirectoryDownloads)!.AbsolutePath;
+        }
+        else
+            root = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
+
+       // Android.OS.Debug(FileSystem.Current.AppDataDirectory);
+       // Debug.WriteLine(root + "/Reports");
 
         var contacts = new List<string>();
         contacts.Add("tadasilv@accellsolutions.com");
+        
 
         try
         {
@@ -123,15 +138,17 @@ public partial class Create : ContentPage
             };
             var fn = Globals.Costumer + ".pdf";
             var file = Path.Combine(root + "/Reports", fn);
-
+            
 
             message.Attachments.Add(new EmailAttachment(file));
 
             await Email.ComposeAsync(message);
-        }catch(Exception ex)
+        }
+        catch (Exception ex)
         {
             await DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
         }
-        
+#endif
+
     }
 }

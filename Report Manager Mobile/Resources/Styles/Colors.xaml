@@ -17,6 +17,22 @@
     <Color x:Key="Gray600">#404040</Color>
     <Color x:Key="Gray900">#212121</Color>
     <Color x:Key="Gray950">#141414</Color>
+    <Color x:Key="BGDark">#1E1E1E</Color>
+    <LinearGradientBrush x:Key="BorderBG">
+        <GradientStop Color="{StaticResource White}"
+                          Offset="0.1" />
+        <GradientStop Color="{StaticResource Gray300}"
+                          Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BorderBGDark">
+        <GradientStop Color="{StaticResource Gray600}"
+                          Offset="0.1" />
+        <GradientStop Color="{StaticResource Gray900}"
+                          Offset="1.0" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="DefaultBGDark" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
     <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>

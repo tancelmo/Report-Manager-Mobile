@@ -1,4 +1,5 @@
 using Report_Manager_Mobile.Data;
+using Report_Manager_Mobile.Resources.Languages;
 
 namespace Report_Manager_Mobile.Pages;
 
@@ -12,7 +13,8 @@ public partial class HomePage : TabbedPage
 	}
     protected override bool OnBackButtonPressed()
     {
-        return false;
+		DisplayAlert(AppResource.AppDisplayName, "Deseja Sair?", "ok");
+		return base.OnBackButtonPressed();
     }
 
 }

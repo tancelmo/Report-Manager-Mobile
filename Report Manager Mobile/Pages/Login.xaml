@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Report_Manager_Mobile.Pages.Login"
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
+             Loaded="ContentPage_Loaded"
              Title="Login">
+    
     <Grid>
         <Image x:Name="LoginBG" Source="bg.jpg"
                Aspect="AspectFill" />
@@ -11,9 +13,9 @@
         <Border HorizontalOptions="Center"
                 VerticalOptions="Center"
                 WidthRequest="300"
-                
-                Opacity=".8"
-                >
+                StrokeThickness="0"
+                Opacity="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10" />
             </Border.StrokeShape>

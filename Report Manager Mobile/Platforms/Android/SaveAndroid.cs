@@ -13,7 +13,7 @@ namespace Report_Manager_Mobile.Services
         public partial void SaveAndView(string filename, string contentType, MemoryStream stream)
         {
             string exception = string.Empty;
-            string? root = null;
+            string root = null;
 
             if (Android.OS.Environment.IsExternalStorageEmulated)
             {
@@ -47,24 +47,24 @@ namespace Report_Manager_Mobile.Services
             if (file.Exists())
             {
 
-                if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.N)
-                {
-                    var fileUri = AndroidX.Core.Content.FileProvider.GetUriForFile(Android.App.Application.Context, Android.App.Application.Context.PackageName + ".provider", file);
-                    var intent = new Intent(Intent.ActionView);
-                    intent.SetData(fileUri);
-                    intent.AddFlags(ActivityFlags.NewTask);
-                    intent.AddFlags(ActivityFlags.GrantReadUriPermission);
-                    Android.App.Application.Context.StartActivity(intent);
-                }
-                else
-                {
-                    var fileUri = Android.Net.Uri.Parse(file.AbsolutePath);
-                    var intent = new Intent(Intent.ActionView);
-                    intent.SetDataAndType(fileUri, contentType);
-                    intent = Intent.CreateChooser(intent, "Open File");
-                    intent!.AddFlags(ActivityFlags.NewTask);
-                    Android.App.Application.Context.StartActivity(intent);
-                }
+                //if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.N)
+                //{
+                //    var fileUri = AndroidX.Core.Content.FileProvider.GetUriForFile(Android.App.Application.Context, Android.App.Application.Context.PackageName + ".provider", file);
+                //    var intent = new Intent(Intent.ActionView);
+                //    intent.SetData(fileUri);
+                //    intent.AddFlags(ActivityFlags.NewTask);
+                //    intent.AddFlags(ActivityFlags.GrantReadUriPermission);
+                //    Android.App.Application.Context.StartActivity(intent);
+                //}
+                //else
+                //{
+                //    var fileUri = Android.Net.Uri.Parse(file.AbsolutePath);
+                //    var intent = new Intent(Intent.ActionView);
+                //    intent.SetDataAndType(fileUri, contentType);
+                //    intent = Intent.CreateChooser(intent, "Open File");
+                //    intent!.AddFlags(ActivityFlags.NewTask);
+                //    Android.App.Application.Context.StartActivity(intent);
+                //}
 
             }
         }
