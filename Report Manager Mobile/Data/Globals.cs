@@ -9,7 +9,9 @@ namespace Report_Manager_Mobile.Data
     public static class Globals
     {
         //192.168.15.33 - 172.23.171.59 - 179.111.22.76
-        public static string connectionString = @"Server=179.111.22.76;Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
+        public static string connectionString { get; set; }
+
+        public static string serverAdress { get; set; }
 
         public static string ConfigFilePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Settings\\Config.ini";
 

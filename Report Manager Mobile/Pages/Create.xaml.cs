@@ -2,15 +2,8 @@ using Report_Manager_Mobile.Data;
 using Report_Manager_Mobile.Resources.Languages;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
-using System.Diagnostics;
-using Syncfusion.Pdf.Grid;
-using Syncfusion.Drawing;
-using System.Reflection;
-using System.Xml.Linq;
-using Color = Syncfusion.Drawing.Color;
-using PointF = Syncfusion.Drawing.PointF;
-using SizeF = Syncfusion.Drawing.SizeF;
 using Report_Manager_Mobile.Services;
+
 #if ANDROID
 using Android.Content;
 using Android.OS;
@@ -109,22 +102,21 @@ public partial class Create : ContentPage
 
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
+        string root = null;
 
 #if ANDROID
-        string root = null;
+        
         if (Android.OS.Environment.IsExternalStorageEmulated)
         {
             root = Android.App.Application.Context!.GetExternalFilesDir(Android.OS.Environment.DirectoryDownloads)!.AbsolutePath;
         }
         else
             root = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-
-       // Android.OS.Debug(FileSystem.Current.AppDataDirectory);
-       // Debug.WriteLine(root + "/Reports");
-
+        
+#endif
         var contacts = new List<string>();
         contacts.Add("tadasilv@accellsolutions.com");
-        
+
 
         try
         {
@@ -138,7 +130,7 @@ public partial class Create : ContentPage
             };
             var fn = Globals.Costumer + ".pdf";
             var file = Path.Combine(root + "/Reports", fn);
-            
+
 
             message.Attachments.Add(new EmailAttachment(file));
 
@@ -148,7 +140,6 @@ public partial class Create : ContentPage
         {
             await DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
         }
-#endif
 
     }
 }

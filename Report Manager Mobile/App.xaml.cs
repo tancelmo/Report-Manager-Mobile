@@ -1,4 +1,5 @@
-﻿using Report_Manager_Mobile.Pages;
+﻿using Report_Manager_Mobile.Data;
+using Report_Manager_Mobile.Pages;
 using System.Diagnostics;
 
 namespace Report_Manager_Mobile;

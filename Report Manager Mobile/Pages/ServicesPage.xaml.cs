@@ -12,25 +12,14 @@ public partial class ServicesPage : ContentPage
     public ServicesPage()
 	{
 		InitializeComponent();
-        schedules = new List<ScheduleData>();
-        
-        try
-        {
-            schedules = GetSchedules();
-            collectionData.ItemsSource = schedules;
-        }catch (Exception ex)
-        {
-            DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
-        }
-        
 
+        
 
     }
 
 
     private List<ScheduleData> GetSchedules()
     {
-
         try
         {
             var query = "select * from schedule";
@@ -50,12 +39,12 @@ public partial class ServicesPage : ContentPage
                             var order = new ScheduleData();
 
                             order.Facility = reader.GetString(2);
-                            order.ServiceNote = "NS 77703322644";
+                            order.ServiceNote = "7771994543";
                             order.Costumer = reader.GetString(4);
                             order.Equipment = reader.GetString(7);
                             order.EquipmentSN = reader.GetString(5);
                             order.EquipmentType = reader.GetString(6);
-                            order.Adress = reader.GetString(12) + " - " + reader.GetString(12) + " - " + reader.GetString(11);
+                            order.Adress = reader.GetString(22).ToString() + " - " + reader.GetString(12) + " - " + reader.GetString(11);
 
                             scheduleData.Add(order);
 
@@ -74,9 +63,10 @@ public partial class ServicesPage : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
+            DisplayAlert(AppResource.WarnignCaption, "#70002 - Could not connect to server", AppResource.OkButton);
             
             Debug.WriteLine("70001############################### - " + ex.ToString());
+            LogFile.Write("#70002", ex.Message);
             //Loadinglbl.Text = "Failed to loading data.";
             //Loadinglbl.Foreground = new SolidColorBrush(Colors.Red);
             return null;
@@ -149,5 +139,18 @@ public partial class ServicesPage : ContentPage
         collectionData.ItemsSource = filteredList;
         SearchBox.Focus();
     }
-    
+
+    private void ContentPage_Loaded(object sender, EventArgs e)
+    {
+        try
+        {
+            schedules = GetSchedules();
+            collectionData.ItemsSource = schedules;
+        }
+        catch (Exception ex)
+        {
+
+            throw;
+        }
+    }
 }
