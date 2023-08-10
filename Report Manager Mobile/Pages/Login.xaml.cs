@@ -69,6 +69,11 @@ public partial class Login : ContentPage
 
         string saveCredential = await SecureStorage.Default.GetAsync("save_credentials");
         string serverAdress = await SecureStorage.Default.GetAsync("serverAdress");
+        if (serverAdress == null)
+        {
+            await SecureStorage.Default.SetAsync("serverAdress", "localhost");
+        }
+        serverAdress = await SecureStorage.Default.GetAsync("serverAdress");
         Globals.serverAdress = serverAdress;
         Globals.connectionString = @"Server=" + Globals.serverAdress + ";Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
 
@@ -81,16 +86,6 @@ public partial class Login : ContentPage
         {
             SaveCredentialsCheckbx.IsChecked = false;
         }
-        if(serverAdress == null)
-        {
-            await DisplayAlert(AppResource.AppDisplayName, "Server Adress é Null", "OK");
-        }else if(serverAdress == "")
-        {
-            await DisplayAlert(AppResource.AppDisplayName, "Server Adress é nada", "OK");
-        }else if( serverAdress == string.Empty)
-        {
-            await DisplayAlert(AppResource.AppDisplayName, "Server Adress é string empty", "OK");
-        }
-        await DisplayAlert(AppResource.AppDisplayName, Globals.connectionString, "OK");
+        
     }
 }
