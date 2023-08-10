@@ -75,7 +75,7 @@ public partial class ServicesPage : ContentPage
         catch (Exception ex)
         {
             DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
-
+            
             Debug.WriteLine("70001############################### - " + ex.ToString());
             //Loadinglbl.Text = "Failed to loading data.";
             //Loadinglbl.Foreground = new SolidColorBrush(Colors.Red);
