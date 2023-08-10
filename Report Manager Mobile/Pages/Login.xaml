@@ -31,10 +31,11 @@
                     FontSize="20"
                     Padding="10"
                     HorizontalOptions="Center" />
+                <Label x:Name="EmailCaption" HorizontalOptions="Center" TextColor="{StaticResource Primary}" Text="{x:Static lang:AppResource.User}"/>
                 <VerticalStackLayout x:Name="UserBox" >
                     <Entry 
                     x:Name="UserEntry"
-                    Placeholder="{x:Static lang:AppResource.User}" 
+                    Placeholder="{x:Static lang:AppResource.UserExample}" 
                     IsSpellCheckEnabled="False"
                     Keyboard="Email"
                     FontSize="15"/>

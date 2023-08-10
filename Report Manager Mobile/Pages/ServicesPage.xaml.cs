@@ -8,11 +8,21 @@ namespace Report_Manager_Mobile.Pages;
 
 public partial class ServicesPage : ContentPage
 {
+    List<ScheduleData> schedules;
     public ServicesPage()
 	{
 		InitializeComponent();
-
-        collectionData.ItemsSource = GetSchedules();
+        schedules = new List<ScheduleData>();
+        
+        try
+        {
+            schedules = GetSchedules();
+            collectionData.ItemsSource = schedules;
+        }catch (Exception ex)
+        {
+            DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
+        }
+        
 
 
     }
@@ -135,10 +145,9 @@ public partial class ServicesPage : ContentPage
 
     private void Search_TextChanged(object sender, TextChangedEventArgs e)
     {
-        //ConfigFile configFile = new ConfigFile(Globals.ConfigFilePath);
-
-        //DisplayAlert(AppResource.AppDisplayName, configFile.Read("AccentColor", "General"), AppResource.OkButton);
-
+        var filteredList = schedules.Where(a => a.Facility.Contains(e.NewTextValue));
+        collectionData.ItemsSource = filteredList;
+        SearchBox.Focus();
     }
     
 }

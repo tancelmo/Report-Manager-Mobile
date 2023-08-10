@@ -15,7 +15,7 @@ public partial class Login : ContentPage
     }
     private async void OnCounterClicked(object sender, EventArgs e)
     {
-        if (SaveCredentialsCheckbx.IsChecked)
+        if (SaveCredentialsCheckbx.IsChecked && UserEntry.Text != null)
         {
             await SecureStorage.Default.SetAsync("save_credentials", UserEntry.Text);
         }
@@ -31,7 +31,7 @@ public partial class Login : ContentPage
         UserBox.IsVisible = false;
         LoginBox.IsVisible = true;
         await LoginBox.TranslateTo(0, 0, 300);
-        
+        EmailCaption.Text = UserEntry.Text;
         ActiveIndicatorLogin.IsRunning = false;
         //--------------------
 
@@ -49,6 +49,11 @@ public partial class Login : ContentPage
         //await Shell.Current.GoToAsync("HomePage");
         //Navigation.RemovePage(this);
         //await Shell.Current.GoToAsync("HomePage");
+        await UserBox.TranslateTo(0, 0, 300);
+        UserBox.IsVisible = true;
+        LoginBox.IsVisible = false;
+        await LoginBox.TranslateTo(500, 0, 300);
+        EmailCaption.Text = AppResource.User;
         ActiveIndicatorLogin.IsRunning = false;
 
     }

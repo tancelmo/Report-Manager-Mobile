@@ -9,7 +9,7 @@
 
 
     <local:ServicesPage Title="Disponiveis" IconImageSource="settings96.svg"/>
-    <local:ServicesPage Title="Emitidas" IconImageSource="settings96.svg"/>
-    <local:ServicesPage Title="Options" IconImageSource="settings96.svg" />
+    <!--<local:ServicesPage Title="Emitidas" IconImageSource="settings96.svg"/>-->
+    <local:Settings Title="Options" IconImageSource="settings96.svg" />
 
 </TabbedPage>

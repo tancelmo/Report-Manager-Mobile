@@ -171,6 +171,9 @@
   <data name="User" xml:space="preserve">
     <value>User</value>
   </data>
+  <data name="UserExample" xml:space="preserve">
+    <value>example@accellsolutions.com</value>
+  </data>
   <data name="WarnignCaption" xml:space="preserve">
     <value>Warning</value>
   </data>
