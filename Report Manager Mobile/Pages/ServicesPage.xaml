@@ -23,8 +23,8 @@
             </Setter>
         </Style>
     </ContentPage.Resources>
-    
-        <CollectionView x:Name="collectionData" Grid.Row="1" Margin="20" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="No data avaliable">
+
+    <CollectionView x:Name="collectionData" Grid.Row="1" Margin="20" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="{x:Static lang:AppResource.EmptyDataView}">
         <CollectionView.Header>
             <SearchBar x:Name="SearchBox" TextChanged="Search_TextChanged" Placeholder="Search a facility"/>
         </CollectionView.Header>

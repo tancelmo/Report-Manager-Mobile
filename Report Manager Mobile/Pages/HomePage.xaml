@@ -3,13 +3,14 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="Report_Manager_Mobile.Pages.HomePage"
             xmlns:local="clr-namespace:Report_Manager_Mobile.Pages"
+            xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
             Title="HomePage"
             BarBackground="#0073B8"
             BarTextColor="White">
 
 
-    <local:ServicesPage Title="Disponiveis" IconImageSource="settings96.svg"/>
-    <!--<local:ServicesPage Title="Emitidas" IconImageSource="settings96.svg"/>-->
-    <local:Settings Title="Options" IconImageSource="settings96.svg" />
+    <local:ServicesPage Title="{x:Static lang:AppResource.TabPageHeaderAvaliable}" IconImageSource="home.png"/>
+    <local:Completed Title="{x:Static lang:AppResource.TabPageHeaderCompleted}" IconImageSource="check.png"/>
+    <local:Settings Title="{x:Static lang:AppResource.TabPageHeaderSettings}" IconImageSource="settings.png" />
 
 </TabbedPage>

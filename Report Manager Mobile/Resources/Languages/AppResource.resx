@@ -135,6 +135,9 @@
   <data name="Costumer" xml:space="preserve">
     <value>Costumer: </value>
   </data>
+  <data name="EmptyDataView" xml:space="preserve">
+    <value>No data avaliable</value>
+  </data>
   <data name="ErrorCaption" xml:space="preserve">
     <value>Error</value>
   </data>
@@ -173,6 +176,15 @@
   </data>
   <data name="ServiceNote" xml:space="preserve">
     <value>SI: </value>
+  </data>
+  <data name="TabPageHeaderAvaliable" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="TabPageHeaderCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="TabPageHeaderSettings" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>User</value>

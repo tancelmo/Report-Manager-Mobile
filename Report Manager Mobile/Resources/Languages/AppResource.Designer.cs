@@ -115,6 +115,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No data avaliable.
+        /// </summary>
+        internal static string EmptyDataView {
+            get {
+                return ResourceManager.GetString("EmptyDataView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
         internal static string ErrorCaption {
@@ -228,6 +237,33 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string ServiceNote {
             get {
                 return ResourceManager.GetString("ServiceNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available.
+        /// </summary>
+        internal static string TabPageHeaderAvaliable {
+            get {
+                return ResourceManager.GetString("TabPageHeaderAvaliable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        internal static string TabPageHeaderCompleted {
+            get {
+                return ResourceManager.GetString("TabPageHeaderCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string TabPageHeaderSettings {
+            get {
+                return ResourceManager.GetString("TabPageHeaderSettings", resourceCulture);
             }
         }
         

@@ -22,7 +22,7 @@ public partial class HomePage : TabbedPage
             {
                 Application.Current.Quit();
             }
-            
+
         });
 
         return true;

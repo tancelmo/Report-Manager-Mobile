@@ -1,5 +1,6 @@
 using Microsoft.Maui.ApplicationModel.Communication;
 using Report_Manager_Mobile.Data;
+using Report_Manager_Mobile.Resources.Languages;
 using System;
 
 namespace Report_Manager_Mobile.Pages;
@@ -17,12 +18,18 @@ public partial class Settings : ContentPage
     {
         
         EntryServerIP.Text = Globals.serverAdress;
-        LblVersion.Text = AppInfo.Current.VersionString + "." + AppInfo.Current.BuildString;
+        LblVersion.Text = AppInfo.Current.Name + " © 2023 Ver. " + AppInfo.Current.VersionString + "." + AppInfo.Current.BuildString;
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await SecureStorage.Default.SetAsync("serverAdress", EntryServerIP.Text);
+        string result = await DisplayPromptAsync("Insert new Adress", "Enter new Server Adress", AppResource.OkButton, AppResource.CancelButton, "accellsolutions.com");
+        if (result != null)
+        {
+            await SecureStorage.Default.SetAsync("serverAdress", result);
+        }
+        
+        
     }
 
     private async void Button_Clicked_1(object sender, EventArgs e)
@@ -57,4 +64,5 @@ public partial class Settings : ContentPage
 
         await Email.ComposeAsync(message);
     }
+
 }

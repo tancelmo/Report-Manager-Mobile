@@ -179,15 +179,28 @@
             <HorizontalStackLayout>
                 <CheckBox />
                 <Label 
-                    Text="27 - O abrigo do CRM foi fechado (se for o caso)?" VerticalTextAlignment="Center"/>
+                    Text="1.1 Presença de gas" VerticalTextAlignment="Center"/>
             </HorizontalStackLayout>
 
             <HorizontalStackLayout>
                 <CheckBox />
                 <Label
-                
-               
-                    Text="29 - Feito contato com a sala de rádio informando a finalização da atividade após troca de PTZ?" VerticalTextAlignment="Center"/>
+                    Text="1.2 Produtos Químicos" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                    Text="1.3 Produtos de Limpeza" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                    Text="1.4 Tintas / Solventes / Vernizes" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                    Text="1.5 Monóxido de Carbono" VerticalTextAlignment="Center"/>
             </HorizontalStackLayout>
 
 

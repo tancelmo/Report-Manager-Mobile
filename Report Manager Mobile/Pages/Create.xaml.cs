@@ -3,6 +3,12 @@ using Report_Manager_Mobile.Resources.Languages;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
 using Report_Manager_Mobile.Services;
+using Syncfusion.Pdf.Grid;
+using Syncfusion.Drawing;
+using PointF = Syncfusion.Drawing.PointF;
+using SizeF = Syncfusion.Drawing.SizeF;
+using Color = Syncfusion.Drawing.Color;
+using System.Reflection;
 
 #if ANDROID
 using Android.Content;
@@ -14,6 +20,8 @@ namespace Report_Manager_Mobile.Pages;
 
 public partial class Create : ContentPage
 {
+    RectangleF TotalPriceCellBounds = RectangleF.Empty;
+    RectangleF QuantityCellBounds = RectangleF.Empty;
     public Create()
     {
         InitializeComponent();
@@ -68,38 +76,8 @@ public partial class Create : ContentPage
     }
     private void CreatePDF_Click()
     {
-        //Create a new PDF document.
-        PdfDocument document = new PdfDocument();
-
-        //Add a page to the document.
-        PdfPage page = document.Pages.Add();
-
-        //Create PDF graphics for the page.
-        PdfGraphics graphics = page.Graphics;
-
-        //Set font. 
-        PdfStandardFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
-
-        //Draw string. 
-        graphics.DrawString(CostumerEntry.Text + "\n" + EquipmentEntry.Text, font, PdfBrushes.Olive, new Syncfusion.Drawing.PointF(10, 10));
-
-        //Saves the PDF to the memory stream.
-        using MemoryStream ms = new();
-        document.Save(ms);
-
-        //Close the PDF document
-        document.Close(true);
-        //ms.Position = 0;
-
-        //Saves the memory stream as file.
-        SaveService saveService = new();
-        saveService.SaveAndView(Globals.Costumer + ".pdf", "application/pdf", ms);
-
-        
-
-        
+        Report.Create();
     }
-
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
         string root = null;

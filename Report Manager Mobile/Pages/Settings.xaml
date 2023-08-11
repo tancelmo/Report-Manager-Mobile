@@ -6,10 +6,10 @@
              Title="Settings"
              Loaded="ContentPage_Loaded">
     <VerticalStackLayout>
-        <Label Text="Server" Margin="20,20,0,0"/>
-        <Entry x:Name="EntryServerIP" Margin="20,0,20,0" Keyboard="Default" FontSize="18" />
-        <Button Text="Apply" Margin="20" Clicked="Button_Clicked"/>
-        <Button Text="Send Log" Clicked="Button_Clicked_1"/>
-        <Label x:Name="LblVersion" />
+        <Label Text="Server Adress" FontSize="18" Margin="20,20,0,0"/>
+        <Entry x:Name="EntryServerIP" Margin="20,0,20,0" Keyboard="Default" FontSize="18" IsEnabled="False"/>
+        <Button Text="Change Server Adress" Margin="20" Clicked="Button_Clicked" FontSize="18" />
+        <Button Text="Send Log" Clicked="Button_Clicked_1" Margin="20,0,20,20" FontSize="18"/>
+        <Label x:Name="LblVersion" FontSize="18" HorizontalOptions="Center" VerticalOptions="End"/>
     </VerticalStackLayout>
 </ContentPage>
