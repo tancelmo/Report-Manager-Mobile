@@ -13,9 +13,6 @@ namespace Report_Manager_Mobile.Data
 
         public static string serverAdress { get; set; }
 
-        public static string ConfigFilePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Settings\\Config.ini";
-
-        public static string ConfigPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Settings";
         public static string Costumer { get; set; }
 
         public static string Facility { get; set; }

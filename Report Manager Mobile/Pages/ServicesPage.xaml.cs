@@ -66,7 +66,7 @@ public partial class ServicesPage : ContentPage
             DisplayAlert(AppResource.WarnignCaption, "#70002 - Could not connect to server", AppResource.OkButton);
             
             Debug.WriteLine("70001############################### - " + ex.ToString());
-            LogFile.Write("#70002", ex.Message);
+            LogFile.Write("#70002", ex.ToString());
             //Loadinglbl.Text = "Failed to loading data.";
             //Loadinglbl.Foreground = new SolidColorBrush(Colors.Red);
             return null;
@@ -149,7 +149,7 @@ public partial class ServicesPage : ContentPage
         }
         catch (Exception ex)
         {
-
+            LogFile.Write("#70002", ex.Message);
             throw;
         }
     }

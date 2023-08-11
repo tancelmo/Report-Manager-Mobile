@@ -87,7 +87,9 @@
                 <ActivityIndicator
                     x:Name="ActiveIndicatorLogin"
                     IsVisible="True"/>
+                
             </VerticalStackLayout>
         </Border>
+        <Label x:Name="LabelHomeAppVer" Margin="5" Text="1.0.1" HorizontalOptions="End" VerticalOptions="End" TextColor="White"/>
     </Grid>
 </ContentPage>

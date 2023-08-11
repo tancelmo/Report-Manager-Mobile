@@ -10,7 +10,7 @@ namespace Report_Manager_Mobile.Helpers
         internal class LogFile
         {
         
-        public static void Write(string errMessage, string localExeption, bool append = true)
+        public static void Write(string codeMessage, string localExeption, bool append = true)
             {
             string root = null;
 
@@ -24,11 +24,14 @@ namespace Report_Manager_Mobile.Helpers
             root = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
         
 #endif
-
+            if(!Directory.Exists(root + "/Log"))
+            {
+                Directory.CreateDirectory(root + "/Log");
+            }
                 using (FileStream stream = new FileStream(root + "/Log/Log.txt", append ? FileMode.Append : FileMode.Create, FileAccess.Write, FileShare.None, 4096, true))
                 using (StreamWriter sw = new StreamWriter(stream))
                 {
-                    sw.WriteLineAsync("[" + DateTime.Now + "] " + errMessage + " - " + localExeption);
+                    sw.WriteLineAsync("[" + DateTime.Now + "] " + codeMessage + " - " + localExeption);
                 }
 
             }
