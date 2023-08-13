@@ -50,7 +50,7 @@ namespace Report_Manager_Mobile.Data
             string basePath = "Report_Manager_Mobile.Resources.Fonts.";
             Stream fontStream = assembly.GetManifestResourceStream(basePath + "OpenSans-Regular.ttf");
             //Create a PdfTrueTypeFont from the stream with the different sizes. 
-            PdfTrueTypeFont headerFont = new PdfTrueTypeFont(fontStream, 30, PdfFontStyle.Regular);
+            PdfTrueTypeFont headerFont = new PdfTrueTypeFont(fontStream, 18, PdfFontStyle.Regular);
             PdfTrueTypeFont arialRegularFont = new PdfTrueTypeFont(fontStream, 18, PdfFontStyle.Regular);
             PdfTrueTypeFont arialBoldFont = new PdfTrueTypeFont(fontStream, 9, PdfFontStyle.Bold);
             //Create a string format.
@@ -95,7 +95,7 @@ namespace Report_Manager_Mobile.Data
             #region Header         
             //Fill the header with a light blue brush. 
             graphics.DrawRectangle(lightBlueBrush, new RectangleF(0, 0, pageWidth, headerHeight));
-            string title = Globals.Costumer;
+            string title = "ARA - AVALIACAO DE RISCOS E ATIVIDADES";
             //Specificy the bounds for the total value. 
             RectangleF headerTotalBounds = new RectangleF(400, 0, pageWidth - 400, headerHeight);
             //Measure the string size using the font. 
@@ -222,7 +222,7 @@ namespace Report_Manager_Mobile.Data
             graphics.DrawImage(bitmap, new RectangleF(10, pageHeight - 70, 132, 40));
 
             //Calculate the text position and draw the text to the PDF page. 
-            y = pageHeight - 100 + margin;
+            y = pageHeight - 110 + margin;
             size = arialRegularFont.MeasureString("ACCELL SOLUÇÕES PARA ENERGIA E ÁGUA LTDA.");
             x = pageWidth - size.Width - margin;
             graphics.DrawString("ACCELL SOLUÇÕES PARA ENERGIA E ÁGUA LTDA.", arialRegularFont, PdfBrushes.Black, new PointF(x, y));

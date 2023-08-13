@@ -4,9 +4,7 @@
             x:Class="Report_Manager_Mobile.Pages.HomePage"
             xmlns:local="clr-namespace:Report_Manager_Mobile.Pages"
             xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
-            Title="HomePage"
-            BarBackground="#0073B8"
-            BarTextColor="White">
+            Title="HomePage">
 
 
     <local:ServicesPage Title="{x:Static lang:AppResource.TabPageHeaderAvaliable}" IconImageSource="home.png"/>
