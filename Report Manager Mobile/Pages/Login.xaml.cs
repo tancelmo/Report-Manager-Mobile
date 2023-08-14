@@ -66,7 +66,6 @@ public partial class Login : ContentPage
 
     private async void ContentPage_Loaded(object sender, EventArgs e)
     {
-        Debug.WriteLine("################### - " + FileSystem.Current.AppDataDirectory);
 
         string saveCredential = await SecureStorage.Default.GetAsync("save_credentials");
         string serverAdress = await SecureStorage.Default.GetAsync("serverAdress");
@@ -87,6 +86,7 @@ public partial class Login : ContentPage
         {
             SaveCredentialsCheckbx.IsChecked = false;
         }
+
         
     }
 }

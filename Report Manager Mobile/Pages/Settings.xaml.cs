@@ -27,6 +27,7 @@ public partial class Settings : ContentPage
         if (result != null)
         {
             await SecureStorage.Default.SetAsync("serverAdress", result);
+            EntryServerIP.Text = result;
         }
         
         

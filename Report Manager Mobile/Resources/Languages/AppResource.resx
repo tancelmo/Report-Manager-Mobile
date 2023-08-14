@@ -129,6 +129,159 @@
   <data name="ARA" xml:space="preserve">
     <value>RISK ASSESSMENT AND ACTIVITIES</value>
   </data>
+  <data name="ARA1" xml:space="preserve">
+    <value>1 - Riscos Químicos</value>
+  </data>
+  <data name="ARA1.1" xml:space="preserve">
+    <value>1 . 1 - Presença de Gás</value>
+  </data>
+  <data name="ARA1.2" xml:space="preserve">
+    <value>1 . 2 - Produtos Químicos</value>
+  </data>
+  <data name="ARA1.3" xml:space="preserve">
+    <value>1 . 3 - Produtos de Limpeza</value>
+  </data>
+  <data name="ARA1.4" xml:space="preserve">
+    <value>1 . 4 - Tintas / Solventes / Vernizes</value>
+  </data>
+  <data name="ARA1.5" xml:space="preserve">
+    <value>1 . 5 - Monóxido de Carbono</value>
+  </data>
+  <data name="ARA2" xml:space="preserve">
+    <value>2 - Riscos Físicos</value>
+  </data>
+  <data name="ARA2.1" xml:space="preserve">
+    <value>2 . 1 - Ruído excessivo</value>
+  </data>
+  <data name="ARA2.2" xml:space="preserve">
+    <value>2 . 2 - Vibrações excessivas</value>
+  </data>
+  <data name="ARA2.3" xml:space="preserve">
+    <value>2 . 3 - Calor excessivo</value>
+  </data>
+  <data name="ARA3" xml:space="preserve">
+    <value>3 - Riscos Ergonômicos</value>
+  </data>
+  <data name="ARA3.1" xml:space="preserve">
+    <value>3 . 1 - Posição inadequada</value>
+  </data>
+  <data name="ARA3.2" xml:space="preserve">
+    <value>3 . 2 - Manuseio de pesos</value>
+  </data>
+  <data name="ARA3.3" xml:space="preserve">
+    <value>3 . 3 - Espaço insuficiente para trabalhar</value>
+  </data>
+  <data name="ARA4" xml:space="preserve">
+    <value>4 - Riscos Biológicos</value>
+  </data>
+  <data name="ARA4.1" xml:space="preserve">
+    <value>4 . 1 - Água contaminada</value>
+  </data>
+  <data name="ARA4.2" xml:space="preserve">
+    <value>4 . 2 - Animais mortos</value>
+  </data>
+  <data name="ARA4.3" xml:space="preserve">
+    <value>4 . 3 - Esgotos</value>
+  </data>
+  <data name="ARA4.4" xml:space="preserve">
+    <value>4 . 4 - Animais peçonhentos</value>
+  </data>
+  <data name="ARA4.5" xml:space="preserve">
+    <value>4 . 5 - Enxame de insetos</value>
+  </data>
+  <data name="ARA5" xml:space="preserve">
+    <value>5 - Riscos Ambientais</value>
+  </data>
+  <data name="ARA5.1" xml:space="preserve">
+    <value>5 . 1 - Vazamento de Gás</value>
+  </data>
+  <data name="ARA5.2" xml:space="preserve">
+    <value>5 . 2 - Vazamento de odorante</value>
+  </data>
+  <data name="ARA5.3" xml:space="preserve">
+    <value>5 . 3 - Desmatamento</value>
+  </data>
+  <data name="ARA5.4" xml:space="preserve">
+    <value>5 . 4 - Contaminação do solo</value>
+  </data>
+  <data name="ARA5.5" xml:space="preserve">
+    <value>5 . 5 - Vazamento de óleo / combustível</value>
+  </data>
+  <data name="ARA5.6" xml:space="preserve">
+    <value>5 . 6 - Mortalidade de animais</value>
+  </data>
+  <data name="ARA6" xml:space="preserve">
+    <value>6 - Riscos de Acidentes</value>
+  </data>
+  <data name="ARA6.1" xml:space="preserve">
+    <value>6 . 1 - Máquinas / equipamentos sem proteção</value>
+  </data>
+  <data name="ARA6.11" xml:space="preserve">
+    <value>6 . 10 - Material / equipamento cortante</value>
+  </data>
+  <data name="ARA6.12" xml:space="preserve">
+    <value>6 . 11 - Condições meteorológicas</value>
+  </data>
+  <data name="ARA6.13" xml:space="preserve">
+    <value>6 . 12 - Queda</value>
+  </data>
+  <data name="ARA6.14" xml:space="preserve">
+    <value>6 . 13 - Iluminação</value>
+  </data>
+  <data name="ARA6.15" xml:space="preserve">
+    <value>6 . 14 - Incêndio / Explosão</value>
+  </data>
+  <data name="ARA6.2" xml:space="preserve">
+    <value>6 . 2 - Equipamento danificado</value>
+  </data>
+  <data name="ARA6.3" xml:space="preserve">
+    <value>6 . 3 - Ferramenta inadequada</value>
+  </data>
+  <data name="ARA6.4" xml:space="preserve">
+    <value>6 . 4 - Equipamento energizado</value>
+  </data>
+  <data name="ARA6.5" xml:space="preserve">
+    <value>6 . 5 - Alta voltagem</value>
+  </data>
+  <data name="ARA6.6" xml:space="preserve">
+    <value>6 . 6 - Fiação desencapada</value>
+  </data>
+  <data name="ARA6.7" xml:space="preserve">
+    <value>6 . 7 - Cabos subterrâneos</value>
+  </data>
+  <data name="ARA6.8" xml:space="preserve">
+    <value>6 . 8 - Material / equipamento aquecido</value>
+  </data>
+  <data name="ARA6.9" xml:space="preserve">
+    <value>6 . 9 - Piso irregular / escorregadio / desnível</value>
+  </data>
+  <data name="ARA7" xml:space="preserve">
+    <value>7 - Riscos Adicionais</value>
+  </data>
+  <data name="ARA7.1" xml:space="preserve">
+    <value>7 . 1 - Trânsito intenso</value>
+  </data>
+  <data name="ARA7.2" xml:space="preserve">
+    <value>7 . 2 - Viatura em local inadequado</value>
+  </data>
+  <data name="ARA7.3" xml:space="preserve">
+    <value>7 . 3 - Sinalização insuficiente</value>
+  </data>
+  <data name="ARA7.4" xml:space="preserve">
+    <value>7 . 4 - Vala profunda</value>
+  </data>
+  <data name="ARA7.5" xml:space="preserve">
+    <value>7 . 5 - Interferências</value>
+  </data>
+  <data name="ARA7.6" xml:space="preserve">
+    <value>7 . 6 - Terreno instável</value>
+  </data>
+  <data name="ARA7.7" xml:space="preserve">
+    <value>7 . 7 - Roubo/ animal doméstico</value>
+  </data>
+  <data name="ARA7.8" xml:space="preserve">
+    <value>7 . 8 - Presença de escola / ponto de ônibus / hospital</value>
+  </data>
   <data name="CancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>

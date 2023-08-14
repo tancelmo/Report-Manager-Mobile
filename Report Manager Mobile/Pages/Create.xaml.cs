@@ -9,6 +9,7 @@ using PointF = Syncfusion.Drawing.PointF;
 using SizeF = Syncfusion.Drawing.SizeF;
 using Color = Syncfusion.Drawing.Color;
 using System.Reflection;
+using System.Net;
 
 #if ANDROID
 using Android.Content;
@@ -74,9 +75,10 @@ public partial class Create : ContentPage
         CreatePDF_Click();
 
     }
-    private void CreatePDF_Click()
+    private async void CreatePDF_Click()
     {
-        Report.Create();
+        await Navigation.PushModalAsync(new ARA());
+        //Report.Create();
     }
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
@@ -101,16 +103,20 @@ public partial class Create : ContentPage
             var message = new EmailMessage
             {
                 Subject = Globals.Costumer + " INST " + Globals.Facility + " NS" + Globals.ServiceNote,
-                Body = EditorMail.Text,
+                Body = Globals.Costumer + "\n" + " INST " + Globals.Facility + "\n" + " NS" + Globals.ServiceNote,
                 To = contacts,
                 Cc = contacts,
                 //Bcc = contacts
             };
-            var fn = Globals.Costumer + ".pdf";
-            var file = Path.Combine(root + "/Reports", fn);
+            var fn = ("INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ","_");
+            var file = Path.Combine(root + "/Reports", "ARA_" + fn);
+            var file2 = Path.Combine(root + "/Reports", "CTC_" + fn);
+            var file3 = Path.Combine(root + "/Reports", "RT_" + fn);
 
 
             message.Attachments.Add(new EmailAttachment(file));
+            message.Attachments.Add(new EmailAttachment(file2));
+            message.Attachments.Add(new EmailAttachment(file3));
 
             await Email.ComposeAsync(message);
         }
@@ -118,6 +124,13 @@ public partial class Create : ContentPage
         {
             await DisplayAlert(AppResource.WarnignCaption, ex.Message, AppResource.OkButton);
         }
+
+    }
+
+    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        //SaveCredentialsCheckbx.IsChecked = !SaveCredentialsCheckbx.IsChecked;
+        
 
     }
 }

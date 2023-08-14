@@ -19,6 +19,12 @@
     <Color x:Key="Gray950">#141414</Color>
     <Color x:Key="BGDark">#1E1E1E</Color>
     <Color x:Key="BGLigth">#f7f7f7</Color>
+    <LinearGradientBrush x:Key="HomeBG">
+        <GradientStop Color="{StaticResource Primary}"
+                          Offset="0.1" />
+        <GradientStop Color="{StaticResource White}"
+                          Offset="1.0" />
+    </LinearGradientBrush>
     <LinearGradientBrush x:Key="BorderBG">
         <GradientStop Color="{StaticResource Gray100}"
                           Offset="0.1" />

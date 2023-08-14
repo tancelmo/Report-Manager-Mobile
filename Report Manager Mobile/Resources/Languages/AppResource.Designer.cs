@@ -97,6 +97,465 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1 - Riscos Químicos.
+        /// </summary>
+        internal static string ARA1 {
+            get {
+                return ResourceManager.GetString("ARA1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 . 1 - Presença de Gás.
+        /// </summary>
+        internal static string ARA1_1 {
+            get {
+                return ResourceManager.GetString("ARA1.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 . 2 - Produtos Químicos.
+        /// </summary>
+        internal static string ARA1_2 {
+            get {
+                return ResourceManager.GetString("ARA1.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 . 3 - Produtos de Limpeza.
+        /// </summary>
+        internal static string ARA1_3 {
+            get {
+                return ResourceManager.GetString("ARA1.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 . 4 - Tintas / Solventes / Vernizes.
+        /// </summary>
+        internal static string ARA1_4 {
+            get {
+                return ResourceManager.GetString("ARA1.4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 . 5 - Monóxido de Carbono.
+        /// </summary>
+        internal static string ARA1_5 {
+            get {
+                return ResourceManager.GetString("ARA1.5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 - Riscos Físicos.
+        /// </summary>
+        internal static string ARA2 {
+            get {
+                return ResourceManager.GetString("ARA2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 . 1 - Ruído excessivo.
+        /// </summary>
+        internal static string ARA2_1 {
+            get {
+                return ResourceManager.GetString("ARA2.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 . 2 - Vibrações excessivas.
+        /// </summary>
+        internal static string ARA2_2 {
+            get {
+                return ResourceManager.GetString("ARA2.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 . 3 - Calor excessivo.
+        /// </summary>
+        internal static string ARA2_3 {
+            get {
+                return ResourceManager.GetString("ARA2.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 - Riscos Ergonômicos.
+        /// </summary>
+        internal static string ARA3 {
+            get {
+                return ResourceManager.GetString("ARA3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 . 1 - Posição inadequada.
+        /// </summary>
+        internal static string ARA3_1 {
+            get {
+                return ResourceManager.GetString("ARA3.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 . 2 - Manuseio de pesos.
+        /// </summary>
+        internal static string ARA3_2 {
+            get {
+                return ResourceManager.GetString("ARA3.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 . 3 - Espaço insuficiente para trabalhar.
+        /// </summary>
+        internal static string ARA3_3 {
+            get {
+                return ResourceManager.GetString("ARA3.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 - Riscos Biológicos.
+        /// </summary>
+        internal static string ARA4 {
+            get {
+                return ResourceManager.GetString("ARA4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 . 1 - Água contaminada.
+        /// </summary>
+        internal static string ARA4_1 {
+            get {
+                return ResourceManager.GetString("ARA4.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 . 2 - Animais mortos.
+        /// </summary>
+        internal static string ARA4_2 {
+            get {
+                return ResourceManager.GetString("ARA4.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 . 3 - Esgotos.
+        /// </summary>
+        internal static string ARA4_3 {
+            get {
+                return ResourceManager.GetString("ARA4.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 . 4 - Animais peçonhentos.
+        /// </summary>
+        internal static string ARA4_4 {
+            get {
+                return ResourceManager.GetString("ARA4.4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 . 5 - Enxame de insetos.
+        /// </summary>
+        internal static string ARA4_5 {
+            get {
+                return ResourceManager.GetString("ARA4.5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 - Riscos Ambientais.
+        /// </summary>
+        internal static string ARA5 {
+            get {
+                return ResourceManager.GetString("ARA5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 . 1 - Vazamento de Gás.
+        /// </summary>
+        internal static string ARA5_1 {
+            get {
+                return ResourceManager.GetString("ARA5.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 . 2 - Vazamento de odorante.
+        /// </summary>
+        internal static string ARA5_2 {
+            get {
+                return ResourceManager.GetString("ARA5.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 . 3 - Desmatamento.
+        /// </summary>
+        internal static string ARA5_3 {
+            get {
+                return ResourceManager.GetString("ARA5.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 . 4 - Contaminação do solo.
+        /// </summary>
+        internal static string ARA5_4 {
+            get {
+                return ResourceManager.GetString("ARA5.4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 . 5 - Vazamento de óleo / combustível.
+        /// </summary>
+        internal static string ARA5_5 {
+            get {
+                return ResourceManager.GetString("ARA5.5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 . 6 - Mortalidade de animais.
+        /// </summary>
+        internal static string ARA5_6 {
+            get {
+                return ResourceManager.GetString("ARA5.6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 - Riscos de Acidentes.
+        /// </summary>
+        internal static string ARA6 {
+            get {
+                return ResourceManager.GetString("ARA6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 1 - Máquinas / equipamentos sem proteção.
+        /// </summary>
+        internal static string ARA6_1 {
+            get {
+                return ResourceManager.GetString("ARA6.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 10 - Material / equipamento cortante.
+        /// </summary>
+        internal static string ARA6_11 {
+            get {
+                return ResourceManager.GetString("ARA6.11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 11 - Condições meteorológicas.
+        /// </summary>
+        internal static string ARA6_12 {
+            get {
+                return ResourceManager.GetString("ARA6.12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 12 - Queda.
+        /// </summary>
+        internal static string ARA6_13 {
+            get {
+                return ResourceManager.GetString("ARA6.13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 13 - Iluminação.
+        /// </summary>
+        internal static string ARA6_14 {
+            get {
+                return ResourceManager.GetString("ARA6.14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 14 - Incêndio / Explosão.
+        /// </summary>
+        internal static string ARA6_15 {
+            get {
+                return ResourceManager.GetString("ARA6.15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 2 - Equipamento danificado.
+        /// </summary>
+        internal static string ARA6_2 {
+            get {
+                return ResourceManager.GetString("ARA6.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 3 - Ferramenta inadequada.
+        /// </summary>
+        internal static string ARA6_3 {
+            get {
+                return ResourceManager.GetString("ARA6.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 4 - Equipamento energizado.
+        /// </summary>
+        internal static string ARA6_4 {
+            get {
+                return ResourceManager.GetString("ARA6.4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 5 - Alta voltagem.
+        /// </summary>
+        internal static string ARA6_5 {
+            get {
+                return ResourceManager.GetString("ARA6.5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 6 - Fiação desencapada.
+        /// </summary>
+        internal static string ARA6_6 {
+            get {
+                return ResourceManager.GetString("ARA6.6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 7 - Cabos subterrâneos.
+        /// </summary>
+        internal static string ARA6_7 {
+            get {
+                return ResourceManager.GetString("ARA6.7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 8 - Material / equipamento aquecido.
+        /// </summary>
+        internal static string ARA6_8 {
+            get {
+                return ResourceManager.GetString("ARA6.8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 . 9 - Piso irregular / escorregadio / desnível.
+        /// </summary>
+        internal static string ARA6_9 {
+            get {
+                return ResourceManager.GetString("ARA6.9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 - Riscos Adicionais.
+        /// </summary>
+        internal static string ARA7 {
+            get {
+                return ResourceManager.GetString("ARA7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 1 - Trânsito intenso.
+        /// </summary>
+        internal static string ARA7_1 {
+            get {
+                return ResourceManager.GetString("ARA7.1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 2 - Viatura em local inadequado.
+        /// </summary>
+        internal static string ARA7_2 {
+            get {
+                return ResourceManager.GetString("ARA7.2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 3 - Sinalização insuficiente.
+        /// </summary>
+        internal static string ARA7_3 {
+            get {
+                return ResourceManager.GetString("ARA7.3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 4 - Vala profunda.
+        /// </summary>
+        internal static string ARA7_4 {
+            get {
+                return ResourceManager.GetString("ARA7.4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 5 - Interferências.
+        /// </summary>
+        internal static string ARA7_5 {
+            get {
+                return ResourceManager.GetString("ARA7.5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 6 - Terreno instável.
+        /// </summary>
+        internal static string ARA7_6 {
+            get {
+                return ResourceManager.GetString("ARA7.6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 7 - Roubo/ animal doméstico.
+        /// </summary>
+        internal static string ARA7_7 {
+            get {
+                return ResourceManager.GetString("ARA7.7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 . 8 - Presença de escola / ponto de ônibus / hospital.
+        /// </summary>
+        internal static string ARA7_8 {
+            get {
+                return ResourceManager.GetString("ARA7.8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string CancelButton {

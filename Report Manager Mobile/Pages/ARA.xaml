@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Report_Manager_Mobile.Pages.ARA"
+             xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
+             xmlns:globals="clr-namespace:Report_Manager_Mobile.Data"
+             Title="ARA">
+        <ScrollView>
+        <VerticalStackLayout Margin="20">
+            <Label Text="{x:Static globals:Globals.Costumer}" HorizontalOptions="Center"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                
+                <Label Text="Instalação: "/>
+                <Label Text="{x:Static globals:Globals.Facility}"/>
+                <Label Text=" NS "/>
+                <Label Text="{x:Static globals:Globals.ServiceNote}"/>
+                
+            </HorizontalStackLayout>
+            <Label Margin="0,20,0,0" Text="{x:Static lang:AppResource.ARA}" FontSize="18" HorizontalOptions="Center"/>
+            <Label Text="{x:Static lang:AppResource.ARA1}" FontSize="15" HorizontalOptions="Center" Margin="20"/>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label 
+                        Text="{x:Static lang:AppResource.ARA1_1}" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                        Text="{x:Static lang:AppResource.ARA1_2}" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                        Text="{x:Static lang:AppResource.ARA1_3}" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                        Text="{x:Static lang:AppResource.ARA1_4}" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox />
+                <Label
+                        Text="{x:Static lang:AppResource.ARA1_5}" VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+
+
+            <Editor x:Name="EditorMail" Placeholder="Ação" HeightRequest="100"/>
+            <RadioButton />
+            <Button Text="Send" FontSize="18" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>
