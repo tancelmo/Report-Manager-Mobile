@@ -16,6 +16,7 @@ public partial class Login : ContentPage
     }
     private async void OnCounterClicked(object sender, EventArgs e)
     {
+        
         if (SaveCredentialsCheckbx.IsChecked && UserEntry.Text != null)
         {
             await SecureStorage.Default.SetAsync("save_credentials", UserEntry.Text);
@@ -35,6 +36,7 @@ public partial class Login : ContentPage
         EmailCaption.Text = UserEntry.Text;
         ActiveIndicatorLogin.IsRunning = false;
         //--------------------
+        btnBack.IsVisible = true;
 
     }
 
@@ -86,7 +88,20 @@ public partial class Login : ContentPage
         {
             SaveCredentialsCheckbx.IsChecked = false;
         }
+        string path = "/Reports/" + DateTime.Now.ToString("ddMMyyyy") + "/" + Globals.Facility;
+        Debug.WriteLine(path);
 
+    }
+
+    private async void ImageButton_Clicked(object sender, EventArgs e)
+    {
+        btnBack.IsVisible = false;
+        await LoginBox.TranslateTo(500, 0, 300);
+        await UserBox.TranslateTo(0, 0, 300);
+        UserBox.IsVisible = true;
+        LoginBox.IsVisible = false;
         
+        
+        EmailCaption.Text = AppResource.User;
     }
 }

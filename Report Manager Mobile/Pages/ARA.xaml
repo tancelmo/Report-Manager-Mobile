@@ -9,204 +9,311 @@
     <ScrollView>
     <VerticalStackLayout Margin="20">
         <Border Margin="5"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness="1"
-                        Background="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource BorderBGDark}}">
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource BorderBGDark}}">
             <StackLayout>
                 <Label Text="{x:Static globals:Globals.Costumer}" FontAttributes="Bold" TextColor="White" Margin="10" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
                 <BoxView 
-                            Color="White"
-                                        HeightRequest="1"
-                                        HorizontalOptions="Fill" />
-                <HorizontalStackLayout HorizontalOptions="Center" Margin="10">
-
-                    <Label Text="INSTALAÇÃO: " TextColor="White"/>
-                    <Label Text="{x:Static globals:Globals.Facility}" TextColor="White"/>
-                    <Label Text=" NS: " TextColor="White"/>
-                    <Label Text="{x:Static globals:Globals.ServiceNote}" TextColor="White"/>
-
-                </HorizontalStackLayout>
-
-            </StackLayout>
+                    Color="White"
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <HorizontalStackLayout HorizontalOptions="Center" Margin="10">
+                        <Label Text="INSTALAÇÃO: " TextColor="White"/>
+                        <Label Text="{x:Static globals:Globals.Facility}" TextColor="White"/>
+                        <Label Text=" NS: " TextColor="White"/>
+                        <Label Text="{x:Static globals:Globals.ServiceNote}" TextColor="White"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
                 
         </Border>
-        <Label Margin="0,20,0,0" Text="{x:Static lang:AppResource.ARA}" FontSize="18" HorizontalOptions="Center"/>
+        <Label Margin="0,20,0,20" Text="{x:Static lang:AppResource.ARA}" FontSize="18"  HorizontalOptions="Center"/>
         <Border Margin="5"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness="1"
-                        Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-            <StackLayout>
-                <Label Text="{x:Static lang:AppResource.ARA1}" FontSize="15" HorizontalOptions="Center" Margin="10" />
-                <BoxView 
-                                        HeightRequest="1"
-                                        HorizontalOptions="Fill" />
-                <HorizontalStackLayout Margin="0">
-                    <CheckBox Margin="0"/>
-                    <Label 
-                        Text="{x:Static lang:AppResource.ARA1_1}" Margin="0" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA1_2}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA1_3}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA1_4}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA1_5}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA1}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <CheckBox Grid.Row="3" Grid.Column="0" />
+                        <CheckBox Grid.Row="4" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA1_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA1_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA1_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA1_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA1_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA1" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+        <!--ARA2-->
+            <Border Margin="5"  
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA2}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA2_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA2_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA2_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA2" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+            <Border Margin="5"  
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA3}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA3_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA3_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA3_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA3" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+
+            <Border Margin="5"  
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA4}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <CheckBox Grid.Row="3" Grid.Column="0" />
+                        <CheckBox Grid.Row="4" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA4_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA4_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA4_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA4_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA4_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA4" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+
+            <Border Margin="5"  
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA5}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <CheckBox Grid.Row="3" Grid.Column="0" />
+                        <CheckBox Grid.Row="4" Grid.Column="0" />
+                        <CheckBox Grid.Row="5" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA5_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA5_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA5_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA5_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA5_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA5_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA5" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+
+            <Border Margin="5"  
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA6}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <CheckBox Grid.Row="3" Grid.Column="0" />
+                        <CheckBox Grid.Row="4" Grid.Column="0" />
+                        <CheckBox Grid.Row="5" Grid.Column="0" />
+                        <CheckBox Grid.Row="6" Grid.Column="0" />
+                        <CheckBox Grid.Row="7" Grid.Column="0" />
+                        <CheckBox Grid.Row="8" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA6_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA6_9}" Grid.Row="8" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA6" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
 
 
-                <Editor x:Name="EditorMail" Placeholder="Ação" HeightRequest="50"/>
-            </StackLayout>
+            <Border Margin="5"  
+                StrokeShape="RoundRectangle 8"
+                Padding="8"
+                StrokeThickness="1"
+                Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                <StackLayout>
+                    <Label Text="{x:Static lang:AppResource.ARA7}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+                    <BoxView 
+                    HeightRequest="1"
+                    HorizontalOptions="Fill" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
 
-        </Border>
-            
-        <Border Margin="5"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness="1"
-                        Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-            <StackLayout>
-                <Label Text="{x:Static lang:AppResource.ARA2}" FontSize="15" HorizontalOptions="Center" Margin="10" />
-                <BoxView 
-                                        HeightRequest="1"
-                                        HorizontalOptions="Fill" />
-                <HorizontalStackLayout Margin="0">
-                    <CheckBox Margin="0"/>
-                    <Label 
-                        Text="{x:Static lang:AppResource.ARA2_1}" Margin="0" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_2}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_3}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                    
-
-
-                <Editor Placeholder="Ação" HeightRequest="50"/>
-            </StackLayout>
-
-        </Border>
-
-        <Border Margin="5"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness="1"
-                        Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-            <StackLayout>
-                <Label Text="{x:Static lang:AppResource.ARA2}" FontSize="15" HorizontalOptions="Center" Margin="10" />
-                <BoxView 
-                                        HeightRequest="1"
-                                        HorizontalOptions="Fill" />
-                <HorizontalStackLayout Margin="0">
-                    <CheckBox Margin="0"/>
-                    <Label 
-                        Text="{x:Static lang:AppResource.ARA2_1}" Margin="0" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_2}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_3}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-
-
-
-                <Editor Placeholder="Ação" HeightRequest="50"/>
-            </StackLayout>
-
-        </Border>
-        <Border Margin="5"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness="1"
-                        Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-            <StackLayout>
-                <Label Text="{x:Static lang:AppResource.ARA2}" FontSize="15" HorizontalOptions="Center" Margin="10" />
-                <BoxView 
-                                        HeightRequest="1"
-                                        HorizontalOptions="Fill" />
-                <HorizontalStackLayout Margin="0">
-                    <CheckBox Margin="0"/>
-                    <Label 
-                        Text="{x:Static lang:AppResource.ARA2_1}" Margin="0" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_2}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_3}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-
-
-
-                <Editor Placeholder="Ação" HeightRequest="50"/>
-            </StackLayout>
-
-        </Border>
-        <Border Margin="5"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness="1"
-                        Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-            <StackLayout>
-                <Label Text="{x:Static lang:AppResource.ARA2}" FontSize="15" HorizontalOptions="Center" Margin="10" />
-                <BoxView 
-                                        HeightRequest="1"
-                                        HorizontalOptions="Fill" />
-                <HorizontalStackLayout Margin="0">
-                    <CheckBox Margin="0"/>
-                    <Label 
-                        Text="{x:Static lang:AppResource.ARA2_1}" Margin="0" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_2}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <CheckBox />
-                    <Label
-                        Text="{x:Static lang:AppResource.ARA2_3}" VerticalTextAlignment="Center"/>
-                </HorizontalStackLayout>
-
-
-
-                <Editor Placeholder="Ação" HeightRequest="50"/>
-            </StackLayout>
-
-        </Border>
-            
-
-
-        <Button Text="Send" FontSize="18" Margin="20" Clicked="Button_Clicked"/>
+                        <CheckBox Grid.Row="0" Grid.Column="0" />
+                        <CheckBox Grid.Row="1" Grid.Column="0" />
+                        <CheckBox Grid.Row="2" Grid.Column="0" />
+                        <CheckBox Grid.Row="3" Grid.Column="0" />
+                        <CheckBox Grid.Row="4" Grid.Column="0" />
+                        <CheckBox Grid.Row="5" Grid.Column="0" />
+                        <CheckBox Grid.Row="6" Grid.Column="0" />
+                        <CheckBox Grid.Row="7" Grid.Column="0" />
+                        <Label Text="{x:Static lang:AppResource.ARA7_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
+                        <Editor x:Name="EditorARA7" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+            <Button Text="Send" FontSize="18" Margin="20" Clicked="Button_Clicked"/>
                 
     </VerticalStackLayout>
             

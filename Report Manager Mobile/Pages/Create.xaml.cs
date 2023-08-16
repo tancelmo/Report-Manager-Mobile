@@ -109,9 +109,9 @@ public partial class Create : ContentPage
                 //Bcc = contacts
             };
             var fn = ("INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ","_");
-            var file = Path.Combine(root + "/Reports", "ARA_" + fn);
-            var file2 = Path.Combine(root + "/Reports", "CTC_" + fn);
-            var file3 = Path.Combine(root + "/Reports", "RT_" + fn);
+            var file = Path.Combine(root + "/Reports/", "ARA_" + fn);
+            var file2 = Path.Combine(root + "/Reports/", "CTC_" + fn);
+            var file3 = Path.Combine(root + "/Reports/", "RT_" + fn);
 
 
             message.Attachments.Add(new EmailAttachment(file));

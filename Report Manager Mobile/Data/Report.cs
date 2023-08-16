@@ -28,12 +28,12 @@ namespace Report_Manager_Mobile.Data
             PdfGraphics graphics = page.Graphics;
 
             //Get the page width and height.
-            float pageWidth = page.GetClientSize().Width;
-            float pageHeight = page.GetClientSize().Height;
+            float pageWidth = page.GetClientSize().Width +10;
+            float pageHeight = page.GetClientSize().Height +10;
             RectangleF TotalPriceCellBounds = RectangleF.Empty;
             RectangleF QuantityCellBounds = RectangleF.Empty;
             //Set the header height.
-            float headerHeight = 90;
+            float headerHeight = 250;
             //Create a brush with a light blue color. 
             PdfColor lightBlue = Color.FromArgb(255, 0, 115, 184);
             PdfBrush lightBlueBrush = new PdfSolidBrush(lightBlue);
@@ -48,7 +48,7 @@ namespace Report_Manager_Mobile.Data
             string basePath = "Report_Manager_Mobile.Resources.Fonts.";
             Stream fontStream = assembly.GetManifestResourceStream(basePath + "OpenSans-Regular.ttf");
             //Create a PdfTrueTypeFont from the stream with the different sizes. 
-            PdfTrueTypeFont headerFont = new PdfTrueTypeFont(fontStream, 18, PdfFontStyle.Regular);
+            PdfTrueTypeFont headerFont = new PdfTrueTypeFont(fontStream, 20, PdfFontStyle.Regular);
             PdfTrueTypeFont arialRegularFont = new PdfTrueTypeFont(fontStream, 18, PdfFontStyle.Regular);
             PdfTrueTypeFont arialBoldFont = new PdfTrueTypeFont(fontStream, 9, PdfFontStyle.Bold);
             //Create a string format.
@@ -257,6 +257,7 @@ namespace Report_Manager_Mobile.Data
             ms.Position = 0;
             //Saves the memory stream as file.
             SaveService saveService = new();
+            //TODO: Remove special characteres from filename
             saveService.SaveAndView(("ARA_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms);
             #endregion
 
@@ -386,7 +387,7 @@ namespace Report_Manager_Mobile.Data
             RectangleF headerTotalBounds = new RectangleF(400, 0, pageWidth - 400, headerHeight);
             //Measure the string size using the font. 
             SizeF textSize = headerFont.MeasureString(title);
-            graphics.DrawString(title, headerFont, whiteBrush, new RectangleF(0, 0, textSize.Width + 50, headerHeight), format);
+            graphics.DrawString(title, headerFont, whiteBrush, new RectangleF(0, 0, textSize.Width + 80, headerHeight), format);
             //Draw a rectangle in the PDF page. 
             graphics.DrawRectangle(darkBlueBrush, headerTotalBounds);
             //Draw the total value to the PDF page. 

@@ -64,7 +64,7 @@
                                 <Label Text="{Binding EquipmentSN}"/>
                             </HorizontalStackLayout>
 
-                            <HorizontalStackLayout HorizontalOptions="End">
+                            <!--<HorizontalStackLayout HorizontalOptions="End">
                                 <Image Source="accept.png"
                                         HorizontalOptions="End"
                                         WidthRequest="20"/>
@@ -74,7 +74,7 @@
                                             TextColor="#4bae4f"
                                             VerticalTextAlignment="Center"
                                             FontAttributes="Bold"/>
-                            </HorizontalStackLayout>
+                            </HorizontalStackLayout>-->
 
                         </StackLayout>
                     </Border>

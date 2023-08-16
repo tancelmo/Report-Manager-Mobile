@@ -15,7 +15,7 @@
 		<ApplicationTitle>Report Manager Mobile</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.report_manager_mobile</ApplicationId>
+		<ApplicationId>com.accellsolutions.report_manager_mobile</ApplicationId>
 		<ApplicationIdGuid>a9f79e66-a6a4-4c20-b4c4-89d411e353e2</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -60,11 +60,14 @@
 	  <None Remove="Resources\Fonts\arial.ttf" />
 	  <None Remove="Resources\Images\accell.png" />
 	  <None Remove="Resources\Images\accept.png" />
+	  <None Remove="Resources\Images\backDark.png" />
+	  <None Remove="Resources\Images\backLigth.png" />
 	  <None Remove="Resources\Images\bg.jpg" />
 	  <None Remove="Resources\Images\cancel.png" />
 	  <None Remove="Resources\Images\capa.jpg" />
 	  <None Remove="Resources\Images\check.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\report.png" />
 	  <None Remove="Resources\Images\settings.png" />
 	  <None Remove="Resources\Splash\splash.png" />
 	</ItemGroup>

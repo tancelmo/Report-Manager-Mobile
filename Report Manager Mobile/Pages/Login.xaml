@@ -34,19 +34,20 @@
                 <Label x:Name="EmailCaption" HorizontalOptions="Center" TextColor="{StaticResource Primary}" Text="{x:Static lang:AppResource.User}"/>
                 <VerticalStackLayout x:Name="UserBox" >
                     <Entry 
-                    x:Name="UserEntry"
-                    Placeholder="{x:Static lang:AppResource.UserExample}" 
-                    IsSpellCheckEnabled="False"
-                    Keyboard="Email"
-                    FontSize="15"/>
+                        x:Name="UserEntry"
+                        Placeholder="{x:Static lang:AppResource.UserExample}" 
+                        IsSpellCheckEnabled="False"
+                        PlaceholderColor="{StaticResource Gray500}"
+                        Keyboard="Email"
+                        FontSize="15"/>
                     <Button
-                    x:Name="NextBtn"
-                    Text="{x:Static lang:AppResource.LoginNext}"
-                    FontSize="18"
-                    Margin="10"
-                    WidthRequest="250"
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Center" />
+                        x:Name="NextBtn"
+                        Text="{x:Static lang:AppResource.LoginNext}"
+                        FontSize="18"
+                        Margin="10"
+                        WidthRequest="250"
+                        Clicked="OnCounterClicked"
+                        HorizontalOptions="Center" />
                 </VerticalStackLayout>
                 <StackLayout 
                     x:Name="LoginBox"
@@ -56,6 +57,7 @@
                         x:Name="UserPass"
                         Placeholder="{x:Static lang:AppResource.Password}"
                         IsPassword="True"
+                        PlaceholderColor="{StaticResource Gray500}"
                         Keyboard="Numeric"
                         FontSize="15" />
                     
@@ -87,9 +89,28 @@
                 <ActivityIndicator
                     x:Name="ActiveIndicatorLogin"
                     IsVisible="True"/>
-                
+
             </VerticalStackLayout>
+            
         </Border>
         <Label x:Name="LabelHomeAppVer" Margin="5" Text="1.0.1" HorizontalOptions="End" VerticalOptions="End" TextColor="White"/>
+        <ImageButton x:Name="btnBack" IsVisible="False" Source="{AppThemeBinding Light=backligth.png, Dark=backdark.png}" Clicked="ImageButton_Clicked" WidthRequest="32" Padding="3" HeightRequest="32" Margin="-250, -390 ,0,0">
+            <!--<VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Scale"
+                            Value="1" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Scale"
+                            Value="0.8" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>-->
+        </ImageButton>
     </Grid>
 </ContentPage>
