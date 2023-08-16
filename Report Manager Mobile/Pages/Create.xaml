@@ -29,11 +29,11 @@
             </HorizontalStackLayout>
             <Label 
                 Text="{x:Static lang:AppResource.Costumer}"/>
-            <Entry Placeholder="{x:Static lang:AppResource.Costumer}"
-                   x:Name="CostumerEntry"/>
+            <Editor Placeholder="{x:Static lang:AppResource.Costumer}"
+                   x:Name="CostumerEntry" Background="{StaticResource Gray100}"/>
             <Label 
                 Text="{x:Static lang:AppResource.Meter}"/>
-            <Entry Placeholder="{x:Static lang:AppResource.Meter}"
+            <Editor Placeholder="{x:Static lang:AppResource.Meter}"
                    x:Name="EquipmentEntry"/>
 
 

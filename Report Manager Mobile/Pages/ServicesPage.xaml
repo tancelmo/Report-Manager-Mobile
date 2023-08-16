@@ -37,7 +37,7 @@
                         Margin="5"  
                         StrokeShape="RoundRectangle 8"
                         Padding="8"
-                        StrokeThickness="0"
+                        StrokeThickness=".5"
                         Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                     
                         <StackLayout>
