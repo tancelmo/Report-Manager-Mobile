@@ -13,6 +13,8 @@ public partial class Login : ContentPage
 	{
 		InitializeComponent();
         LabelHomeAppVer.Text = "Ver. " + AppInfo.Current.VersionString + "." + AppInfo.Current.BuildString;
+        
+
     }
     private async void OnCounterClicked(object sender, EventArgs e)
     {
