@@ -14,11 +14,12 @@ public partial class ARA : ContentPage
         Debug.Write("No momento check1 esta como: " +  UserLocalSettings.ARACheck1_1);
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-		Report.CreateARA();
-		Report.CreateCTC();
-		Report.CreateRT();
+        //Report.CreateARA();
+        //Report.CreateCTC();
+        //Report.CreateRT();
+        await Navigation.PushModalAsync(new CTC());
     }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
@@ -254,5 +255,130 @@ public partial class ARA : ContentPage
     private void EditorARA4_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor5", EditorARA5.Text);
+    }
+
+    private void CheckBox_CheckedChanged_5_1(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_16(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_17(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_18(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_19(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_20(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void EditorARA5_Unfocused(object sender, FocusEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_21(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_22(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_23(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_24(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_25(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_26(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_27(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_28(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_29(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_30(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_31(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_32(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_33(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_34(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_35(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_36(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void CheckBox_CheckedChanged_37(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
+
+    private void EditorARA7_Unfocused(object sender, FocusEventArgs e)
+    {
+
     }
 }

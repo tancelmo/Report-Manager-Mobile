@@ -96,7 +96,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA2_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA2_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA2_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA2" Unfocused="EditorARA2_Unfocused" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA2" Unfocused="EditorARA2_Unfocused" Text="{x:Static globals:UserLocalSettings.ARAEditor2}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -128,7 +128,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA3_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA3_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA3_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA3" Unfocused="EditorARA3_Unfocused" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA3" Unfocused="EditorARA3_Unfocused" Text="{x:Static globals:UserLocalSettings.ARAEditor3}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -167,7 +167,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA4_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA4_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA4_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA4" Grid.Row="5" Unfocused="EditorARA4_Unfocused" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA4" Grid.Row="5" Unfocused="EditorARA4_Unfocused" Text="{x:Static globals:UserLocalSettings.ARAEditor4}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -197,19 +197,19 @@
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
-                        <CheckBox Grid.Row="0" Grid.Column="0" />
-                        <CheckBox Grid.Row="1" Grid.Column="0" />
-                        <CheckBox Grid.Row="2" Grid.Column="0" />
-                        <CheckBox Grid.Row="3" Grid.Column="0" />
-                        <CheckBox Grid.Row="4" Grid.Column="0" />
-                        <CheckBox Grid.Row="5" Grid.Column="0" />
+                        <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck5_1 }" CheckedChanged="CheckBox_CheckedChanged_5_1"/>
+                        <CheckBox Grid.Row="1" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck5_2 }" CheckedChanged="CheckBox_CheckedChanged_16"/>
+                        <CheckBox Grid.Row="2" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck5_3 }" CheckedChanged="CheckBox_CheckedChanged_17"/>
+                        <CheckBox Grid.Row="3" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck5_4 }" CheckedChanged="CheckBox_CheckedChanged_18"/>
+                        <CheckBox Grid.Row="4" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck5_5 }" CheckedChanged="CheckBox_CheckedChanged_19"/>
+                        <CheckBox Grid.Row="5" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck5_6 }" CheckedChanged="CheckBox_CheckedChanged_20"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA5" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA5" Grid.Row="6" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor5}" Unfocused="EditorARA5_Unfocused" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -242,15 +242,15 @@
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
-                        <CheckBox Grid.Row="0" Grid.Column="0" />
-                        <CheckBox Grid.Row="1" Grid.Column="0" />
-                        <CheckBox Grid.Row="2" Grid.Column="0" />
-                        <CheckBox Grid.Row="3" Grid.Column="0" />
-                        <CheckBox Grid.Row="4" Grid.Column="0" />
-                        <CheckBox Grid.Row="5" Grid.Column="0" />
-                        <CheckBox Grid.Row="6" Grid.Column="0" />
-                        <CheckBox Grid.Row="7" Grid.Column="0" />
-                        <CheckBox Grid.Row="8" Grid.Column="0" />
+                        <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_1 }" CheckedChanged="CheckBox_CheckedChanged_21"/>
+                        <CheckBox Grid.Row="1" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_2 }" CheckedChanged="CheckBox_CheckedChanged_22"/>
+                        <CheckBox Grid.Row="2" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_3 }" CheckedChanged="CheckBox_CheckedChanged_23"/>
+                        <CheckBox Grid.Row="3" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_4 }" CheckedChanged="CheckBox_CheckedChanged_24"/>
+                        <CheckBox Grid.Row="4" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_5 }" CheckedChanged="CheckBox_CheckedChanged_25"/>
+                        <CheckBox Grid.Row="5" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_6 }" CheckedChanged="CheckBox_CheckedChanged_26"/>
+                        <CheckBox Grid.Row="6" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_7 }" CheckedChanged="CheckBox_CheckedChanged_27"/>
+                        <CheckBox Grid.Row="7" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_8 }" CheckedChanged="CheckBox_CheckedChanged_28"/>
+                        <CheckBox Grid.Row="8" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck6_9 }" CheckedChanged="CheckBox_CheckedChanged_29"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
@@ -260,7 +260,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA6_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_9}" Grid.Row="8" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA6" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA6" Grid.Row="9" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor6}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -293,14 +293,14 @@
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
-                        <CheckBox Grid.Row="0" Grid.Column="0" />
-                        <CheckBox Grid.Row="1" Grid.Column="0" />
-                        <CheckBox Grid.Row="2" Grid.Column="0" />
-                        <CheckBox Grid.Row="3" Grid.Column="0" />
-                        <CheckBox Grid.Row="4" Grid.Column="0" />
-                        <CheckBox Grid.Row="5" Grid.Column="0" />
-                        <CheckBox Grid.Row="6" Grid.Column="0" />
-                        <CheckBox Grid.Row="7" Grid.Column="0" />
+                        <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_1 }" CheckedChanged="CheckBox_CheckedChanged_30"/>
+                        <CheckBox Grid.Row="1" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_2 }" CheckedChanged="CheckBox_CheckedChanged_31"/>
+                        <CheckBox Grid.Row="2" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_3 }" CheckedChanged="CheckBox_CheckedChanged_32"/>
+                        <CheckBox Grid.Row="3" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_4 }" CheckedChanged="CheckBox_CheckedChanged_33"/>
+                        <CheckBox Grid.Row="4" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_5 }" CheckedChanged="CheckBox_CheckedChanged_34"/>
+                        <CheckBox Grid.Row="5" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_6 }" CheckedChanged="CheckBox_CheckedChanged_35"/>
+                        <CheckBox Grid.Row="6" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_7 }" CheckedChanged="CheckBox_CheckedChanged_36"/>
+                        <CheckBox Grid.Row="7" Grid.Column="0" IsChecked="{x:Static globals:UserLocalSettings.ARACheck7_8 }" CheckedChanged="CheckBox_CheckedChanged_37"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
@@ -309,7 +309,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA7_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Start"/>
-                        <Editor x:Name="EditorARA7" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA7" Grid.Row="8" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor7}" Grid.ColumnSpan="2" Unfocused="EditorARA7_Unfocused" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
