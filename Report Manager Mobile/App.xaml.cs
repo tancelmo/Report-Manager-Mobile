@@ -10,7 +10,7 @@ public partial class App : Application
 	{
         Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjYzMTc3OEAzMjMyMmUzMDJlMzBhcXFMc051cUY2Y1VVOHowOW1KRG9IdlZ0RWN5bWlKdUtNYjhkVDZ6aWpVPQ==");
         InitializeComponent();
-        UserLocalSettings.GetUserSettings();
+        UserLocalSettings.GetUserSettings(Preferences.Default.Get("LastSettings", false));
         MainPage = new Login();
 	}
 

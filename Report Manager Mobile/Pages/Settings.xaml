@@ -3,13 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Report_Manager_Mobile.Pages.Settings"
              BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}"
+             xmlns:globals="clr-namespace:Report_Manager_Mobile.Data"
+             xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              Title="Settings"
              Loaded="ContentPage_Loaded">
-    <VerticalStackLayout>
-        <Label Text="Server Adress" FontSize="18" Margin="20,20,0,0"/>
-        <Entry x:Name="EntryServerIP" Margin="20,0,20,0" Keyboard="Default" FontSize="18" IsEnabled="False"/>
-        <Button Text="Change Server Adress" Margin="20" Clicked="Button_Clicked" FontSize="18" />
-        <Button Text="Send Log" Clicked="Button_Clicked_1" Margin="20,0,20,20" FontSize="18"/>
+    <VerticalStackLayout Margin="20">
+        <Label Text="Server Adress" FontSize="18" />
+        <Entry x:Name="EntryServerIP" Keyboard="Default" FontSize="18" IsEnabled="False"/>
+        <HorizontalStackLayout>
+            <CheckBox x:Name="Presets" IsChecked="{x:Static globals:UserLocalSettings.LastSettings}" CheckedChanged="CheckBox_CheckedChanged"/>
+            <Label Text="{x:Static lang:AppResource.LatestSettings}" FontSize="18" VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </HorizontalStackLayout>
+        <Button Text="Change Server Adress" Clicked="Button_Clicked" FontSize="18" Margin="0,5"/>
+        <Button Text="Send Log" Clicked="Button_Clicked_1" FontSize="18" Margin="0,5"/>
         <Label x:Name="LblVersion" FontSize="18" HorizontalOptions="Center" VerticalOptions="End"/>
+        
     </VerticalStackLayout>
 </ContentPage>

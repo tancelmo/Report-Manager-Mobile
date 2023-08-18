@@ -260,7 +260,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA6_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_9}" Grid.Row="8" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA6" Grid.Row="9" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor6}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA6" Grid.Row="9" Unfocused="EditorARA6_Unfocused" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor6}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>

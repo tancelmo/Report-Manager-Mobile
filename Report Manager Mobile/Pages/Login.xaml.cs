@@ -90,8 +90,8 @@ public partial class Login : ContentPage
         {
             SaveCredentialsCheckbx.IsChecked = false;
         }
-        string path = "/Reports/" + DateTime.Now.ToString("ddMMyyyy") + "/" + Globals.Facility;
-        Debug.WriteLine(path);
+        //string path = "/Reports/" + DateTime.Now.ToString("ddMMyyyy") + "/" + Globals.Facility;
+        //Debug.WriteLine(path);
 
     }
 

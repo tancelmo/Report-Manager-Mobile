@@ -297,6 +297,9 @@
   <data name="Facility" xml:space="preserve">
     <value>Facility: </value>
   </data>
+  <data name="LatestSettings" xml:space="preserve">
+    <value>Use last saved presets</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
   </data>

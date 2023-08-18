@@ -66,4 +66,23 @@ public partial class Settings : ContentPage
         await Email.ComposeAsync(message);
     }
 
+    private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+       
+        if (e.Value)
+        {
+            Preferences.Default.Set("LastSettings", true);
+
+        }
+        else
+        {
+            Preferences.Default.Set("LastSettings", false);
+        }
+        
+    }
+
+    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        Presets.IsChecked = !Presets.IsChecked;
+    }
 }
