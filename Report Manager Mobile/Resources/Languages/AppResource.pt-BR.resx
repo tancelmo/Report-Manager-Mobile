@@ -132,6 +132,9 @@
   <data name="LoginNext" xml:space="preserve">
     <value>Próximo</value>
   </data>
+  <data name="No" xml:space="preserve">
+    <value>Não</value>
+  </data>
   <data name="NoUser" xml:space="preserve">
     <value>Usuário não encontrado.</value>
   </data>
@@ -149,5 +152,8 @@
   </data>
   <data name="WarnignCaption" xml:space="preserve">
     <value>Aviso</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
   </data>
 </root>

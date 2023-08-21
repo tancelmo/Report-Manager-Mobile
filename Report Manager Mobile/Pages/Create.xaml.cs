@@ -77,6 +77,7 @@ public partial class Create : ContentPage
     }
     private async void CreatePDF_Click()
     {
+        UserLocalSettings.GetUserSettings(Preferences.Default.Get("LastSettings", false));
         await Navigation.PushModalAsync(new ARA());
         //Report.Create();
     }

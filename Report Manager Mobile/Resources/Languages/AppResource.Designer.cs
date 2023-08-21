@@ -646,7 +646,16 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NO.
+        ///   Looks up a localized string similar to Meter Type.
+        /// </summary>
+        internal static string MeterType {
+            get {
+                return ResourceManager.GetString("MeterType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
         /// </summary>
         internal static string No {
             get {
@@ -763,7 +772,7 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to YES.
+        ///   Looks up a localized string similar to Yes.
         /// </summary>
         internal static string Yes {
             get {

@@ -14,12 +14,12 @@ public partial class ARA : ContentPage
         Debug.Write("No momento check1 esta como: " +  UserLocalSettings.ARACheck1_1);
     }
 
-    private async void Button_Clicked(object sender, EventArgs e)
+    private void Button_Clicked(object sender, EventArgs e)
     {
-        //Report.CreateARA();
+        Report.CreateARA();
         //Report.CreateCTC();
         //Report.CreateRT();
-        await Navigation.PushModalAsync(new CTC());
+        //await Navigation.PushModalAsync(new CTC());
     }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)

@@ -40,7 +40,7 @@
             <HorizontalStackLayout>
                 <VerticalStackLayout>
                     <Label Text="Type"/>
-                    <Picker x:Name="TypePicker" Title="Meter type" >
+                    <Picker x:Name="TypePicker" Title="{x:Static lang:AppResource.MeterType}" >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>CR016</x:String>
@@ -62,6 +62,9 @@
                                 <x:String>CT16C</x:String>
                                 <x:String>CT25C</x:String>
                                 <x:String>CT40C</x:String>
+                                <x:String>CT65C</x:String>
+                                <x:String>CT10M</x:String>
+                                <x:String>CT16M</x:String>
                                 <x:String>IR016</x:String>
                                 <x:String>IR025</x:String>
                                 <x:String>IR040</x:String>
@@ -80,6 +83,9 @@
                                 <x:String>IT16C</x:String>
                                 <x:String>IT25C</x:String>
                                 <x:String>IT40C</x:String>
+                                <x:String>IT65C</x:String>
+                                <x:String>IT10M</x:String>
+                                <x:String>IT16M</x:String>
                                 <x:String>DR016</x:String>
                                 <x:String>DR025</x:String>
                                 <x:String>DR040</x:String>
@@ -97,6 +103,9 @@
                                 <x:String>DT16C</x:String>
                                 <x:String>DT25C</x:String>
                                 <x:String>DT40C</x:String>
+                                <x:String>DT65C</x:String>
+                                <x:String>DT10M</x:String>
+                                <x:String>DT16M</x:String>
                                 <x:String>GR016</x:String>
                                 <x:String>GR025</x:String>
                                 <x:String>GR040</x:String>
@@ -132,6 +141,9 @@
                                 <x:String>FT16C</x:String>
                                 <x:String>FT25C</x:String>
                                 <x:String>FT40C</x:String>
+                                <x:String>FT65C</x:String>
+                                <x:String>FT10M</x:String>
+                                <x:String>FT16M</x:String>
                                 <x:String>TR016</x:String>
                                 <x:String>TR025</x:String>
                                 <x:String>TR040</x:String>
@@ -140,7 +152,6 @@
                                 <x:String>TR160</x:String>
                                 <x:String>TR250</x:String>
                                 <x:String>TR400</x:String>
-                                <x:String>CT65C</x:String>
                                 <x:String>AR016</x:String>
                                 <x:String>AR025</x:String>
                                 <x:String>AR040</x:String>
@@ -160,6 +171,8 @@
                                 <x:String>AT25C</x:String>
                                 <x:String>AT40C</x:String>
                                 <x:String>AT65C</x:String>
+                                <x:String>AT10M</x:String>
+                                <x:String>AT16M</x:String>
                             </x:Array>
                         </Picker.ItemsSource>
                     </Picker>
