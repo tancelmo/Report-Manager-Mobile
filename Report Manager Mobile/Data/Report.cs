@@ -116,30 +116,31 @@ namespace Report_Manager_Mobile.Data
             graphics.DrawString(Globals.Adress, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             y += arialRegularFont.Height + lineSpace;
             graphics.DrawString("9365550136", arialRegularFont, PdfBrushes.Black, new PointF(x, y));
-            
+
+            #region ARA1 to ARA5
             //ARA1
             y += arialRegularFont.Height + lineSpace;
             graphics.DrawRectangle(lightBlueBrush, new RectangleF(x, y, pageWidth - (margin * 2), 20));
             graphics.DrawString(AppResource.ARA1, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
 
             y += arialRegularFont.Height + lineSpace;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck1_1", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck1_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA1_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
             
             y += arialRegularFont.Height + lineSpace -10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck1_2", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck1_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA1_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck1_3", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck1_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA1_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck1_4", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck1_4) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA1_4, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck1_5", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck1_5) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA1_5, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             //ARA2
@@ -148,15 +149,15 @@ namespace Report_Manager_Mobile.Data
             graphics.DrawString(AppResource.ARA2, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
 
             y += arialRegularFont.Height + lineSpace;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck2_1", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck2_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA2_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck2_2", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck2_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA2_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck2_3", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck2_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA2_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             //ARA3
@@ -165,15 +166,15 @@ namespace Report_Manager_Mobile.Data
             graphics.DrawString(AppResource.ARA3, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
 
             y += arialRegularFont.Height + lineSpace;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck3_1", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck3_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA3_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck3_2", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck3_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA3_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck3_3", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck3_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA3_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             //ARA4
@@ -182,30 +183,55 @@ namespace Report_Manager_Mobile.Data
             graphics.DrawString(AppResource.ARA4, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
 
             y += arialRegularFont.Height + lineSpace;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_1", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck4_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA4_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_2", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck4_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA4_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_3", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck4_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA4_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_4", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck4_4) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA4_4, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_5", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck4_5) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
             graphics.DrawString(AppResource.ARA4_5, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
+            //ARA5
+            y += arialRegularFont.Height + lineSpace;
+            graphics.DrawRectangle(lightBlueBrush, new RectangleF(x, y, pageWidth - (margin * 2), 20));
+            graphics.DrawString(AppResource.ARA5, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
 
+            y += arialRegularFont.Height + lineSpace;
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck5_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(AppResource.ARA5_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck5_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(AppResource.ARA5_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck5_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(AppResource.ARA5_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
-            //
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck5_4) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(AppResource.ARA5_4, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck5_5) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(AppResource.ARA5_5, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics.DrawString(BoolToString(UserLocalSettings.ARACheck5_6) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics.DrawString(AppResource.ARA5_6, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            #endregion
 
             #region Footer
 
@@ -254,36 +280,51 @@ namespace Report_Manager_Mobile.Data
             graphics.DrawString("faleconosco@accellsolutions.com", arialRegularFont, PdfBrushes.Black, new PointF(x, y));
 
             #endregion
+
+            //PAGE 2 ############################################################
+
             PdfPage page2 = document.Pages.Add();
             //Create PDF graphics for the page.
             PdfGraphics graphics2 = page2.Graphics;
-            y = headerHeight + margin;
-            x = margin;
+            //Get the page width and height.
+            float pageWidth2 = page2.GetClientSize().Width;
+            float pageHeight2 = page2.GetClientSize().Height;
+            //Create a border pen and draw the border to on the PDF page. 
+            PdfColor borderColor2 = Color.FromArgb(255, 0, 115, 184);
+            PdfPen borderPen2 = new PdfPen(borderColor2, 1f);
+            graphics2.DrawRectangle(borderPen2, new RectangleF(0, 0, pageWidth2, pageHeight2));
+            float headerHeight2 = 90;
 
-            graphics2.DrawRectangle(borderPen, new RectangleF(0, 0, pageWidth, pageHeight));
+            //Create a string format.
+            PdfStringFormat format2 = new PdfStringFormat();
+            format2.Alignment = PdfTextAlignment.Center;
+            format2.LineAlignment = PdfVerticalAlignment.Middle;
 
 
-
-            #region Header   2      
+            #region Header2      
             //Fill the header with a light blue brush. 
-            graphics2.DrawRectangle(lightBlueBrush, new RectangleF(0, 0, pageWidth, headerHeight));
-            
-            graphics2.DrawString(title, headerFont, whiteBrush, new RectangleF(0, 0, textSize.Width + 50, headerHeight), format);
+            graphics2.DrawRectangle(lightBlueBrush, new RectangleF(0, 0, pageWidth2, headerHeight2));
+
+            //Specificy the bounds for the total value. 
+            arialRegularFont = new PdfTrueTypeFont(fontStream, 18, PdfFontStyle.Regular);
+            //Measure the string size using the font. 
+
+            graphics2.DrawString(title, headerFont, whiteBrush, new RectangleF(0, 0, textSize.Width + 50, headerHeight2), format2);
             //Draw a rectangle in the PDF page. 
             graphics2.DrawRectangle(darkBlueBrush, headerTotalBounds);
             //Draw the total value to the PDF page. 
-            graphics2.DrawString(Globals.Facility, arialRegularFont, whiteBrush, new RectangleF(400, 0, pageWidth - 400, headerHeight + 10), format);
+            graphics2.DrawString(Globals.Facility, arialRegularFont, whiteBrush, new RectangleF(400, 0, pageWidth2 - 400, headerHeight2 + 10), format2);
             //Create a font from the font stream. 
             arialRegularFont = new PdfTrueTypeFont(fontStream, 9, PdfFontStyle.Regular);
             //Set the bottom line alignment and draw the text to the PDF page. 
-            format.LineAlignment = PdfVerticalAlignment.Bottom;
-            graphics2.DrawString("Facility", arialRegularFont, whiteBrush, new RectangleF(400, 0, pageWidth - 400, headerHeight / 2 - arialRegularFont.Height), format);
-            #endregion
+            format2.LineAlignment = PdfVerticalAlignment.Bottom;
+            graphics2.DrawString("Facility", arialRegularFont, whiteBrush, new RectangleF(400, 0, pageWidth2 - 400, headerHeight2 / 2 - arialRegularFont.Height), format2);
 
-            //Measure the string size using the font. 
             
-            y = headerHeight + margin;
-            x = (pageWidth - margin) - size.Width;
+            //Measure the string size using the font. 
+            size = arialRegularFont.MeasureString("Invoice Number: 2058557939");
+            y = headerHeight2 + margin;
+            x = (pageWidth2 - margin) - size.Width;
             //Draw text to a PDF page with the provided font and location. 
             graphics2.DrawString("Invoice Number: " + Globals.ServiceNote, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             //Measure the string size using the font.
@@ -291,35 +332,99 @@ namespace Report_Manager_Mobile.Data
             x = (pageWidth - margin) - size.Width;
             y += arialRegularFont.Height + lineSpace;
             //Draw text to a PDF page with the provided font and location. 
-            graphics2.DrawString("Date: " + DateTime.Now.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            graphics2.DrawString("Date: " + DateTime.Now.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x+10, y+10));
 
-            y = headerHeight + margin;
+
+            #endregion
+
+            y = headerHeight2 + margin;
             x = margin;
-
-            //ARA4
+            //Draw text to a PDF page with the provided font and location. 
+            graphics2.DrawString(Globals.Equipment, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             y += arialRegularFont.Height + lineSpace;
-            graphics2.DrawRectangle(lightBlueBrush, new RectangleF(x, y, pageWidth - (margin * 2), 20));
-            graphics2.DrawString(AppResource.ARA4, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
+            graphics2.DrawString(Globals.EquipmentType, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            y += arialRegularFont.Height + lineSpace;
+            graphics2.DrawString(Globals.EquipmentSN, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            
+
+            //ARA6
+            y += arialRegularFont.Height + lineSpace;
+            graphics2.DrawRectangle(lightBlueBrush, new RectangleF(x, y, pageWidth2 - (margin * 2), 20));
+            graphics2.DrawString(AppResource.ARA6, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
 
             y += arialRegularFont.Height + lineSpace;
-            graphics2.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_1", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
-            graphics2.DrawString(AppResource.ARA4_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics2.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_2", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
-            graphics2.DrawString(AppResource.ARA4_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics2.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_3", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
-            graphics2.DrawString(AppResource.ARA4_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics2.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_4", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
-            graphics2.DrawString(AppResource.ARA4_4, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_4) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_4, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
             y += arialRegularFont.Height + lineSpace - 10;
-            graphics2.DrawString(BoolToString(Preferences.Default.Get("ARAcheck4_5", false)) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
-            graphics2.DrawString(AppResource.ARA4_5, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_5) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_5, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_6) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_6, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_7) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_7, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_8) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_8, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck6_9) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA6_9, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+
+            //ARA7
+            y += arialRegularFont.Height + lineSpace;
+            graphics2.DrawRectangle(lightBlueBrush, new RectangleF(x, y, pageWidth2 - (margin * 2), 20));
+            graphics2.DrawString(AppResource.ARA7, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
+
+            y += arialRegularFont.Height + lineSpace;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_1, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_2) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_2, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_3) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_3, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_4) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_4, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_5) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_5, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_6) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_6, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_7) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_7, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
+
+            y += arialRegularFont.Height + lineSpace - 10;
+            graphics2.DrawString(BoolToString(UserLocalSettings.ARACheck7_8) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));
+            graphics2.DrawString(AppResource.ARA7_8, arialRegularFont, PdfBrushes.Black, new PointF(x + 30, y));
 
 
 
@@ -365,23 +470,6 @@ namespace Report_Manager_Mobile.Data
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             #region Helpers
             string BoolToString(bool b)
             {
@@ -395,12 +483,22 @@ namespace Report_Manager_Mobile.Data
                 }
             }
             #endregion
-            
-            for (int i = 0; i < document.Pages.Count; i++)
-            {
-                //Draw the composite field.
-                graphics.DrawString("Page {0} of {1}", arialRegularFont, PdfBrushes.Black,  new PointF(pageWidth / 2 - 5, pageHeight - 5));
-            }
+            RectangleF bounds = new RectangleF(0, 0, document.Pages[0].GetClientSize().Width, 50);
+            PdfPageTemplateElement footer = new PdfPageTemplateElement(bounds);
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 9);
+            PdfBrush brush = new PdfSolidBrush(Color.Black);
+            //Create page number field.
+            PdfPageNumberField pageNumber = new PdfPageNumberField(font, brush);
+            //Create page count field.
+            PdfPageCountField count = new PdfPageCountField(font, brush);
+            //Add the fields in composite fields.
+            PdfCompositeField compositeField = new PdfCompositeField(font, brush, "Page {0} of {1}", pageNumber, count);
+            compositeField.Bounds = footer.Bounds;
+            //Draw the composite field in footer.
+            compositeField.Draw(footer.Graphics, new PointF((pageWidth / 2) - 20, 40));
+            //Add the footer template at the bottom.
+            document.Template.Bottom = footer;
+
             using MemoryStream ms = new();
             //Saves the presentation to the memory stream.
             document.Save(ms);
