@@ -282,6 +282,12 @@
   <data name="ARA7_8" xml:space="preserve">
     <value>7 . 8 - Presença de escola / ponto de ônibus / hospital</value>
   </data>
+  <data name="ARANo" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ARAYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
   <data name="CancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>

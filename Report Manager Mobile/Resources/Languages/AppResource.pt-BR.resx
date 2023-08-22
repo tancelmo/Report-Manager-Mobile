@@ -120,6 +120,12 @@
   <data name="AppDisplayName" xml:space="preserve">
     <value>Report Manager Mobile</value>
   </data>
+  <data name="ARANo" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ARAYes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
   <data name="CancelButton" xml:space="preserve">
     <value>Cancelar</value>
   </data>

@@ -556,6 +556,24 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to -.
+        /// </summary>
+        internal static string ARANo {
+            get {
+                return ResourceManager.GetString("ARANo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string ARAYes {
+            get {
+                return ResourceManager.GetString("ARAYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string CancelButton {
