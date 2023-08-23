@@ -63,7 +63,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA1_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA1_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA1_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA1" Text="{x:Static globals:UserLocalSettings.ARAEditor1}" Unfocused="EditorARA1_Unfocused" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA1" Text="{x:Static globals:UserLocalSettings.ARAEditor1}" TextChanged="EditorARA1_TextChanged" Unfocused="EditorARA1_Unfocused" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>

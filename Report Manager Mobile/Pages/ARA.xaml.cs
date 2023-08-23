@@ -32,11 +32,13 @@ public partial class ARA : ContentPage
         if(e.Value)
         {
             Preferences.Default.Set("ARAcheck1_1", true);
+            UserLocalSettings.ARACheck1_1 = true;
             
         }
         else
         {
             Preferences.Default.Set("ARAcheck1_1", false);
+            UserLocalSettings.ARACheck1_1 = false;
         }
         
         
@@ -47,11 +49,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck1_2", true);
-
+            UserLocalSettings.ARACheck1_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck1_2", false);
+            UserLocalSettings.ARACheck1_2 = false;
         }
     }
 
@@ -60,11 +63,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck1_3", true);
-
+            UserLocalSettings.ARACheck1_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck1_3", false);
+            UserLocalSettings.ARACheck1_3 = true;
         }
     }
 
@@ -73,11 +77,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck1_4", true);
-
+            UserLocalSettings.ARACheck1_4 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck1_4", false);
+            UserLocalSettings.ARACheck1_4 = false;
         }
     }
 
@@ -86,17 +91,19 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck1_5", true);
-
+            UserLocalSettings.ARACheck1_5 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck1_5", false);
+            UserLocalSettings.ARACheck1_5 = false;
         }
     }
 
     private void EditorARA1_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor1", EditorARA1.Text);
+        UserLocalSettings.ARAEditor1 = EditorARA1.Text;
     }
 
     private void CheckBox_CheckedChanged_5(object sender, CheckedChangedEventArgs e)
@@ -104,11 +111,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck2_1", true);
-
+            UserLocalSettings.ARACheck2_1 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck2_1", false);
+            UserLocalSettings.ARACheck2_1 = false;
         }
     }
 
@@ -117,11 +125,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck2_2", true);
-
+            UserLocalSettings.ARACheck2_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck2_2", false);
+            UserLocalSettings.ARACheck2_2 = false;
         }
     }
 
@@ -130,17 +139,19 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck2_3", true);
-
+            UserLocalSettings.ARACheck2_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck2_3", false);
+            UserLocalSettings.ARACheck2_3 = false;
         }
     }
 
     private void EditorARA2_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor2", EditorARA2.Text);
+        UserLocalSettings.ARAEditor2 = EditorARA2.Text;
     }
 
     private void CheckBox_CheckedChanged_8(object sender, CheckedChangedEventArgs e)
@@ -148,11 +159,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck3_1", true);
-
+            UserLocalSettings.ARACheck3_1 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck3_1", false);
+            UserLocalSettings.ARACheck3_1 = false;
         }
     }
 
@@ -161,11 +173,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck3_2", true);
-
+            UserLocalSettings.ARACheck3_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck3_2", false);
+            UserLocalSettings.ARACheck3_2 = false;
         }
     }
 
@@ -174,17 +187,19 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck3_3", true);
-
+            UserLocalSettings.ARACheck3_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck3_3", false);
+            UserLocalSettings.ARACheck3_3 = false;
         }
     }
 
     private void EditorARA3_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor3", EditorARA3.Text);
+        UserLocalSettings.ARAEditor3 = EditorARA3.Text;
     }
 
     private void CheckBox_CheckedChanged_11(object sender, CheckedChangedEventArgs e)
@@ -192,11 +207,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck4_1", true);
-
+            UserLocalSettings.ARACheck4_1 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck4_1", false);
+            UserLocalSettings.ARACheck4_1 = false;
         }
     }
 
@@ -205,11 +221,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck4_2", true);
-
+            UserLocalSettings.ARACheck4_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck4_2", false);
+            UserLocalSettings.ARACheck4_2 = false;
         }
     }
 
@@ -218,11 +235,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck4_3", true);
-
+            UserLocalSettings.ARACheck4_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck4_3", false);
+            UserLocalSettings.ARACheck4_1 = false;
         }
     }
 
@@ -231,11 +249,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck4_4", true);
-
+            UserLocalSettings.ARACheck4_4 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck4_4", false);
+            UserLocalSettings.ARACheck4_4 = false;
         }
     }
 
@@ -245,17 +264,19 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck4_5", true);
-
+            UserLocalSettings.ARACheck4_5 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck4_5", false);
+            UserLocalSettings.ARACheck4_5 = false;
         }
     }
 
     private void EditorARA4_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor4", EditorARA4.Text);
+        UserLocalSettings.ARAEditor4 = EditorARA4.Text;
     }
 
     private void CheckBox_CheckedChanged_5_1(object sender, CheckedChangedEventArgs e)
@@ -263,11 +284,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck5_1", true);
-
+            UserLocalSettings.ARACheck5_1 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck5_1", false);
+            UserLocalSettings.ARACheck5_1 = false;
         }
     }
 
@@ -276,11 +298,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck5_2", true);
-
+            UserLocalSettings.ARACheck5_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck5_2", false);
+            UserLocalSettings.ARACheck5_2 = false;
         }
     }
 
@@ -289,11 +312,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck5_3", true);
-
+            UserLocalSettings.ARACheck5_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck5_3", false);
+            UserLocalSettings.ARACheck5_3 = false;
         }
     }
 
@@ -302,11 +326,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck5_4", true);
-
+            UserLocalSettings.ARACheck5_4 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck5_4", false);
+            UserLocalSettings.ARACheck5_4 = false;
         }
     }
 
@@ -315,11 +340,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck5_5", true);
-
+            UserLocalSettings.ARACheck5_5 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck5_5", false);
+            UserLocalSettings.ARACheck5_5 = false;
         }
     }
 
@@ -328,17 +354,19 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck5_6", true);
-
+            UserLocalSettings.ARACheck5_6 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck5_6", false);
+            UserLocalSettings.ARACheck5_6 = false;
         }
     }
 
     private void EditorARA5_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor5", EditorARA5.Text);
+        UserLocalSettings.ARAEditor5 = EditorARA5.Text;
     }
 
     private void CheckBox_CheckedChanged_21(object sender, CheckedChangedEventArgs e)
@@ -346,11 +374,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_1", true);
-
+            UserLocalSettings.ARACheck6_1 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_1", false);
+            UserLocalSettings.ARACheck6_1 = false;
         }
     }
 
@@ -359,11 +388,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_2", true);
-
+            UserLocalSettings.ARACheck6_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_2", false);
+            UserLocalSettings.ARACheck6_2 = false;
         }
     }
 
@@ -372,11 +402,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_3", true);
-
+            UserLocalSettings.ARACheck6_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_3", false);
+            UserLocalSettings.ARACheck6_3 = false;
         }
     }
 
@@ -385,11 +416,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_4", true);
-
+            UserLocalSettings.ARACheck6_4 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_4", false);
+            UserLocalSettings.ARACheck6_4 = false;
         }
     }
 
@@ -398,11 +430,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_5", true);
-
+            UserLocalSettings.ARACheck6_5 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_5", false);
+            UserLocalSettings.ARACheck6_5 = false;
         }
     }
 
@@ -411,11 +444,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_6", true);
-
+            UserLocalSettings.ARACheck6_6 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_6", false);
+            UserLocalSettings.ARACheck6_6 = false;
         }
     }
 
@@ -424,11 +458,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_7", true);
-
+            UserLocalSettings.ARACheck6_7 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_7", false);
+            UserLocalSettings.ARACheck6_7 = false;
         }
     }
 
@@ -437,11 +472,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_8", true);
-
+            UserLocalSettings.ARACheck6_8 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_8", false);
+            UserLocalSettings.ARACheck6_8 = false;
         }
     }
 
@@ -450,17 +486,19 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck6_9", true);
-
+            UserLocalSettings.ARACheck6_9 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck6_9", false);
+            UserLocalSettings.ARACheck6_9 = false;
         }
     }
 
     private void EditorARA6_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor6", EditorARA6.Text);
+        UserLocalSettings.ARAEditor6 = EditorARA6.Text;
     }
 
     private void CheckBox_CheckedChanged_30(object sender, CheckedChangedEventArgs e)
@@ -468,11 +506,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_1", true);
-
+            UserLocalSettings.ARACheck7_1 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_1", false);
+            UserLocalSettings.ARACheck7_1 = false;
         }
     }
 
@@ -481,11 +520,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_2", true);
-
+            UserLocalSettings.ARACheck7_2 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_2", false);
+            UserLocalSettings.ARACheck7_2 = false;
         }
     }
 
@@ -494,11 +534,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_3", true);
-
+            UserLocalSettings.ARACheck7_3 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_3", false);
+            UserLocalSettings.ARACheck7_3 = false;
         }
     }
 
@@ -507,11 +548,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_4", true);
-
+            UserLocalSettings.ARACheck7_4 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_4", false);
+            UserLocalSettings.ARACheck7_4 = false;
         }
     }
 
@@ -520,11 +562,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_5", true);
-
+            UserLocalSettings.ARACheck7_5 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_5", false);
+            UserLocalSettings.ARACheck7_5 = false;
         }
     }
 
@@ -533,11 +576,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_6", true);
-
+            UserLocalSettings.ARACheck7_6 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_6", false);
+            UserLocalSettings.ARACheck7_6 = false;
         }
     }
 
@@ -546,11 +590,12 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_7", true);
-
+            UserLocalSettings.ARACheck7_7 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_7", false);
+            UserLocalSettings.ARACheck7_7 = false;
         }
     }
 
@@ -559,18 +604,24 @@ public partial class ARA : ContentPage
         if (e.Value)
         {
             Preferences.Default.Set("ARAcheck7_8", true);
-
+            UserLocalSettings.ARACheck7_8 = true;
         }
         else
         {
             Preferences.Default.Set("ARAcheck7_8", false);
+            UserLocalSettings.ARACheck7_8 = false;
         }
     }
 
     private void EditorARA7_Unfocused(object sender, FocusEventArgs e)
     {
         Preferences.Default.Set("ARAEditor7", EditorARA7.Text);
+        UserLocalSettings.ARAEditor7 = EditorARA7.Text;
     }
 
-    
+    private void EditorARA1_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor1", EditorARA1.Text);
+        UserLocalSettings.ARAEditor1 = EditorARA1.Text;
+    }
 }

@@ -21,8 +21,7 @@ namespace Report_Manager_Mobile.Pages;
 
 public partial class Create : ContentPage
 {
-    RectangleF TotalPriceCellBounds = RectangleF.Empty;
-    RectangleF QuantityCellBounds = RectangleF.Empty;
+
     public Create()
     {
         InitializeComponent();
@@ -34,7 +33,7 @@ public partial class Create : ContentPage
         MeterSNEntry.Text = Globals.EquipmentSN;
         AdressEntry.Text = Globals.Adress;
         TypePicker.SelectedItem = Globals.EquipmentType;
-
+        UserLocalSettings.GetUserSettings(Preferences.Default.Get("LastSettings", false));
     }
 
     private void Button_Clicked(object sender, EventArgs e)
@@ -77,7 +76,7 @@ public partial class Create : ContentPage
     }
     private async void CreatePDF_Click()
     {
-        UserLocalSettings.GetUserSettings(Preferences.Default.Get("LastSettings", false));
+        
         await Navigation.PushModalAsync(new ARA());
         //Report.Create();
     }

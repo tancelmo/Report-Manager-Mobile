@@ -139,6 +139,10 @@ namespace Report_Manager_Mobile.Data
             y += arialRegularFont.Height + lineSpace;
             graphics.DrawRectangle(lightBlueBrush, new RectangleF(x, y, pageWidth - (margin * 2), 20));
             graphics.DrawString(AppResource.ARA1, arialRegularFont, PdfBrushes.White, new PointF(x + 5, y + 3));
+            graphics.DrawString(AppResource.Action, arialRegularFont, PdfBrushes.White, new PointF(x + (pageWidth / 2), y + 3));
+            //graphics.DrawString(UserLocalSettings.ARAEditor1, arialRegularFont, PdfBrushes.Black, new PointF(x + (pageWidth / 2), y + arialRegularFont.Height + lineSpace));
+            graphics.DrawString(UserLocalSettings.ARAEditor1, arialRegularFont, PdfBrushes.Black, new RectangleF(x + (pageWidth / 2), y + arialRegularFont.Height + lineSpace, 195, 100));
+
 
             y += arialRegularFont.Height + lineSpace;
             graphics.DrawString(BoolToString(UserLocalSettings.ARACheck1_1) + "  ", arialRegularFont, PdfBrushes.Black, new PointF(x + 5, y));

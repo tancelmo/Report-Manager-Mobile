@@ -123,7 +123,6 @@ namespace Report_Manager_Mobile.Data
                 ARACheck7_8 = Preferences.Default.Get("ARAcheck7_8", false);
                 ARAEditor7 = Preferences.Default.Get("ARAEditor7", "");
 
-                LastSettings = Preferences.Default.Get("LastSettings", false);
             }
         }
     }

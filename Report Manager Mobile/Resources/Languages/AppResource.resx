@@ -120,6 +120,9 @@
   <data name="AccountError" xml:space="preserve">
     <value>User or password wrong, try again.</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
   <data name="Adress" xml:space="preserve">
     <value>Adress: </value>
   </data>
