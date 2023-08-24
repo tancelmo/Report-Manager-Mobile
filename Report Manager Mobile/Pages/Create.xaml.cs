@@ -33,52 +33,14 @@ public partial class Create : ContentPage
         MeterSNEntry.Text = Globals.EquipmentSN;
         AdressEntry.Text = Globals.Adress;
         TypePicker.SelectedItem = Globals.EquipmentType;
+        
         UserLocalSettings.GetUserSettings(Preferences.Default.Get("LastSettings", false));
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-        //var contacts = new List<string>();
-        //contacts.Add("tadasilv@accellsolutions.com");
-
-        //try
-        //{
-        //    var message = new EmailMessage
-        //    {
-        //        Subject = Globals.Costumer + " INST " + Globals.Facility + " NS" + Globals.ServiceNote,
-        //        Body = EditorMail.Text,
-        //        To = contacts,
-        //        Cc = contacts,
-        //        //Bcc = contacts
-        //    };
-        //    var fn = "Attachment.txt";
-        //    var file = Path.Combine(FileSystem.CacheDirectory, fn);
-        //    File.WriteAllText(file, "File inside" + EditorMail.Text);
-
-        //    message.Attachments.Add(new EmailAttachment(file));
-
-        //    await Email.ComposeAsync(message);
-
-        //}
-        //catch (FeatureNotSupportedException fbsEx)
-        //{
-        //    // Email is not supported on this device
-        //    await DisplayAlert(AppResource.WarnignCaption, fbsEx.Message, AppResource.OkButton);
-        //    Debug.WriteLine(fbsEx);
-        //}
-        //catch (Exception ex)
-        //{
-        //    await DisplayAlert(AppResource.WarnignCaption, ex.Message + "UE", AppResource.OkButton);
-        //    // Some other exception occurred
-        //}
-        CreatePDF_Click();
-
-    }
-    private async void CreatePDF_Click()
-    {
-        
         await Navigation.PushModalAsync(new ARA());
-        //Report.Create();
+
     }
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
@@ -132,5 +94,22 @@ public partial class Create : ContentPage
         //SaveCredentialsCheckbx.IsChecked = !SaveCredentialsCheckbx.IsChecked;
         
 
+    }
+
+    private void ContentPage_Loaded(object sender, EventArgs e)
+    {
+        List<string> workList = new();
+        workList.Add(AppResource.Work1);
+        workList.Add(AppResource.Work2);
+        workList.Add(AppResource.Work3);
+        workList.Add(AppResource.Work4);
+        WorkPicker.ItemsSource = workList;
+        WorkPicker.SelectedIndex = 0;
+        Globals.Work = WorkPicker.SelectedItem.ToString();
+    }
+
+    private void WorkPicker_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Globals.Work = WorkPicker.SelectedItem.ToString();
     }
 }

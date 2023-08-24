@@ -592,11 +592,38 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ACCELL SOLUÇÕES PARA ENERGIA E ÁGUA LTDA..
+        /// </summary>
+        internal static string CompanyName {
+            get {
+                return ResourceManager.GetString("CompanyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Costumer: .
         /// </summary>
         internal static string Costumer {
             get {
                 return ResourceManager.GetString("Costumer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Empresa Visitada: .
+        /// </summary>
+        internal static string CostumerARA {
+            get {
+                return ResourceManager.GetString("CostumerARA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date: .
+        /// </summary>
+        internal static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
             }
         }
         
@@ -624,6 +651,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string Facility {
             get {
                 return ResourceManager.GetString("Facility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invoice Number: .
+        /// </summary>
+        internal static string InvoiceNumber {
+            get {
+                return ResourceManager.GetString("InvoiceNumber", resourceCulture);
             }
         }
         
@@ -673,11 +709,20 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Meter Type.
+        ///   Looks up a localized string similar to Meter Type:.
         /// </summary>
         internal static string MeterType {
             get {
                 return ResourceManager.GetString("MeterType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Empresa Visitante: .
+        /// </summary>
+        internal static string MyCompanyARA {
+            get {
+                return ResourceManager.GetString("MyCompanyARA", resourceCulture);
             }
         }
         
@@ -795,6 +840,51 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string WarnignCaption {
             get {
                 return ResourceManager.GetString("WarnignCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work:.
+        /// </summary>
+        internal static string Work {
+            get {
+                return ResourceManager.GetString("Work", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to METER CHANGE.
+        /// </summary>
+        internal static string Work1 {
+            get {
+                return ResourceManager.GetString("Work1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to METER AND PTZ CHANGE.
+        /// </summary>
+        internal static string Work2 {
+            get {
+                return ResourceManager.GetString("Work2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PTZ CHANGE.
+        /// </summary>
+        internal static string Work3 {
+            get {
+                return ResourceManager.GetString("Work3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AUDIT AND INSPECTION.
+        /// </summary>
+        internal static string Work4 {
+            get {
+                return ResourceManager.GetString("Work4", resourceCulture);
             }
         }
         

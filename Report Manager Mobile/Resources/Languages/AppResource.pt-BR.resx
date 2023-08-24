@@ -117,8 +117,173 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AccountError" xml:space="preserve">
+    <value>Usuário ou senha incorretos, tente novamente</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="Adress" xml:space="preserve">
+    <value>Endereço: </value>
+  </data>
   <data name="AppDisplayName" xml:space="preserve">
     <value>Report Manager Mobile</value>
+  </data>
+  <data name="ARA" xml:space="preserve">
+    <value>AVALIAÇÃO DE RISCOS E ATIVIDADES</value>
+  </data>
+  <data name="ARA1" xml:space="preserve">
+    <value>1 - Riscos Químicos</value>
+  </data>
+  <data name="ARA1_1" xml:space="preserve">
+    <value>1 . 1 - Presença de Gás</value>
+  </data>
+  <data name="ARA1_2" xml:space="preserve">
+    <value>1 . 2 - Produtos Químicos</value>
+  </data>
+  <data name="ARA1_3" xml:space="preserve">
+    <value>1 . 3 - Produtos de Limpeza</value>
+  </data>
+  <data name="ARA1_4" xml:space="preserve">
+    <value>1 . 4 - Tintas / Solventes / Vernizes</value>
+  </data>
+  <data name="ARA1_5" xml:space="preserve">
+    <value>1 . 5 - Monóxido de Carbono</value>
+  </data>
+  <data name="ARA2" xml:space="preserve">
+    <value>2 - Riscos Físicos</value>
+  </data>
+  <data name="ARA2_1" xml:space="preserve">
+    <value>2 . 1 - Ruído excessivo</value>
+  </data>
+  <data name="ARA2_2" xml:space="preserve">
+    <value>2 . 2 - Vibrações excessivas</value>
+  </data>
+  <data name="ARA2_3" xml:space="preserve">
+    <value>2 . 3 - Calor excessivo</value>
+  </data>
+  <data name="ARA3" xml:space="preserve">
+    <value>3 - Riscos Ergonômicos</value>
+  </data>
+  <data name="ARA3_1" xml:space="preserve">
+    <value>3 . 1 - Posição inadequada</value>
+  </data>
+  <data name="ARA3_2" xml:space="preserve">
+    <value>3 . 2 - Manuseio de pesos</value>
+  </data>
+  <data name="ARA3_3" xml:space="preserve">
+    <value>3 . 3 - Espaço insuficiente para trabalhar</value>
+  </data>
+  <data name="ARA4" xml:space="preserve">
+    <value>4 - Riscos Biológicos</value>
+  </data>
+  <data name="ARA4_1" xml:space="preserve">
+    <value>4 . 1 - Água contaminada</value>
+  </data>
+  <data name="ARA4_2" xml:space="preserve">
+    <value>4 . 2 - Animais mortos</value>
+  </data>
+  <data name="ARA4_3" xml:space="preserve">
+    <value>4 . 3 - Esgotos</value>
+  </data>
+  <data name="ARA4_4" xml:space="preserve">
+    <value>4 . 4 - Animais peçonhentos</value>
+  </data>
+  <data name="ARA4_5" xml:space="preserve">
+    <value>4 . 5 - Enxame de insetos</value>
+  </data>
+  <data name="ARA5" xml:space="preserve">
+    <value>5 - Riscos Ambientais</value>
+  </data>
+  <data name="ARA5_1" xml:space="preserve">
+    <value>5 . 1 - Vazamento de Gás</value>
+  </data>
+  <data name="ARA5_2" xml:space="preserve">
+    <value>5 . 2 - Vazamento de odorante</value>
+  </data>
+  <data name="ARA5_3" xml:space="preserve">
+    <value>5 . 3 - Desmatamento</value>
+  </data>
+  <data name="ARA5_4" xml:space="preserve">
+    <value>5 . 4 - Contaminação do solo</value>
+  </data>
+  <data name="ARA5_5" xml:space="preserve">
+    <value>5 . 5 - Vazamento de óleo / combustível</value>
+  </data>
+  <data name="ARA5_6" xml:space="preserve">
+    <value>5 . 6 - Mortalidade de animais</value>
+  </data>
+  <data name="ARA6" xml:space="preserve">
+    <value>6 - Riscos de Acidentes</value>
+  </data>
+  <data name="ARA6.14" xml:space="preserve">
+    <value>6 . 14 - Incêndio / Explosão</value>
+  </data>
+  <data name="ARA6_1" xml:space="preserve">
+    <value>6 . 1 - Máquinas / equipamentos sem proteção</value>
+  </data>
+  <data name="ARA6_10" xml:space="preserve">
+    <value>6 . 10 - Material / equipamento cortante</value>
+  </data>
+  <data name="ARA6_11" xml:space="preserve">
+    <value>6 . 11 - Condições meteorológicas</value>
+  </data>
+  <data name="ARA6_12" xml:space="preserve">
+    <value>6 . 12 - Queda</value>
+  </data>
+  <data name="ARA6_13" xml:space="preserve">
+    <value>6 . 13 - Iluminação</value>
+  </data>
+  <data name="ARA6_2" xml:space="preserve">
+    <value>6 . 2 - Equipamento danificado</value>
+  </data>
+  <data name="ARA6_3" xml:space="preserve">
+    <value>6 . 3 - Ferramenta inadequada</value>
+  </data>
+  <data name="ARA6_4" xml:space="preserve">
+    <value>6 . 4 - Equipamento energizado</value>
+  </data>
+  <data name="ARA6_5" xml:space="preserve">
+    <value>6 . 5 - Alta voltagem</value>
+  </data>
+  <data name="ARA6_6" xml:space="preserve">
+    <value>6 . 6 - Fiação desencapada</value>
+  </data>
+  <data name="ARA6_7" xml:space="preserve">
+    <value>6 . 7 - Cabos subterrâneos</value>
+  </data>
+  <data name="ARA6_8" xml:space="preserve">
+    <value>6 . 8 - Material / equipamento aquecido</value>
+  </data>
+  <data name="ARA6_9" xml:space="preserve">
+    <value>6 . 9 - Piso irregular / escorregadio / desnível</value>
+  </data>
+  <data name="ARA7" xml:space="preserve">
+    <value>7 - Riscos Adicionais</value>
+  </data>
+  <data name="ARA7_1" xml:space="preserve">
+    <value>7 . 1 - Trânsito intenso</value>
+  </data>
+  <data name="ARA7_2" xml:space="preserve">
+    <value>7 . 2 - Viatura em local inadequado</value>
+  </data>
+  <data name="ARA7_3" xml:space="preserve">
+    <value>7 . 3 - Sinalização insuficiente</value>
+  </data>
+  <data name="ARA7_4" xml:space="preserve">
+    <value>7 . 4 - Vala profunda</value>
+  </data>
+  <data name="ARA7_5" xml:space="preserve">
+    <value>7 . 5 - Interferências</value>
+  </data>
+  <data name="ARA7_6" xml:space="preserve">
+    <value>7 . 6 - Terreno instável</value>
+  </data>
+  <data name="ARA7_7" xml:space="preserve">
+    <value>7 . 7 - Roubo/ animal doméstico</value>
+  </data>
+  <data name="ARA7_8" xml:space="preserve">
+    <value>7 . 8 - Presença de escola / ponto de ônibus / hospital</value>
   </data>
   <data name="ARANo" xml:space="preserve">
     <value>-</value>
@@ -129,20 +294,56 @@
   <data name="CancelButton" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>ACCELL SOLUÇÕES PARA ENERGIA E ÁGUA LTDA.</value>
+  </data>
+  <data name="Costumer" xml:space="preserve">
+    <value>Cliente: </value>
+  </data>
+  <data name="CostumerARA" xml:space="preserve">
+    <value>Empresa Visitada: </value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data: </value>
+  </data>
+  <data name="EmptyDataView" xml:space="preserve">
+    <value>Nenhum dado disponível</value>
+  </data>
   <data name="ErrorCaption" xml:space="preserve">
     <value>Erro</value>
   </data>
+  <data name="Facility" xml:space="preserve">
+    <value>Instalação: </value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Número da Nota: </value>
+  </data>
+  <data name="LatestSettings" xml:space="preserve">
+    <value>Usar última configuração salva</value>
+  </data>
   <data name="Login" xml:space="preserve">
-    <value>Entrar</value>
+    <value>Login</value>
   </data>
   <data name="LoginNext" xml:space="preserve">
-    <value>Próximo</value>
+    <value>Próxima</value>
+  </data>
+  <data name="Meter" xml:space="preserve">
+    <value>Medidor: </value>
+  </data>
+  <data name="MeterSN" xml:space="preserve">
+    <value>Nº de Série: </value>
+  </data>
+  <data name="MeterType" xml:space="preserve">
+    <value>Tipo: </value>
+  </data>
+  <data name="MyCompanyARA" xml:space="preserve">
+    <value>Empresa Visitante: </value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
   </data>
   <data name="NoUser" xml:space="preserve">
-    <value>Usuário não encontrado.</value>
+    <value>Usuário não encontrado</value>
   </data>
   <data name="OkButton" xml:space="preserve">
     <value>OK</value>
@@ -150,14 +351,47 @@
   <data name="Password" xml:space="preserve">
     <value>Senha</value>
   </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Fechar aplicação?</value>
+  </data>
   <data name="SaveCredentials" xml:space="preserve">
-    <value>Salvar minhas credenciais?</value>
+    <value>Salvar minhas credenciais</value>
+  </data>
+  <data name="ServiceNote" xml:space="preserve">
+    <value>NS: </value>
+  </data>
+  <data name="TabPageHeaderAvaliable" xml:space="preserve">
+    <value>Disponível</value>
+  </data>
+  <data name="TabPageHeaderCompleted" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  <data name="TabPageHeaderSettings" xml:space="preserve">
+    <value>Opções</value>
   </data>
   <data name="User" xml:space="preserve">
-    <value>Email</value>
+    <value>Usuário</value>
+  </data>
+  <data name="UserExample" xml:space="preserve">
+    <value>examplo@accellsolutions.com</value>
   </data>
   <data name="WarnignCaption" xml:space="preserve">
     <value>Aviso</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Atividade:</value>
+  </data>
+  <data name="Work1" xml:space="preserve">
+    <value>TROCA DE MEDIDOR</value>
+  </data>
+  <data name="Work2" xml:space="preserve">
+    <value>TROCA DE MEDIDOR E PTZ</value>
+  </data>
+  <data name="Work3" xml:space="preserve">
+    <value>TROCA DE PTZ</value>
+  </data>
+  <data name="Work4" xml:space="preserve">
+    <value>AUDITORIA E FISCALIZAÇÃO</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sim</value>

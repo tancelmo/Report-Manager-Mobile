@@ -100,12 +100,6 @@ public partial class ARA : ContentPage
         }
     }
 
-    private void EditorARA1_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor1", EditorARA1.Text);
-        UserLocalSettings.ARAEditor1 = EditorARA1.Text;
-    }
-
     private void CheckBox_CheckedChanged_5(object sender, CheckedChangedEventArgs e)
     {
         if (e.Value)
@@ -148,12 +142,6 @@ public partial class ARA : ContentPage
         }
     }
 
-    private void EditorARA2_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor2", EditorARA2.Text);
-        UserLocalSettings.ARAEditor2 = EditorARA2.Text;
-    }
-
     private void CheckBox_CheckedChanged_8(object sender, CheckedChangedEventArgs e)
     {
         if (e.Value)
@@ -194,12 +182,6 @@ public partial class ARA : ContentPage
             Preferences.Default.Set("ARAcheck3_3", false);
             UserLocalSettings.ARACheck3_3 = false;
         }
-    }
-
-    private void EditorARA3_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor3", EditorARA3.Text);
-        UserLocalSettings.ARAEditor3 = EditorARA3.Text;
     }
 
     private void CheckBox_CheckedChanged_11(object sender, CheckedChangedEventArgs e)
@@ -271,12 +253,6 @@ public partial class ARA : ContentPage
             Preferences.Default.Set("ARAcheck4_5", false);
             UserLocalSettings.ARACheck4_5 = false;
         }
-    }
-
-    private void EditorARA4_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor4", EditorARA4.Text);
-        UserLocalSettings.ARAEditor4 = EditorARA4.Text;
     }
 
     private void CheckBox_CheckedChanged_5_1(object sender, CheckedChangedEventArgs e)
@@ -361,12 +337,6 @@ public partial class ARA : ContentPage
             Preferences.Default.Set("ARAcheck5_6", false);
             UserLocalSettings.ARACheck5_6 = false;
         }
-    }
-
-    private void EditorARA5_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor5", EditorARA5.Text);
-        UserLocalSettings.ARAEditor5 = EditorARA5.Text;
     }
 
     private void CheckBox_CheckedChanged_21(object sender, CheckedChangedEventArgs e)
@@ -495,12 +465,6 @@ public partial class ARA : ContentPage
         }
     }
 
-    private void EditorARA6_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor6", EditorARA6.Text);
-        UserLocalSettings.ARAEditor6 = EditorARA6.Text;
-    }
-
     private void CheckBox_CheckedChanged_30(object sender, CheckedChangedEventArgs e)
     {
         if (e.Value)
@@ -613,15 +577,45 @@ public partial class ARA : ContentPage
         }
     }
 
-    private void EditorARA7_Unfocused(object sender, FocusEventArgs e)
-    {
-        Preferences.Default.Set("ARAEditor7", EditorARA7.Text);
-        UserLocalSettings.ARAEditor7 = EditorARA7.Text;
-    }
-
     private void EditorARA1_TextChanged(object sender, TextChangedEventArgs e)
     {
         Preferences.Default.Set("ARAEditor1", EditorARA1.Text);
         UserLocalSettings.ARAEditor1 = EditorARA1.Text;
+    }
+
+    private void EditorARA2_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor2", EditorARA2.Text);
+        UserLocalSettings.ARAEditor2 = EditorARA2.Text;
+    }
+
+    private void EditorARA3_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor3", EditorARA3.Text);
+        UserLocalSettings.ARAEditor3 = EditorARA3.Text;
+    }
+
+    private void EditorARA4_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor4", EditorARA4.Text);
+        UserLocalSettings.ARAEditor4 = EditorARA4.Text;
+    }
+
+    private void EditorARA5_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor5", EditorARA5.Text);
+        UserLocalSettings.ARAEditor5 = EditorARA5.Text;
+    }
+
+    private void EditorARA6_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor6", EditorARA6.Text);
+        UserLocalSettings.ARAEditor6 = EditorARA6.Text;
+    }
+
+    private void EditorARA7_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("ARAEditor7", EditorARA7.Text);
+        UserLocalSettings.ARAEditor7 = EditorARA7.Text;
     }
 }

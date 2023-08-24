@@ -4,14 +4,12 @@
              x:Class="Report_Manager_Mobile.Pages.Create"
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}"
+             Loaded="ContentPage_Loaded"
              Title="Create">
     <ScrollView>
         <VerticalStackLayout Margin="20">
 
             <Label Text="Executar" FontSize="18" HorizontalOptions="Center" HeightRequest="25"/>
-
-
-
             <HorizontalStackLayout>
                 <VerticalStackLayout>
                     <Label 
@@ -39,7 +37,7 @@
 
             <HorizontalStackLayout>
                 <VerticalStackLayout>
-                    <Label Text="Type"/>
+                    <Label Text="{x:Static lang:AppResource.MeterType}"/>
                     <Picker x:Name="TypePicker" Title="{x:Static lang:AppResource.MeterType}" >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
@@ -188,7 +186,10 @@
             <Label 
                 Text="{x:Static lang:AppResource.Adress}"/>
             <Editor x:Name="AdressEntry" Placeholder="{x:Static lang:AppResource.Adress}" />
-            
+            <Label Text="{x:Static lang:AppResource.Date}"/>
+            <DatePicker/>
+            <Label Text="{x:Static lang:AppResource.Work}" Margin="0,20,0,0"/>
+            <Picker x:Name="WorkPicker" HorizontalTextAlignment="Center" FontSize="18" SelectedIndexChanged="WorkPicker_SelectedIndexChanged"/>
 
             <Button Text="Próximo" FontSize="18" Margin="0,10" Clicked="Button_Clicked"/>
             <Button Text="Send" FontSize="18" Clicked="Button_Clicked_1"/>

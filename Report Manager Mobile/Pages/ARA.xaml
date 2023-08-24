@@ -63,7 +63,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA1_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA1_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA1_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA1" Text="{x:Static globals:UserLocalSettings.ARAEditor1}" TextChanged="EditorARA1_TextChanged" Unfocused="EditorARA1_Unfocused" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA1" Text="{x:Static globals:UserLocalSettings.ARAEditor1}" TextChanged="EditorARA1_TextChanged" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -96,7 +96,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA2_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA2_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA2_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA2" Unfocused="EditorARA2_Unfocused" Text="{x:Static globals:UserLocalSettings.ARAEditor2}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA2" TextChanged="EditorARA2_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor2}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -128,7 +128,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA3_1}" Grid.Row="0" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA3_2}" Grid.Row="1" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA3_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA3" Unfocused="EditorARA3_Unfocused" Text="{x:Static globals:UserLocalSettings.ARAEditor3}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA3" TextChanged="EditorARA3_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor3}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -167,7 +167,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA4_3}" Grid.Row="2" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA4_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA4_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA4" Grid.Row="5" Unfocused="EditorARA4_Unfocused" Text="{x:Static globals:UserLocalSettings.ARAEditor4}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA4" Grid.Row="5" TextChanged="EditorARA4_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor4}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -209,7 +209,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA5_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA5" Grid.Row="6" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor5}" Unfocused="EditorARA5_Unfocused" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA5" Grid.Row="6" Grid.Column="0" TextChanged="EditorARA5_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor5}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -260,7 +260,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA6_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA6_9}" Grid.Row="8" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA6" Grid.Row="9" Unfocused="EditorARA6_Unfocused" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor6}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA6" Grid.Row="9" TextChanged="EditorARA6_TextChanged" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor6}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
@@ -309,7 +309,7 @@
                         <Label Text="{x:Static lang:AppResource.ARA7_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Start"/>
-                        <Editor x:Name="EditorARA7" Grid.Row="8" Grid.Column="0" Text="{x:Static globals:UserLocalSettings.ARAEditor7}" Grid.ColumnSpan="2" Unfocused="EditorARA7_Unfocused" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA7" Grid.Row="8" Grid.Column="0" TextChanged="EditorARA7_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor7}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>

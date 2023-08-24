@@ -26,5 +26,7 @@ namespace Report_Manager_Mobile.Data
         public static string EquipmentType { get; set; }
 
         public static string EquipmentSN { get; set; }
+
+        public static string Work { get; set; }
     }
 }

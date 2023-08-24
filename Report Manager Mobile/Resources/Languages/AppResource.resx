@@ -294,8 +294,17 @@
   <data name="CancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>ACCELL SOLUÇÕES PARA ENERGIA E ÁGUA LTDA.</value>
+  </data>
   <data name="Costumer" xml:space="preserve">
     <value>Costumer: </value>
+  </data>
+  <data name="CostumerARA" xml:space="preserve">
+    <value>Empresa Visitada: </value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date: </value>
   </data>
   <data name="EmptyDataView" xml:space="preserve">
     <value>No data avaliable</value>
@@ -305,6 +314,9 @@
   </data>
   <data name="Facility" xml:space="preserve">
     <value>Facility: </value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Invoice Number: </value>
   </data>
   <data name="LatestSettings" xml:space="preserve">
     <value>Use last saved presets</value>
@@ -322,7 +334,10 @@
     <value>Serial Number: </value>
   </data>
   <data name="MeterType" xml:space="preserve">
-    <value>Meter Type</value>
+    <value>Meter Type:</value>
+  </data>
+  <data name="MyCompanyARA" xml:space="preserve">
+    <value>Empresa Visitante: </value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>
@@ -362,6 +377,21 @@
   </data>
   <data name="WarnignCaption" xml:space="preserve">
     <value>Warning</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Work:</value>
+  </data>
+  <data name="Work1" xml:space="preserve">
+    <value>METER CHANGE</value>
+  </data>
+  <data name="Work2" xml:space="preserve">
+    <value>METER AND PTZ CHANGE</value>
+  </data>
+  <data name="Work3" xml:space="preserve">
+    <value>PTZ CHANGE</value>
+  </data>
+  <data name="Work4" xml:space="preserve">
+    <value>AUDIT AND INSPECTION</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
