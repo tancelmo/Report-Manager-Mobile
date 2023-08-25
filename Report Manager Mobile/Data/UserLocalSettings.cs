@@ -66,6 +66,10 @@ namespace Report_Manager_Mobile.Data
 
         public static bool RememberMe { get; set; }
 
+        public static string MailList { get; set; } = string.Empty;
+
+        public static string CcMailList { get; set; } = string.Empty;
+
 
         public static void GetUserSettings(bool option)
         {

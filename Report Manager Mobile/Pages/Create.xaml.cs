@@ -56,9 +56,11 @@ public partial class Create : ContentPage
             root = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
         
 #endif
-        var contacts = new List<string>();
-        contacts.Add("tadasilv@accellsolutions.com");
 
+        List<string> mailTo = UserLocalSettings.MailList.Split(';').ToList();
+        List<string> ccTo = UserLocalSettings.CcMailList.Split(';').ToList();
+        //mailTo = "tadasilv@accellsolutions.com;morspi@accellsolutions.com;hmello@accellsolutions.com;jou@accellsolutions.com;rriboli@accellsolutions.com".Split(';').ToList();
+        
 
         try
         {
@@ -66,8 +68,8 @@ public partial class Create : ContentPage
             {
                 Subject = Globals.Costumer + " INST " + Globals.Facility + " NS" + Globals.ServiceNote,
                 Body = Globals.Costumer + "\n" + " INST " + Globals.Facility + "\n" + " NS" + Globals.ServiceNote,
-                To = contacts,
-                Cc = contacts,
+                To = mailTo,
+                Cc = ccTo,
                 //Bcc = contacts
             };
             var fn = ("INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ","_");

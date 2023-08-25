@@ -18,6 +18,12 @@
                 </Label.GestureRecognizers>
             </Label>
         </HorizontalStackLayout>
+        <Label HorizontalTextAlignment="Center" FontSize="15" Text="Opcoes de Email"/>
+        <Label Text="Para:"/>
+        <Editor x:Name="MailTo" Keyboard="Email" IsSpellCheckEnabled="False" HeightRequest="70" Text="{x:Static globals:UserLocalSettings.MailList}" TextChanged="MailTo_TextChanged"/>
+        <Label Text="CC:"/>
+        <Editor x:Name="CcMailTo" Keyboard="Email" IsSpellCheckEnabled="False" HeightRequest="70" Text="{x:Static globals:UserLocalSettings.CcMailList}" TextChanged="CcMailTo_TextChanged"/>
+
         <Button Text="Change Server Adress" Clicked="Button_Clicked" FontSize="18" Margin="0,5"/>
         <Button Text="Send Log" Clicked="Button_Clicked_1" FontSize="18" Margin="0,5"/>
         <Label x:Name="LblVersion" FontSize="18" HorizontalOptions="Center" VerticalOptions="End"/>

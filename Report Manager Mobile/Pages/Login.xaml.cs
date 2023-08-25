@@ -2,6 +2,7 @@
 using MySqlConnector;
 using Report_Manager_Mobile.Data;
 using Report_Manager_Mobile.Resources.Languages;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace Report_Manager_Mobile.Pages;
@@ -14,6 +15,7 @@ public partial class Login : ContentPage
 		InitializeComponent();
         LabelHomeAppVer.Text = "Ver. " + AppInfo.Current.VersionString + "." + AppInfo.Current.BuildString;
         
+
 
     }
     private async void OnCounterClicked(object sender, EventArgs e)

@@ -85,4 +85,17 @@ public partial class Settings : ContentPage
     {
         Presets.IsChecked = !Presets.IsChecked;
     }
+
+    private void MailTo_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("MailList", MailTo.Text);
+        UserLocalSettings.MailList = MailTo.Text;
+        
+    }
+
+    private void CcMailTo_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Preferences.Default.Set("CcMailList", CcMailTo.Text);
+        UserLocalSettings.CcMailList = CcMailTo.Text;
+    }
 }
