@@ -98,11 +98,11 @@ namespace Report_Manager_Mobile.Data
             //Draw text to a PDF page with the provided font and location. 
             graphics.DrawString(AppResource.InvoiceNumber + Globals.ServiceNote, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             //Measure the string size using the font.
-            size = arialRegularFont.MeasureString(AppResource.Date + DateTime.Now.ToString("dddd dd, MMMM yyyy"));
+            size = arialRegularFont.MeasureString(AppResource.Date + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"));
             x = (pageWidth - margin) - size.Width;
             y += arialRegularFont.Height + lineSpace;
             //Draw text to a PDF page with the provided font and location. 
-            graphics.DrawString(AppResource.Date + DateTime.Now.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            graphics.DrawString(AppResource.Date + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
 
             y = headerHeight + margin;
             x = margin;
@@ -336,11 +336,11 @@ namespace Report_Manager_Mobile.Data
             //Draw text to a PDF page with the provided font and location. 
             graphics2.DrawString("Invoice Number: " + Globals.ServiceNote, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             //Measure the string size using the font.
-            size = arialRegularFont.MeasureString("Date :" + DateTime.Now.ToString("dddd dd, MMMM yyyy"));
+            size = arialRegularFont.MeasureString("Date :" + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"));
             x = (pageWidth - margin) - size.Width;
             y += arialRegularFont.Height + lineSpace;
             //Draw text to a PDF page with the provided font and location. 
-            graphics2.DrawString("Date: " + DateTime.Now.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x+10, y+10));
+            graphics2.DrawString("Date: " + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x+10, y+10));
 
 
             #endregion
@@ -557,7 +557,7 @@ namespace Report_Manager_Mobile.Data
             //Saves the memory stream as file.
             SaveService saveService = new();
             //TODO: Remove special characteres from filename
-            saveService.SaveAndView(("ARA_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms);
+            saveService.SaveAndView(("ARA_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms, UserLocalSettings.ARAPreview);
             
 
         }
@@ -661,11 +661,11 @@ namespace Report_Manager_Mobile.Data
             //Draw text to a PDF page with the provided font and location. 
             graphics.DrawString("Invoice Number: 2058557939", arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             //Measure the string size using the font.
-            size = arialRegularFont.MeasureString("Date :" + DateTime.Now.ToString("dddd dd, MMMM yyyy"));
+            size = arialRegularFont.MeasureString("Date :" + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"));
             x = (pageWidth - margin) - size.Width;
             y += arialRegularFont.Height + lineSpace;
             //Draw text to a PDF page with the provided font and location. 
-            graphics.DrawString("Date: " + DateTime.Now.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            graphics.DrawString("Date: " + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
 
             y = headerHeight + margin;
             x = margin;
@@ -801,7 +801,7 @@ namespace Report_Manager_Mobile.Data
             ms.Position = 0;
             //Saves the memory stream as file.
             SaveService saveService = new();
-            saveService.SaveAndView(("CTC_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms);
+            saveService.SaveAndView(("CTC_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms, UserLocalSettings.ARAPreview);
             #endregion
 
             #region Helper Methods
@@ -949,11 +949,11 @@ namespace Report_Manager_Mobile.Data
             //Draw text to a PDF page with the provided font and location. 
             graphics.DrawString("Invoice Number: 2058557939", arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             //Measure the string size using the font.
-            size = arialRegularFont.MeasureString("Date :" + DateTime.Now.ToString("dddd dd, MMMM yyyy"));
+            size = arialRegularFont.MeasureString("Date :" + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"));
             x = (pageWidth - margin) - size.Width;
             y += arialRegularFont.Height + lineSpace;
             //Draw text to a PDF page with the provided font and location. 
-            graphics.DrawString("Date: " + DateTime.Now.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            graphics.DrawString("Date: " + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
 
             y = headerHeight + margin;
             x = margin;
@@ -1089,7 +1089,7 @@ namespace Report_Manager_Mobile.Data
             ms.Position = 0;
             //Saves the memory stream as file.
             SaveService saveService = new();
-            saveService.SaveAndView(("RT_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms);
+            saveService.SaveAndView(("RT_INST" + Globals.Facility + "_NS" + Globals.ServiceNote + "_" + Globals.Costumer + ".pdf").Replace(" ", "_"), "application/pdf", ms, UserLocalSettings.ARAPreview);
             #endregion
 
             #region Helper Methods

@@ -23,11 +23,11 @@
             </Setter>
         </Style>
     </ContentPage.Resources>
-
-    <CollectionView x:Name="collectionData" Grid.Row="1" Margin="20" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="{x:Static lang:AppResource.EmptyDataView}">
-        <CollectionView.Header>
-            <SearchBar x:Name="SearchBox" TextChanged="Search_TextChanged" Placeholder="Search a facility"/>
-        </CollectionView.Header>
+    <Grid>
+        <SearchBar x:Name="SearchBox" TextChanged="Search_TextChanged" Placeholder="Search a facility" />
+        <Button x:Name="ManualInsert" Clicked="ManualInsert_Clicked" Text="Manual Insert" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false" />
+        <CollectionView x:Name="collectionData" Grid.Row="1" Margin="10,50,10,0" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="{x:Static lang:AppResource.EmptyDataView}">
+        
             
             <CollectionView.ItemTemplate>
 
@@ -82,4 +82,5 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
         <!--<SearchBar Placeholder="Search" x:Name="Search" TextChanged="Search_TextChanged" HorizontalOptions="Center"/>-->
+    </Grid>
 </ContentPage>

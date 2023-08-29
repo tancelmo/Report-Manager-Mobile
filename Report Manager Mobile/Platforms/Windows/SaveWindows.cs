@@ -12,7 +12,7 @@ namespace Report_Manager_Mobile.Services
 {
     public partial class SaveService
     {
-        public async partial void SaveAndView(string filename, string contentType, MemoryStream stream)
+        public async partial void SaveAndView(string filename, string contentType, MemoryStream stream, bool seePreview)
         {
             StorageFile stFile;
             string extension = Path.GetExtension(filename);

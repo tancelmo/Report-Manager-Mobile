@@ -11,7 +11,7 @@ namespace Report_Manager_Mobile.Services
 
     public partial class SaveService
     {
-        public partial void SaveAndView(string filename, string contentType, MemoryStream stream)
+        public partial void SaveAndView(string filename, string contentType, MemoryStream stream, bool seePreview)
         {
             string exception = string.Empty;
             string root = null;
@@ -45,7 +45,7 @@ namespace Report_Manager_Mobile.Services
             {
                 exception = e.ToString();
             }
-            if (file.Exists())
+            if (file.Exists() && seePreview)
             {
 
                 if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.N)

@@ -10,6 +10,7 @@ using SizeF = Syncfusion.Drawing.SizeF;
 using Color = Syncfusion.Drawing.Color;
 using System.Reflection;
 using System.Net;
+using System.Diagnostics;
 
 #if ANDROID
 using Android.Content;
@@ -39,6 +40,13 @@ public partial class Create : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
+        Globals.Facility = FacilityEntry.Text;
+        Globals.ServiceNote = SNEntry.Text; 
+        Globals.Costumer = CostumerEntry.Text;
+        Globals.Equipment = EquipmentEntry.Text;
+        Globals.EquipmentSN = MeterSNEntry.Text;
+        Globals.Adress = AdressEntry.Text;
+        Globals.EquipmentType = TypePicker.SelectedItem.ToString();
         await Navigation.PushModalAsync(new ARA());
 
     }
@@ -107,11 +115,17 @@ public partial class Create : ContentPage
         workList.Add(AppResource.Work4);
         WorkPicker.ItemsSource = workList;
         WorkPicker.SelectedIndex = 0;
+        Globals.InvoiceDate = InvoiceDate.Date;
         Globals.Work = WorkPicker.SelectedItem.ToString();
     }
 
     private void WorkPicker_SelectedIndexChanged(object sender, EventArgs e)
     {
         Globals.Work = WorkPicker.SelectedItem.ToString();
+    }
+
+    private void InvoiceDate_DateSelected(object sender, DateChangedEventArgs e)
+    {
+        Globals.InvoiceDate = InvoiceDate.Date;
     }
 }

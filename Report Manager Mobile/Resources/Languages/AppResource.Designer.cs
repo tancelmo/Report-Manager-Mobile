@@ -619,11 +619,29 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CONFERENCIA DE TRABALHO EM CAMPO.
+        /// </summary>
+        internal static string CTC {
+            get {
+                return ResourceManager.GetString("CTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date: .
         /// </summary>
         internal static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open preview?.
+        /// </summary>
+        internal static string DocPreview {
+            get {
+                return ResourceManager.GetString("DocPreview", resourceCulture);
             }
         }
         

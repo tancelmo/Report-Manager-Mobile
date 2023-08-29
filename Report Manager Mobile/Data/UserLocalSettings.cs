@@ -70,7 +70,9 @@ namespace Report_Manager_Mobile.Data
 
         public static string CcMailList { get; set; } = string.Empty;
 
-
+        public static bool ARAPreview { get; set; }
+        public static bool CTCPreview { get; set; }
+        public static bool RTPreview { get; set; }
         public static void GetUserSettings(bool option)
         {
             if (option)
@@ -128,6 +130,8 @@ namespace Report_Manager_Mobile.Data
                 ARACheck7_8 = Preferences.Default.Get("ARAcheck7_8", false);
                 ARAEditor7 = Preferences.Default.Get("ARAEditor7", "");
 
+                ARAPreview = Preferences.Default.Get("ARAPreview", false);
+
             }
             else
             {
@@ -184,6 +188,8 @@ namespace Report_Manager_Mobile.Data
                 ARACheck7_7 = false;
                 ARACheck7_8 = false;
                 ARAEditor7 = string.Empty;
+
+                ARAPreview = false;
             }
         }
     }

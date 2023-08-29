@@ -9,7 +9,7 @@ namespace Report_Manager_Mobile.Services
 {
     public partial class SaveService
     {
-        public partial void SaveAndView(string filename, string contentType, MemoryStream stream)
+        public partial void SaveAndView(string filename, string contentType, MemoryStream stream, bool seePreview)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string filePath = Path.Combine(path, filename);

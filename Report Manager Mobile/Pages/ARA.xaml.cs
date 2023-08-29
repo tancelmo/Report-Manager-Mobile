@@ -14,12 +14,13 @@ public partial class ARA : ContentPage
         Debug.Write("No momento check1 esta como: " +  UserLocalSettings.ARACheck1_1);
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
         Report.CreateARA();
+
         //Report.CreateCTC();
         //Report.CreateRT();
-        //await Navigation.PushModalAsync(new CTC());
+        await Navigation.PushModalAsync(new CTC());
     }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
@@ -617,5 +618,22 @@ public partial class ARA : ContentPage
     {
         Preferences.Default.Set("ARAEditor7", EditorARA7.Text);
         UserLocalSettings.ARAEditor7 = EditorARA7.Text;
+    }
+
+
+    private void checkPreview_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        if (checkPreview.IsChecked)
+        {
+            UserLocalSettings.ARAPreview = true;
+            Preferences.Default.Set("ARAPreview", true);
+        }
+        else
+        {
+            UserLocalSettings.ARAPreview = false;
+            Preferences.Default.Set("ARAPreview", false);
+        }
+            
+
     }
 }

@@ -13,8 +13,6 @@ public partial class ServicesPage : ContentPage
 	{
 		InitializeComponent();
 
-        
-
     }
 
 
@@ -64,7 +62,9 @@ public partial class ServicesPage : ContentPage
         catch (Exception ex)
         {
             DisplayAlert(AppResource.WarnignCaption, "#70002 - Could not connect to server", AppResource.OkButton);
-            
+            ManualInsert.IsVisible = true;
+            SearchBox.IsVisible = false;
+            collectionData.IsVisible = false;
             Debug.WriteLine("70001############################### - " + ex.ToString());
             LogFile.Write("#70002", ex.ToString());
             //Loadinglbl.Text = "Failed to loading data.";
@@ -122,6 +122,7 @@ public partial class ServicesPage : ContentPage
     private async void collectionData_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         ScheduleData Data = e.CurrentSelection[0] as ScheduleData;
+
         Globals.Costumer = Data.Costumer;
         Globals.Adress = Data.Adress;
         Globals.Equipment = Data.Equipment;
@@ -129,6 +130,7 @@ public partial class ServicesPage : ContentPage
         Globals.EquipmentType = Data.EquipmentType;
         Globals.EquipmentSN = Data.EquipmentSN;
         Globals.Facility = Data.Facility;
+        
 
         await Navigation.PushModalAsync(new Create());        
     }
@@ -152,5 +154,10 @@ public partial class ServicesPage : ContentPage
             LogFile.Write("#70002", ex.Message);
             throw;
         }
+    }
+
+    private async void ManualInsert_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new Create());
     }
 }

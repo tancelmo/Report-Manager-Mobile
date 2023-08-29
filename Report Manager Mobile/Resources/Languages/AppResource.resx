@@ -303,8 +303,14 @@
   <data name="CostumerARA" xml:space="preserve">
     <value>Empresa Visitada: </value>
   </data>
+  <data name="CTC" xml:space="preserve">
+    <value>CONFERENCIA DE TRABALHO EM CAMPO</value>
+  </data>
   <data name="Date" xml:space="preserve">
     <value>Date: </value>
+  </data>
+  <data name="DocPreview" xml:space="preserve">
+    <value>Open preview?</value>
   </data>
   <data name="EmptyDataView" xml:space="preserve">
     <value>No data avaliable</value>

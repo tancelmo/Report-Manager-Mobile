@@ -187,7 +187,7 @@
                 Text="{x:Static lang:AppResource.Adress}"/>
             <Editor x:Name="AdressEntry" Placeholder="{x:Static lang:AppResource.Adress}" />
             <Label Text="{x:Static lang:AppResource.Date}"/>
-            <DatePicker/>
+            <DatePicker x:Name="InvoiceDate" DateSelected="InvoiceDate_DateSelected"/>
             <Label Text="{x:Static lang:AppResource.Work}" Margin="0,20,0,0"/>
             <Picker x:Name="WorkPicker" HorizontalTextAlignment="Center" FontSize="18" SelectedIndexChanged="WorkPicker_SelectedIndexChanged"/>
 
