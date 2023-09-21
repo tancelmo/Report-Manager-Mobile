@@ -11,6 +11,7 @@ using Color = Syncfusion.Drawing.Color;
 using System.Reflection;
 using System.Net;
 using System.Diagnostics;
+using System.Collections.ObjectModel;
 
 #if ANDROID
 using Android.Content;
@@ -22,7 +23,6 @@ namespace Report_Manager_Mobile.Pages;
 
 public partial class Create : ContentPage
 {
-
     public Create()
     {
         InitializeComponent();
@@ -36,6 +36,7 @@ public partial class Create : ContentPage
         TypePicker.SelectedItem = Globals.EquipmentType;
         
         UserLocalSettings.GetUserSettings(Preferences.Default.Get("LastSettings", false));
+
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
@@ -117,6 +118,8 @@ public partial class Create : ContentPage
         WorkPicker.SelectedIndex = 0;
         Globals.InvoiceDate = InvoiceDate.Date;
         Globals.Work = WorkPicker.SelectedItem.ToString();
+
+       
     }
 
     private void WorkPicker_SelectedIndexChanged(object sender, EventArgs e)
@@ -128,4 +131,6 @@ public partial class Create : ContentPage
     {
         Globals.InvoiceDate = InvoiceDate.Date;
     }
+
+    
 }

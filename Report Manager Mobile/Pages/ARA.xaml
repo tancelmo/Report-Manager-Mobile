@@ -7,32 +7,37 @@
              BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}"
              Title="ARA">
     <ScrollView>
-    <VerticalStackLayout Margin="20">
-        <Border Margin="5"  
+    <VerticalStackLayout Margin="0">
+        <Border Margin="20"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
-                StrokeThickness="1"
+                StrokeThickness=".5"
                 Background="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource BorderBGDark}}">
             <StackLayout>
-                <Label Text="{x:Static globals:Globals.Costumer}" FontAttributes="Bold" TextColor="White" Margin="10" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+                <Label Text="{x:Static globals:Globals.Costumer}" TextColor="White" FontAttributes="Bold" Margin="10" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
                 <BoxView 
                     Color="White"
                     HeightRequest="1"
                     HorizontalOptions="Fill" />
-                    <HorizontalStackLayout HorizontalOptions="Center" Margin="10">
+                    <HorizontalStackLayout HorizontalOptions="Center" Margin="10" >
                         <Label Text="INSTALAÇÃO: " TextColor="White"/>
                         <Label Text="{x:Static globals:Globals.Facility}" TextColor="White"/>
-                        <Label Text=" NS: " TextColor="White"/>
+                        <Label Text="  -  NS: " TextColor="White"/>
                         <Label Text="{x:Static globals:Globals.ServiceNote}" TextColor="White"/>
                     </HorizontalStackLayout>
                 </StackLayout>
-                
-        </Border>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
         <Label Margin="0,20,0,20" Text="{x:Static lang:AppResource.ARA}" FontSize="18"  HorizontalOptions="Center"/>
-        <Border Margin="5"  
+        <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
-                StrokeThickness="1"
+                StrokeThickness=".5"
                 Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout>
                     <Label Text="{x:Static lang:AppResource.ARA1}" FontSize="18" HorizontalOptions="Center" Margin="10" />
@@ -66,9 +71,15 @@
                         <Editor x:Name="EditorARA1" Text="{x:Static globals:UserLocalSettings.ARAEditor1}" TextChanged="EditorARA1_TextChanged" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
+                <!--<Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            
+                            Opacity="0.3"/>
+                </Border.Shadow>-->
             </Border>
         <!--ARA2-->
-            <Border Margin="5"  
+            <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"
@@ -100,7 +111,7 @@
                     </Grid>
                 </StackLayout>
             </Border>
-            <Border Margin="5"  
+            <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"
@@ -133,7 +144,7 @@
                 </StackLayout>
             </Border>
 
-            <Border Margin="5"  
+            <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"
@@ -172,7 +183,7 @@
                 </StackLayout>
             </Border>
 
-            <Border Margin="5"  
+            <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"
@@ -209,12 +220,12 @@
                         <Label Text="{x:Static lang:AppResource.ARA5_4}" Grid.Row="3" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA5_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Editor x:Name="EditorARA5" Grid.Row="6" Grid.Column="0" TextChanged="EditorARA5_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor5}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
+                        <Editor x:Name="EditorARA5" Grid.Row="6" BackgroundColor="White" Grid.Column="0" TextChanged="EditorARA5_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor5}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
 
-            <Border Margin="5"  
+            <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"
@@ -266,7 +277,7 @@
             </Border>
 
 
-            <Border Margin="5"  
+            <Border Margin="20,10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"
@@ -308,15 +319,19 @@
                         <Label Text="{x:Static lang:AppResource.ARA7_5}" Grid.Row="4" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_6}" Grid.Row="5" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Label Text="{x:Static lang:AppResource.ARA7_7}" Grid.Row="6" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
-                        <Label Text="{x:Static lang:AppResource.ARA7_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Start"/>
+                        <Label Text="{x:Static lang:AppResource.ARA7_8}" Grid.Row="7" Grid.Column="1" Margin="0" VerticalTextAlignment="Center"/>
                         <Editor x:Name="EditorARA7" Grid.Row="8" Grid.Column="0" TextChanged="EditorARA7_TextChanged" Text="{x:Static globals:UserLocalSettings.ARAEditor7}" Grid.ColumnSpan="2" FontSize="15" Placeholder="Ação" Margin="10,0" PlaceholderColor="{StaticResource Gray500}" HeightRequest="80"/>
                     </Grid>
                 </StackLayout>
             </Border>
-            <Button Text="Próximo" FontSize="18" Margin="5" Clicked="Button_Clicked"/>
+            <Button Text="Próximo" FontSize="18" Margin="20,10" Clicked="Button_Clicked"/>
             <HorizontalStackLayout HorizontalOptions="Center">
                 <CheckBox Margin="-10,0,0,0" x:Name="checkPreview" IsChecked="{x:Static globals:UserLocalSettings.ARAPreview}" CheckedChanged="checkPreview_CheckedChanged"/>
-                <Label Text="{x:Static lang:AppResource.DocPreview}" FontAutoScalingEnabled="True" VerticalTextAlignment="Center"/>
+                <Label Margin="-5,0,0,0" Text="{x:Static lang:AppResource.DocPreview}" FontAutoScalingEnabled="True" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </HorizontalStackLayout>
             
 

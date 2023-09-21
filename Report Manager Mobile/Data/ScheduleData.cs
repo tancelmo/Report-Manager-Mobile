@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Report_Manager_Mobile.Data
 {
-    internal class ScheduleData
+    public class ScheduleData
     {
 
 
@@ -22,6 +22,9 @@ namespace Report_Manager_Mobile.Data
 
         public string EquipmentType { get; set; }
         public string EquipmentSN { get; set; }
+
+        public bool MobileAvaliable { get; set; }
+        public bool MobileComplete { get; set; }
 
 
     }

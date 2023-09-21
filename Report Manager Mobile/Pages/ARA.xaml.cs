@@ -1,3 +1,4 @@
+using Microsoft.Maui.Controls;
 using Report_Manager_Mobile.Data;
 using System.Diagnostics;
 
@@ -25,7 +26,7 @@ public partial class ARA : ContentPage
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-
+        checkPreview.IsChecked = !checkPreview.IsChecked;
     }
 
     private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -41,8 +42,7 @@ public partial class ARA : ContentPage
             Preferences.Default.Set("ARAcheck1_1", false);
             UserLocalSettings.ARACheck1_1 = false;
         }
-        
-        
+
     }
 
     private void CheckBox_CheckedChanged_1(object sender, CheckedChangedEventArgs e)

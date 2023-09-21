@@ -72,8 +72,8 @@
                 </StackLayout>
                 
                 <HorizontalStackLayout HorizontalOptions="Center">
-                    <CheckBox x:Name="SaveCredentialsCheckbx" />
-                    <Label VerticalTextAlignment="Center" Text="{x:Static lang:AppResource.SaveCredentials}">
+                    <CheckBox x:Name="SaveCredentialsCheckbx" Margin="-10,0,0,0" />
+                    <Label VerticalTextAlignment="Center" Margin="-5,0,0,0" Text="{x:Static lang:AppResource.SaveCredentials}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                         </Label.GestureRecognizers>

@@ -24,11 +24,16 @@ namespace Report_Manager_Mobile.Data
         {
             //Create a new PDF document.
             PdfDocument document = new PdfDocument();
+            //Margin
+            PdfMargins marginPage = new PdfMargins();
+            //Set all the side of the page margin.
+            marginPage.All = 20;
+            document.PageSettings.Margins = marginPage;
             //Add a page to the document.
             PdfPage page = document.Pages.Add();
             //Create PDF graphics for the page.
             PdfGraphics graphics = page.Graphics;
-            
+           
             //Get the page width and height.
             float pageWidth = page.GetClientSize().Width;
             float pageHeight = page.GetClientSize().Height;
@@ -326,21 +331,21 @@ namespace Report_Manager_Mobile.Data
             arialRegularFont = new PdfTrueTypeFont(fontStream, 9, PdfFontStyle.Regular);
             //Set the bottom line alignment and draw the text to the PDF page. 
             format2.LineAlignment = PdfVerticalAlignment.Bottom;
-            graphics2.DrawString("Facility", arialRegularFont, whiteBrush, new RectangleF(400, 0, pageWidth2 - 400, headerHeight2 / 2 - arialRegularFont.Height), format2);
+            graphics2.DrawString(AppResource.Facility, arialRegularFont, whiteBrush, new RectangleF(400, 0, pageWidth2 - 400, headerHeight2 / 2 - arialRegularFont.Height), format2);
 
             
             //Measure the string size using the font. 
-            size = arialRegularFont.MeasureString("Invoice Number: " + Globals.ServiceNote);
+            size = arialRegularFont.MeasureString(AppResource.InvoiceNumber + Globals.ServiceNote);
             y = headerHeight2 + margin;
             x = (pageWidth2 - margin) - size.Width;
             //Draw text to a PDF page with the provided font and location. 
-            graphics2.DrawString("Invoice Number: " + Globals.ServiceNote, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            graphics2.DrawString(AppResource.InvoiceNumber + Globals.ServiceNote, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             //Measure the string size using the font.
-            size = arialRegularFont.MeasureString("Date :" + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"));
-            x = (pageWidth - margin) - size.Width;
+            size = arialRegularFont.MeasureString(AppResource.Date + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"));
+            x = (pageWidth2 - margin) - size.Width;
             y += arialRegularFont.Height + lineSpace;
             //Draw text to a PDF page with the provided font and location. 
-            graphics2.DrawString("Date: " + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x+10, y+10));
+            graphics2.DrawString(AppResource.Date + Globals.InvoiceDate.ToString("dddd dd, MMMM yyyy"), arialRegularFont, PdfBrushes.Black, new PointF(x, y));
 
 
             #endregion
@@ -348,11 +353,11 @@ namespace Report_Manager_Mobile.Data
             y = headerHeight2 + margin;
             x = margin;
             //Draw text to a PDF page with the provided font and location. 
-            graphics2.DrawString(Globals.Equipment, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            //graphics2.DrawString(Globals.Equipment, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
             y += arialRegularFont.Height + lineSpace;
-            graphics2.DrawString(Globals.EquipmentType, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
-            y += arialRegularFont.Height + lineSpace;
-            graphics2.DrawString(Globals.EquipmentSN, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            //graphics2.DrawString(Globals.EquipmentType, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
+            //y += arialRegularFont.Height + lineSpace;
+            //graphics2.DrawString(Globals.EquipmentSN, arialRegularFont, PdfBrushes.Black, new PointF(x, y));
 
             //ARA5
             y += arialRegularFont.Height + lineSpace;
@@ -541,7 +546,7 @@ namespace Report_Manager_Mobile.Data
             //Create page count field.
             PdfPageCountField count = new PdfPageCountField(font, brush);
             //Add the fields in composite fields.
-            PdfCompositeField compositeField = new PdfCompositeField(font, brush, "Page {0} of {1}", pageNumber, count);
+            PdfCompositeField compositeField = new PdfCompositeField(font, brush, AppResource.Page + " {0} " + AppResource.PageOf + " {1}", pageNumber, count);
             compositeField.Bounds = footer.Bounds;
             //Draw the composite field in footer.
             compositeField.Draw(footer.Graphics, new PointF((pageWidth / 2) - 20, 35));

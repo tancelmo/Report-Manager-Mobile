@@ -18,7 +18,7 @@
     <Color x:Key="Gray900">#212121</Color>
     <Color x:Key="Gray950">#141414</Color>
     <Color x:Key="BGDark">#1E1E1E</Color>
-    <Color x:Key="BGLigth">#f7f7f7</Color>
+    <Color x:Key="BGLigth">#fafafa</Color>
     <LinearGradientBrush x:Key="HomeBG">
         <GradientStop Color="{StaticResource Primary}"
                           Offset="0.1" />

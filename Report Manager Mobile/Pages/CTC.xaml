@@ -6,7 +6,7 @@
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              Title="CTC">
     <VerticalStackLayout>
-        <Border Margin="5"  
+        <Border Margin="10"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
                 StrokeThickness="1"

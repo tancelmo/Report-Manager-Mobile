@@ -4,8 +4,13 @@
              x:Class="Report_Manager_Mobile.Pages.Create"
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             xmlns:local="clr-namespace:Report_Manager_Mobile.Data"
              Loaded="ContentPage_Loaded"
              Title="Create">
+    <ContentPage.BindingContext>
+        <local:MeterViewModels/>
+    </ContentPage.BindingContext>
     <ScrollView>
         <VerticalStackLayout Margin="20">
 
@@ -13,14 +18,17 @@
             <HorizontalStackLayout>
                 <VerticalStackLayout>
                     <Label 
-                Text="{x:Static lang:AppResource.Facility}"/>
-                    <Entry x:Name="FacilityEntry" Placeholder="{x:Static lang:AppResource.Facility}"/>
+                        Text="{x:Static lang:AppResource.Facility}"/>
+                    <Entry x:Name="FacilityEntry" Placeholder="{x:Static lang:AppResource.Facility}"
+                           Keyboard="Numeric"/>
 
                 </VerticalStackLayout>
                 <VerticalStackLayout>
                     <Label 
-                Text="{x:Static lang:AppResource.ServiceNote}"/>
-                    <Entry x:Name="SNEntry" Placeholder="{x:Static lang:AppResource.ServiceNote}"/>
+                        Text="{x:Static lang:AppResource.ServiceNote}"/>
+                    <Entry x:Name="SNEntry"
+                           Placeholder="{x:Static lang:AppResource.ServiceNote}"
+                           Keyboard="Numeric"/>
 
                 </VerticalStackLayout>
 
@@ -31,10 +39,14 @@
                    x:Name="CostumerEntry" />
             <Label 
                 Text="{x:Static lang:AppResource.Meter}"/>
-            <Editor Placeholder="{x:Static lang:AppResource.Meter}"
-                   x:Name="EquipmentEntry" />
-
-
+            
+                <editors:SfAutocomplete BackgroundColor="Transparent" Margin="0,0,0,-5"
+                                    Placeholder="{x:Static lang:AppResource.Meter}"
+                                    TextSearchMode="Contains"
+                                    DisplayMemberPath="Name"
+                                    TextMemberPath="Name"
+                                    ItemsSource="{Binding EquipamentModels}"
+                                    x:Name="EquipmentEntry" />
             <HorizontalStackLayout>
                 <VerticalStackLayout>
                     <Label Text="{x:Static lang:AppResource.MeterType}"/>
@@ -187,10 +199,10 @@
                 Text="{x:Static lang:AppResource.Adress}"/>
             <Editor x:Name="AdressEntry" Placeholder="{x:Static lang:AppResource.Adress}" />
             <Label Text="{x:Static lang:AppResource.Date}"/>
-            <DatePicker x:Name="InvoiceDate" DateSelected="InvoiceDate_DateSelected"/>
+            <DatePicker x:Name="InvoiceDate" DateSelected="InvoiceDate_DateSelected" HorizontalOptions="Start"/>
             <Label Text="{x:Static lang:AppResource.Work}" Margin="0,20,0,0"/>
-            <Picker x:Name="WorkPicker" HorizontalTextAlignment="Center" FontSize="18" SelectedIndexChanged="WorkPicker_SelectedIndexChanged"/>
-
+            <Picker x:Name="WorkPicker" HorizontalTextAlignment="Center" FontSize="15" SelectedIndexChanged="WorkPicker_SelectedIndexChanged"/>
+            
             <Button Text="Próximo" FontSize="18" Margin="0,10" Clicked="Button_Clicked"/>
             <Button Text="Send" FontSize="18" Clicked="Button_Clicked_1"/>
 

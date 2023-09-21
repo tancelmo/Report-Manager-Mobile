@@ -772,6 +772,24 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        internal static string Page {
+            get {
+                return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to of.
+        /// </summary>
+        internal static string PageOf {
+            get {
+                return ResourceManager.GetString("PageOf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string Password {

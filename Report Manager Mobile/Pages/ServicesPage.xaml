@@ -25,7 +25,7 @@
     </ContentPage.Resources>
     <Grid>
         <SearchBar x:Name="SearchBox" TextChanged="Search_TextChanged" Placeholder="Search a facility" />
-        <Button x:Name="ManualInsert" Clicked="ManualInsert_Clicked" Text="Manual Insert" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false" />
+        <Button x:Name="ManualInsert" Clicked="ManualInsert_Clicked" FontSize="15" Text="Manual Insert" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false" />
         <CollectionView x:Name="collectionData" Grid.Row="1" Margin="10,50,10,0" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="{x:Static lang:AppResource.EmptyDataView}">
         
             
@@ -39,7 +39,9 @@
                         Padding="8"
                         StrokeThickness=".5"
                         Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-                    
+
+
+                        
                         <StackLayout>
                             <Label Text="{Binding Costumer}"
                                 FontSize="15"
@@ -77,6 +79,7 @@
                             </HorizontalStackLayout>-->
 
                         </StackLayout>
+                        
                     </Border>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

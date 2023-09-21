@@ -8,19 +8,21 @@ namespace Report_Manager_Mobile.Pages;
 
 public partial class ServicesPage : ContentPage
 {
-    List<ScheduleData> schedules;
+    public List<ScheduleData> schedules;
+
+    public static ServicesPage ServicesPageCurrent;
     public ServicesPage()
 	{
 		InitializeComponent();
-
+        ServicesPageCurrent = this;
     }
 
 
-    private List<ScheduleData> GetSchedules()
+    List<ScheduleData> GetSchedules()
     {
         try
         {
-            var query = "select * from schedule";
+            var query = "select * from schedule where mobileAvaliable=1";
 
             var scheduleData = new List<ScheduleData>();
 
@@ -43,7 +45,8 @@ public partial class ServicesPage : ContentPage
                             order.EquipmentSN = reader.GetString(5);
                             order.EquipmentType = reader.GetString(6);
                             order.Adress = reader.GetString(22).ToString() + " - " + reader.GetString(12) + " - " + reader.GetString(11);
-
+                            order.MobileAvaliable = reader.GetBoolean(23);
+                            order.MobileComplete = reader.GetBoolean(24);
                             scheduleData.Add(order);
 
                         }
@@ -72,50 +75,6 @@ public partial class ServicesPage : ContentPage
             return null;
 
         }
-        //return new List<ScheduleData> 
-        //{
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //    new ScheduleData { Costumer = "LUA NOVA IND E COM DE PROD. ALIMENTICIOS", Adress = "R PROF MOACIR SANTOS DE CAMPOS - JARDIM NOVA CALIFORNIA - CAMPINAS - CEP: 13051-094", Equipment = "MED TURBINA G250 400M3/H 4\" FL 150#", EquipmentSN = "CT400 - 3057061", Facility = "637855", ServiceNote = "7771989508"},
-        //};
 
     }
 
@@ -147,7 +106,10 @@ public partial class ServicesPage : ContentPage
         try
         {
             schedules = GetSchedules();
+            //var filteredList = schedules.Where(a => a.MobileAvaliable.Equals(true));
+            //collectionData.ItemsSource = filteredList;
             collectionData.ItemsSource = schedules;
+            
         }
         catch (Exception ex)
         {

@@ -28,13 +28,23 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<DefaultLanguage>en-US</DefaultLanguage>
+		<Platforms>AnyCPU;x86</Platforms>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
 	  <AndroidPackageFormat>apk</AndroidPackageFormat>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|x86'">
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	</PropertyGroup>
+
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <MtouchLink>None</MtouchLink>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|x86'">
 	  <MtouchLink>None</MtouchLink>
 	</PropertyGroup>
 
@@ -86,7 +96,8 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="MySqlConnector" Version="2.2.7" />
-		<PackageReference Include="Syncfusion.Pdf.NET" Version="22.2.8" />
+		<PackageReference Include="Syncfusion.Maui.Inputs" Version="22.2.11" />
+		<PackageReference Include="Syncfusion.Pdf.NET" Version="22.2.11" />
 	</ItemGroup>
 
 	<ItemGroup>
