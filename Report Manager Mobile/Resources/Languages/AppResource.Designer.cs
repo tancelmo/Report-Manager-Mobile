@@ -628,6 +628,267 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1 - Feito inspeção visual antes do acesso ao CRM?.
+        /// </summary>
+        internal static string CTC1 {
+            get {
+                return ResourceManager.GetString("CTC1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10 - Todos os parafusos foram apertados?.
+        /// </summary>
+        internal static string CTC10 {
+            get {
+                return ResourceManager.GetString("CTC10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 11 - Testado emissores de pulsos?.
+        /// </summary>
+        internal static string CTC11 {
+            get {
+                return ResourceManager.GetString("CTC11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 12 - Medidor retirado foi tamponado?.
+        /// </summary>
+        internal static string CTC12 {
+            get {
+                return ResourceManager.GetString("CTC12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 13 - Lacrado by - pass (figura 8/ Raquete)?.
+        /// </summary>
+        internal static string CTC13 {
+            get {
+                return ResourceManager.GetString("CTC13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 14 - Lacrado by - pass (válvulas)?.
+        /// </summary>
+        internal static string CTC14 {
+            get {
+                return ResourceManager.GetString("CTC14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 15 - Lacrado PTZ?.
+        /// </summary>
+        internal static string CTC15 {
+            get {
+                return ResourceManager.GetString("CTC15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 16 - Lacrado transdutor de pressão?.
+        /// </summary>
+        internal static string CTC16 {
+            get {
+                return ResourceManager.GetString("CTC16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 17 - Lacrado transdutor de temperature?.
+        /// </summary>
+        internal static string CTC17 {
+            get {
+                return ResourceManager.GetString("CTC17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 18 - Lacrado emissor de pulsos?.
+        /// </summary>
+        internal static string CTC18 {
+            get {
+                return ResourceManager.GetString("CTC18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 19 - Plug dos vents recolocados?.
+        /// </summary>
+        internal static string CTC19 {
+            get {
+                return ResourceManager.GetString("CTC19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 - Todos os EPI’s necessários foram utilizados?.
+        /// </summary>
+        internal static string CTC2 {
+            get {
+                return ResourceManager.GetString("CTC2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 20 - PTZ foi reconfigurado?.
+        /// </summary>
+        internal static string CTC20 {
+            get {
+                return ResourceManager.GetString("CTC20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 21 - Leituras VC x VNC x mecânico foram sincronizadas?.
+        /// </summary>
+        internal static string CTC21 {
+            get {
+                return ResourceManager.GetString("CTC21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 22 - O CRM apresenta vazamento (s)?.
+        /// </summary>
+        internal static string CTC22 {
+            get {
+                return ResourceManager.GetString("CTC22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 23 - Houve acompanhamento do cliente?.
+        /// </summary>
+        internal static string CTC23 {
+            get {
+                return ResourceManager.GetString("CTC23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24 - Todo ferramental e material descartado foram recolhidos?.
+        /// </summary>
+        internal static string CTC24 {
+            get {
+                return ResourceManager.GetString("CTC24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 25 - Válvula de entrada foi aberta?.
+        /// </summary>
+        internal static string CTC25 {
+            get {
+                return ResourceManager.GetString("CTC25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 26 - Válvula de Saída foi aberta?.
+        /// </summary>
+        internal static string CTC26 {
+            get {
+                return ResourceManager.GetString("CTC26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 27 - O abrigo do CRM foi fechado (se for o caso)?.
+        /// </summary>
+        internal static string CTC27 {
+            get {
+                return ResourceManager.GetString("CTC27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 28 - Documentação preenchida corretamente (Click)?.
+        /// </summary>
+        internal static string CTC28 {
+            get {
+                return ResourceManager.GetString("CTC28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 29 - Feito contato com a sala de rádio informando a finalização da atividade após troca de PTZ?.
+        /// </summary>
+        internal static string CTC29 {
+            get {
+                return ResourceManager.GetString("CTC29", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 - A área próxima ao CRM foi isolada e identificada?.
+        /// </summary>
+        internal static string CTC3 {
+            get {
+                return ResourceManager.GetString("CTC3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 - CRM em espaço confinado?.
+        /// </summary>
+        internal static string CTC4 {
+            get {
+                return ResourceManager.GetString("CTC4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 - Há extintor no CRM?.
+        /// </summary>
+        internal static string CTC5 {
+            get {
+                return ResourceManager.GetString("CTC5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 - Há sinalização de advertência (placas)?.
+        /// </summary>
+        internal static string CTC6 {
+            get {
+                return ResourceManager.GetString("CTC6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7 - Foi utilizado ferramental adequado?.
+        /// </summary>
+        internal static string CTC7 {
+            get {
+                return ResourceManager.GetString("CTC7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8 - Retirados tampões do medidor a ser instalado?.
+        /// </summary>
+        internal static string CTC8 {
+            get {
+                return ResourceManager.GetString("CTC8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9 - Fluxo do medidor no sentido correto?.
+        /// </summary>
+        internal static string CTC9 {
+            get {
+                return ResourceManager.GetString("CTC9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date: .
         /// </summary>
         internal static string Date {
@@ -741,6 +1002,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string MyCompanyARA {
             get {
                 return ResourceManager.GetString("MyCompanyARA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to N/A.
+        /// </summary>
+        internal static string NA {
+            get {
+                return ResourceManager.GetString("NA", resourceCulture);
             }
         }
         

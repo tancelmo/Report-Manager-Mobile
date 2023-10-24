@@ -12,7 +12,7 @@ public partial class App : Application
         InitializeComponent();
         UserLocalSettings.LastSettings = Preferences.Default.Get("LastSettings", false);
         StartUp.GetMailList();
-        MainPage = new Login();
+        MainPage = new AppShell();
 	}
 
 	

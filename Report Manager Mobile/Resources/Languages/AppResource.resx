@@ -306,6 +306,93 @@
   <data name="CTC" xml:space="preserve">
     <value>CONFERENCIA DE TRABALHO EM CAMPO</value>
   </data>
+  <data name="CTC1" xml:space="preserve">
+    <value>1 - Feito inspeção visual antes do acesso ao CRM?</value>
+  </data>
+  <data name="CTC10" xml:space="preserve">
+    <value>10 - Todos os parafusos foram apertados?</value>
+  </data>
+  <data name="CTC11" xml:space="preserve">
+    <value>11 - Testado emissores de pulsos?</value>
+  </data>
+  <data name="CTC12" xml:space="preserve">
+    <value>12 - Medidor retirado foi tamponado?</value>
+  </data>
+  <data name="CTC13" xml:space="preserve">
+    <value>13 - Lacrado by - pass (figura 8/ Raquete)?</value>
+  </data>
+  <data name="CTC14" xml:space="preserve">
+    <value>14 - Lacrado by - pass (válvulas)?</value>
+  </data>
+  <data name="CTC15" xml:space="preserve">
+    <value>15 - Lacrado PTZ?</value>
+  </data>
+  <data name="CTC16" xml:space="preserve">
+    <value>16 - Lacrado transdutor de pressão?</value>
+  </data>
+  <data name="CTC17" xml:space="preserve">
+    <value>17 - Lacrado transdutor de temperature?</value>
+  </data>
+  <data name="CTC18" xml:space="preserve">
+    <value>18 - Lacrado emissor de pulsos?</value>
+  </data>
+  <data name="CTC19" xml:space="preserve">
+    <value>19 - Plug dos vents recolocados?</value>
+  </data>
+  <data name="CTC2" xml:space="preserve">
+    <value>2 - Todos os EPI’s necessários foram utilizados?</value>
+  </data>
+  <data name="CTC20" xml:space="preserve">
+    <value>20 - PTZ foi reconfigurado?</value>
+  </data>
+  <data name="CTC21" xml:space="preserve">
+    <value>21 - Leituras VC x VNC x mecânico foram sincronizadas?</value>
+  </data>
+  <data name="CTC22" xml:space="preserve">
+    <value>22 - O CRM apresenta vazamento (s)?</value>
+  </data>
+  <data name="CTC23" xml:space="preserve">
+    <value>23 - Houve acompanhamento do cliente?</value>
+  </data>
+  <data name="CTC24" xml:space="preserve">
+    <value>24 - Todo ferramental e material descartado foram recolhidos?</value>
+  </data>
+  <data name="CTC25" xml:space="preserve">
+    <value>25 - Válvula de entrada foi aberta?</value>
+  </data>
+  <data name="CTC26" xml:space="preserve">
+    <value>26 - Válvula de Saída foi aberta?</value>
+  </data>
+  <data name="CTC27" xml:space="preserve">
+    <value>27 - O abrigo do CRM foi fechado (se for o caso)?</value>
+  </data>
+  <data name="CTC28" xml:space="preserve">
+    <value>28 - Documentação preenchida corretamente (Click)?</value>
+  </data>
+  <data name="CTC29" xml:space="preserve">
+    <value>29 - Feito contato com a sala de rádio informando a finalização da atividade após troca de PTZ?</value>
+  </data>
+  <data name="CTC3" xml:space="preserve">
+    <value>3 - A área próxima ao CRM foi isolada e identificada?</value>
+  </data>
+  <data name="CTC4" xml:space="preserve">
+    <value>4 - CRM em espaço confinado?</value>
+  </data>
+  <data name="CTC5" xml:space="preserve">
+    <value>5 - Há extintor no CRM?</value>
+  </data>
+  <data name="CTC6" xml:space="preserve">
+    <value>6 - Há sinalização de advertência (placas)?</value>
+  </data>
+  <data name="CTC7" xml:space="preserve">
+    <value>7 - Foi utilizado ferramental adequado?</value>
+  </data>
+  <data name="CTC8" xml:space="preserve">
+    <value>8 - Retirados tampões do medidor a ser instalado?</value>
+  </data>
+  <data name="CTC9" xml:space="preserve">
+    <value>9 - Fluxo do medidor no sentido correto?</value>
+  </data>
   <data name="Date" xml:space="preserve">
     <value>Date: </value>
   </data>
@@ -344,6 +431,9 @@
   </data>
   <data name="MyCompanyARA" xml:space="preserve">
     <value>Empresa Visitante: </value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>N/A</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>

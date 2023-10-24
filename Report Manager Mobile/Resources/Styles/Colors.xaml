@@ -26,9 +26,9 @@
                           Offset="1.0" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="BorderBG">
-        <GradientStop Color="{StaticResource Gray100}"
+        <GradientStop Color="#d9E1E1E1"
                           Offset="0.1" />
-        <GradientStop Color="{StaticResource Gray200}"
+        <GradientStop Color="#d9C8C8C8"
                           Offset="1.0" />
     </LinearGradientBrush>
 
@@ -38,7 +38,7 @@
         <GradientStop Color="{StaticResource Gray900}"
                           Offset="1.0" />
     </LinearGradientBrush>
-
+    
     <SolidColorBrush x:Key="DefaultBGDark" Color="{StaticResource BGDark}"/>
     <SolidColorBrush x:Key="DefaultBGLigth" Color="{StaticResource BGLigth}"/>
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>

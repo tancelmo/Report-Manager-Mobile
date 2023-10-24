@@ -27,8 +27,8 @@ namespace Report_Manager_Mobile.Data
             //Margin
             PdfMargins marginPage = new PdfMargins();
             //Set all the side of the page margin.
-            marginPage.All = 20;
-            document.PageSettings.Margins = marginPage;
+            //marginPage.All = 0;
+            //document.PageSettings.Margins = marginPage;
             //Add a page to the document.
             PdfPage page = document.Pages.Add();
             //Create PDF graphics for the page.

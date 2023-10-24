@@ -5,28 +5,473 @@
              xmlns:globals="clr-namespace:Report_Manager_Mobile.Data"
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
              Title="CTC">
-    <VerticalStackLayout>
-        <Border Margin="10"  
+    <ScrollView>
+        <VerticalStackLayout Margin="0">
+            <Border Margin="20"  
                 StrokeShape="RoundRectangle 8"
                 Padding="8"
-                StrokeThickness="1"
+                StrokeThickness=".5"
                 Background="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource BorderBGDark}}">
-            <StackLayout>
-                <Label Text="{x:Static globals:Globals.Costumer}" FontAttributes="Bold" TextColor="White" Margin="10" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
-                <BoxView 
+                <StackLayout >
+                    <Label Text="{x:Static globals:Globals.Costumer}" TextColor="White" FontAttributes="Bold" Margin="10" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+                    <BoxView 
                     Color="White"
                     HeightRequest="1"
                     HorizontalOptions="Fill" />
-                <HorizontalStackLayout HorizontalOptions="Center" Margin="10">
-                    <Label Text="INSTALAÇÃO: " TextColor="White"/>
-                    <Label Text="{x:Static globals:Globals.Facility}" TextColor="White"/>
-                    <Label Text=" NS: " TextColor="White"/>
-                    <Label Text="{x:Static globals:Globals.ServiceNote}" TextColor="White"/>
-                </HorizontalStackLayout>
-            </StackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center" Margin="10" >
+                        <Label Text="INSTALAÇÃO: " TextColor="White"/>
+                        <Label Text="{x:Static globals:Globals.Facility}" TextColor="White"/>
+                        <Label Text="  -  NS: " TextColor="White"/>
+                        <Label Text="{x:Static globals:Globals.ServiceNote}" TextColor="White"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Label Margin="0,20,0,20" Text="{x:Static lang:AppResource.CTC}" FontSize="18"  HorizontalOptions="Center"/>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC1}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
 
-        </Border>
-        <Label Margin="0,20,0,20" Text="{x:Static lang:AppResource.CTC}" FontSize="18"  HorizontalOptions="Center"/>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC2}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC3}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC4}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC5}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC6}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC7}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC8}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC9}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC10}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC13}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC14}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" Text="{x:Static lang:AppResource.CTC15}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC16}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC17}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC18}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC19}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC20}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC21}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC22}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC23}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC24}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC25}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC26}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC27}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC28}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Border Margin="20,10"
+                    StrokeShape="RoundRectangle 8">
+                <StackLayout Margin="15,15,15,0">
+                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC29}" />
+                    <HorizontalStackLayout HorizontalOptions="EndAndExpand">
+                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.No}"/>
+                        <RadioButton Content="{x:Static lang:AppResource.NA}"/>
+                    </HorizontalStackLayout>
+                </StackLayout>
+                <Border.Shadow>
+                    <Shadow Brush="Black"      
+                            Offset="5,5"
+                            Opacity=".3"/>
+                </Border.Shadow>
+            </Border>
+            <Button Text="Próximo" FontSize="18" Margin="20,10"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <CheckBox VerticalOptions="Center"/>
+                <Label Text="Show preview?" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
 
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

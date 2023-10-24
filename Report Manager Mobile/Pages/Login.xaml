@@ -23,7 +23,7 @@
                 
                 <Image Source="accell.png" 
                        WidthRequest="200"
-                       Margin="0,10,0,20"/>
+                       Margin="0,10,0,20" />
 
                 <Label
                     x:Name="Test"
