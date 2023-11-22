@@ -5,7 +5,7 @@
              BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}"
              xmlns:globals="clr-namespace:Report_Manager_Mobile.Data"
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
-             Title="Settings"
+             Title="{x:Static lang:AppResource.TabPageHeaderSettings}"
              Loaded="ContentPage_Loaded">
     <VerticalStackLayout Margin="20">
         <Label Text="Server Adress" FontSize="18" />

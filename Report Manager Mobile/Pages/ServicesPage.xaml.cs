@@ -3,6 +3,7 @@ using Report_Manager_Mobile.Data;
 using Report_Manager_Mobile.Helpers;
 using Report_Manager_Mobile.Resources.Languages;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace Report_Manager_Mobile.Pages;
 
@@ -10,15 +11,21 @@ public partial class ServicesPage : ContentPage
 {
     public List<ScheduleData> schedules;
 
+    //private bool server = true;
+
     public static ServicesPage ServicesPageCurrent;
+
+
     public ServicesPage()
 	{
 		InitializeComponent();
         ServicesPageCurrent = this;
+        //BindingContext = this;
+        
     }
 
-
-    List<ScheduleData> GetSchedules()
+    
+    public List<ScheduleData> GetSchedules()
     {
         try
         {
@@ -47,6 +54,7 @@ public partial class ServicesPage : ContentPage
                             order.Adress = reader.GetString(22).ToString() + " - " + reader.GetString(12) + " - " + reader.GetString(11);
                             order.MobileAvaliable = reader.GetBoolean(23);
                             order.MobileComplete = reader.GetBoolean(24);
+                            order.Date = reader.GetDateTime(16);
                             scheduleData.Add(order);
 
                         }
@@ -57,6 +65,10 @@ public partial class ServicesPage : ContentPage
                 connection.Close();
 
             }
+            if(scheduleData.Count == 0)
+            {
+                ManualInsert.IsVisible = true;
+            }
             return scheduleData;
             
 
@@ -66,18 +78,27 @@ public partial class ServicesPage : ContentPage
         {
             DisplayAlert(AppResource.WarnignCaption, "#70002 - Could not connect to server", AppResource.OkButton);
             ManualInsert.IsVisible = true;
-            SearchBox.IsVisible = false;
-            collectionData.IsVisible = false;
+            collectionData.IsVisible = true;
             Debug.WriteLine("70001############################### - " + ex.ToString());
             LogFile.Write("#70002", ex.ToString());
-            //Loadinglbl.Text = "Failed to loading data.";
-            //Loadinglbl.Foreground = new SolidColorBrush(Colors.Red);
             return null;
 
         }
 
     }
+    //private void EmptyView()
+    //{
+    //    if (server == false)
+    //    {
+    //        ManualInsert.IsVisible = true;
 
+    //    }
+    //    else
+    //    {
+    //        ManualInsert.IsVisible = false;
+    //    }
+    //    //Debug.WriteLine("###########################################" + schedules.Count.ToString());
+    //}
     private async void collectionData_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         ScheduleData Data = e.CurrentSelection[0] as ScheduleData;
@@ -96,9 +117,13 @@ public partial class ServicesPage : ContentPage
 
     private void Search_TextChanged(object sender, TextChangedEventArgs e)
     {
-        var filteredList = schedules.Where(a => a.Facility.Contains(e.NewTextValue));
-        collectionData.ItemsSource = filteredList;
-        SearchBox.Focus();
+        if(schedules != null)
+        {
+            var filteredList = schedules.Where(a => a.Facility.Contains(e.NewTextValue));
+            collectionData.ItemsSource = filteredList;
+            SearchBox.Focus();
+        }
+        
     }
 
     private void ContentPage_Loaded(object sender, EventArgs e)
@@ -109,6 +134,11 @@ public partial class ServicesPage : ContentPage
             //var filteredList = schedules.Where(a => a.MobileAvaliable.Equals(true));
             //collectionData.ItemsSource = filteredList;
             collectionData.ItemsSource = schedules;
+
+            //if (schedules.Count == 0)
+            //{
+            //    ManualInsert.IsVisible = true;
+            //}
             
         }
         catch (Exception ex)
@@ -116,10 +146,42 @@ public partial class ServicesPage : ContentPage
             LogFile.Write("#70002", ex.Message);
             throw;
         }
+
+        //EmptyView();
     }
 
     private async void ManualInsert_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushModalAsync(new Create());
+    }
+
+    private async void refreshViewGeneral_Refreshing(object sender, EventArgs e)
+    {
+        await Task.Delay(500);
+        
+        try
+        {
+            schedules = GetSchedules();
+            collectionData.ItemsSource = schedules;
+            SearchBox.IsVisible = true;
+            collectionData.IsVisible = true;
+            if(schedules != null)
+            {
+                if(schedules.Count > 0)
+                {
+                    ManualInsert.IsVisible = false;
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            
+            LogFile.Write("#70002", ex.Message);
+            throw;
+            
+        }
+        //EmptyView();
+        refreshViewGeneral.IsRefreshing = false;
     }
 }

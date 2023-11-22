@@ -23,14 +23,17 @@ public partial class Settings : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        string result = await DisplayPromptAsync("Insert new Adress", "Enter new Server Adress", AppResource.OkButton, AppResource.CancelButton, "accellsolutions.com");
+        string result = await DisplayPromptAsync("Insert new Adress", "Enter new Server Adress", AppResource.OkButton, AppResource.CancelButton, "accellsolutions.com", 15, Keyboard.Plain);
         if (result != null)
         {
             await SecureStorage.Default.SetAsync("serverAdress", result);
             EntryServerIP.Text = result;
+            Globals.serverAdress = result;
+            Globals.connectionString = @"Server=" + Globals.serverAdress + ";Database=report_manager;Uid=newuser;Pwd=New@Mic15;SSL Mode=None;AllowPublicKeyRetrieval=true";
+
         }
-        
-        
+
+
     }
 
     private async void Button_Clicked_1(object sender, EventArgs e)

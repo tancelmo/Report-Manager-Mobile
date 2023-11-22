@@ -45,6 +45,8 @@
                                     TextSearchMode="Contains"
                                     DisplayMemberPath="Name"
                                     TextMemberPath="Name"
+                                    TextColor="{AppThemeBinding Dark=White, Light=Black}"
+                                    ClearButtonIconColor="{AppThemeBinding Dark=White, Light=Black}"
                                     ItemsSource="{Binding EquipamentModels}"
                                     x:Name="EquipmentEntry" />
             <HorizontalStackLayout>

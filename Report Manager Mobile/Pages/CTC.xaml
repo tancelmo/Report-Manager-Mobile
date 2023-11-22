@@ -34,7 +34,8 @@
             </Border>
             <Label Margin="0,20,0,20" Text="{x:Static lang:AppResource.CTC}" FontSize="18"  HorizontalOptions="Center"/>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC1}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -51,7 +52,8 @@
             </Border>
 
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC2}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -67,7 +69,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC3}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -83,7 +86,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC4}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -99,7 +103,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC5}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -115,7 +120,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC6}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -131,7 +137,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC7}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -147,7 +154,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC8}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -163,7 +171,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC9}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -179,7 +188,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC10}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -195,7 +205,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC13}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -211,7 +222,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC14}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -227,7 +239,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" Text="{x:Static lang:AppResource.CTC15}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -243,7 +256,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC16}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -259,7 +273,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC17}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -275,7 +290,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC18}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -291,7 +307,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC19}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -307,7 +324,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC20}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -323,7 +341,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC21}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -339,7 +358,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC22}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -355,7 +375,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC23}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -371,7 +392,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC24}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -387,7 +409,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC25}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -403,7 +426,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC26}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -419,7 +443,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC27}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -435,7 +460,8 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
                     <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC28}" />
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
@@ -451,11 +477,13 @@
                 </Border.Shadow>
             </Border>
             <Border Margin="20,10"
-                    StrokeShape="RoundRectangle 8">
+                    StrokeShape="RoundRectangle 8"
+                    Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
                 <StackLayout Margin="15,15,15,0">
-                    <Label VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC29}" />
+                    <Label x:Name="LblCTC29" VerticalOptions="Center" FontSize="15" Text="{x:Static lang:AppResource.CTC29}" />
+                    <Label x:Name="EmployeeRadioRoomName" FontSize="Body" TextColor="{StaticResource Primary}"/>
                     <HorizontalStackLayout HorizontalOptions="EndAndExpand">
-                        <RadioButton Content="{x:Static lang:AppResource.Yes}"/>
+                        <RadioButton x:Name="ctc28chck" Content="{x:Static lang:AppResource.Yes}" CheckedChanged="RadioButton_CheckedChanged"/>
                         <RadioButton Content="{x:Static lang:AppResource.No}"/>
                         <RadioButton Content="{x:Static lang:AppResource.NA}"/>
                     </HorizontalStackLayout>

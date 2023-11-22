@@ -76,7 +76,7 @@ public partial class Create : ContentPage
             var message = new EmailMessage
             {
                 Subject = Globals.Costumer + " INST " + Globals.Facility + " NS" + Globals.ServiceNote,
-                Body = Globals.Costumer + "\n" + " INST " + Globals.Facility + "\n" + " NS" + Globals.ServiceNote,
+                Body = Globals.Costumer + "\n" + " INST " + Globals.Facility + " " + " NS " + Globals.ServiceNote + "\n" + AppResource.Meter + Globals.Equipment + "\n" + AppResource.MeterSN + Globals.EquipmentSN + "\n" + AppResource.MeterType + Globals.EquipmentType,
                 To = mailTo,
                 Cc = ccTo,
                 //Bcc = contacts

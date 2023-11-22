@@ -9,8 +9,6 @@
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:Login}"/>
-    <ShellContent
-        Title="Create"
-        ContentTemplate="{DataTemplate local:Create}" />
+
 
 </Shell>

@@ -26,6 +26,8 @@ namespace Report_Manager_Mobile.Data
         public bool MobileAvaliable { get; set; }
         public bool MobileComplete { get; set; }
 
+        public DateTime Date { get; set; }
+
 
     }
 }

@@ -3,78 +3,90 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Report_Manager_Mobile.Pages.Completed"
              xmlns:lang="clr-namespace:Report_Manager_Mobile.Resources.Languages"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              Loaded="ContentPage_Loaded"
-             Title="Completed"
-                          BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}">
-    <Grid>
-        <SearchBar x:Name="SearchBox" TextChanged="SearchBox_TextChanged" Placeholder="Search a facility" />
-        <CollectionView x:Name="collectionData" Grid.Row="1" Margin="10,50,10,10" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="{x:Static lang:AppResource.EmptyDataView}">
+             Title="{x:Static lang:AppResource.TabPageHeaderCompleted}"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource BGDark}, Light={StaticResource BGLigth}}">
+    <RefreshView
+    x:Name="refreshViewGeneral"
+    Refreshing="refreshViewGeneral_Refreshing">
+        <Grid>
+            <SearchBar x:Name="SearchBox" TextChanged="SearchBox_TextChanged" Placeholder="{x:Static lang:AppResource.SearchBoxFacility}" WidthRequest="{Binding Source={x:Reference collectionData}, Path=Width}"/>
+            <CollectionView x:Name="collectionData" Grid.Row="1" Margin="10,60,10,0" CanReorderItems="True" ItemsLayout="VerticalGrid" SelectionChanged="collectionData_SelectionChanged" SelectionMode="Single" EmptyView="{x:Static lang:AppResource.EmptyDataView}">
 
 
-            <CollectionView.ItemTemplate>
+                <CollectionView.ItemTemplate>
 
-                <DataTemplate>
+                    <DataTemplate>
 
-                    <Border
-                        Margin="0"  
-                        StrokeShape="RoundRectangle 8"
-                        Padding="8"
-                        StrokeThickness=".5"
-                        Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup Name="CommonStates">
-                                <VisualState Name="Normal" />
-                                <VisualState Name="Selected">
-                                    <VisualState.Setters>
-                                        <Setter Property="BackgroundColor" Value="Yellow" />
-                                    </VisualState.Setters>
-                                </VisualState>
+                        <Border
+                            Margin="5"  
+                            StrokeShape="RoundRectangle 8"
+                            Padding="8"
+                            StrokeThickness=".5"
+                            Background="{AppThemeBinding Light={StaticResource BorderBG}, Dark={StaticResource BorderBGDark}}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="Yellow" />
+                                        </VisualState.Setters>
+                                    </VisualState>
 
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                        <StackLayout>
-                            <Label Text="{Binding Costumer}"
-                                FontSize="15"
-                                FontAttributes="Bold" />
-                            
-                            <BoxView 
-                                     HeightRequest="1"
-                                     HorizontalOptions="Fill" />
-                            <HorizontalStackLayout Margin="0,5,0,0">
-                                <Label Text="{x:Static lang:AppResource.Facility}"/>
-                                <Label Text="{Binding Facility}"/>
-                                <Label Text="   "/>
-                                <Label Text="{x:Static lang:AppResource.ServiceNote}"/>
-                                <Label Text="{Binding ServiceNote}"/>
-                            </HorizontalStackLayout>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <StackLayout>
+                                <Label Text="{Binding Costumer}"
+                                    FontSize="15"
+                                    FontAttributes="Bold" />
 
-                            <Label Text="{Binding Adress}"/>
-                            <Label Text="{Binding Equipment}" />
-                            <HorizontalStackLayout>
-                                <Label Text="{x:Static lang:AppResource.MeterSN}"/>
-                                <Label Text="{Binding EquipmentType}"/>
-                                <Label Text=" - "/>
-                                <Label Text="{Binding EquipmentSN}"/>
-                            </HorizontalStackLayout>
+                                <BoxView 
+                                         HeightRequest="1"
+                                         HorizontalOptions="Fill" />
+                                <HorizontalStackLayout Margin="0,5,0,0">
+                                    <Label Text="{x:Static lang:AppResource.Facility}"/>
+                                    <Label Text="{Binding Facility}"/>
+                                    <Label Text="   "/>
+                                    <Label Text="{x:Static lang:AppResource.ServiceNote}"/>
+                                    <Label Text="{Binding ServiceNote}"/>
+                                </HorizontalStackLayout>
 
-                            <HorizontalStackLayout HorizontalOptions="End">
-                                <Image Source="accept.png"
-                                        HorizontalOptions="End"
-                                        WidthRequest="20"/>
-                                <Label Text="Concluído" 
+                                <Label Text="{Binding Adress}"/>
+                                <Label Text="{Binding Equipment}" />
+                                <HorizontalStackLayout>
+                                    <Label Text="{x:Static lang:AppResource.MeterSN}"/>
+                                    <Label Text="{Binding EquipmentType}"/>
+                                    <Label Text=" - "/>
+                                    <Label Text="{Binding EquipmentSN}"/>
+                                </HorizontalStackLayout>
+
+                                <Grid >
+                                    <Label Text="{Binding Date}" 
                                             FontSize="16"
-                                            Margin="5,0"
-                                            TextColor="#4bae4f"
-                                            VerticalTextAlignment="Center"
+                                            HorizontalOptions="Start"
                                             FontAttributes="Bold"/>
-                            </HorizontalStackLayout>
+                                    <HorizontalStackLayout Spacing="5" HorizontalOptions="End">
+                                        <Image Source="accept.png"
+                                                HorizontalOptions="End"
+                                                WidthRequest="20"/>
+                                        <Label Text="{x:Static lang:AppResource.Completed}" 
+                                            FontSize="16"
+                                            TextColor="#4bae4f"
+                                            HorizontalOptions="End"
+                                            FontAttributes="Bold"/>
+                                    </HorizontalStackLayout>
+                                    
+                                    
+                                </Grid>
 
-                        </StackLayout>
-                        
-                    </Border>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <!--<SearchBar Placeholder="Search" x:Name="Search" TextChanged="Search_TextChanged" HorizontalOptions="Center"/>-->
-    </Grid>
+                            </StackLayout>
+
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <!--<SearchBar Placeholder="Search" x:Name="Search" TextChanged="Search_TextChanged" HorizontalOptions="Center"/>-->
+        </Grid>
+    </RefreshView>
 </ContentPage>

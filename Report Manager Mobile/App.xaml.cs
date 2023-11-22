@@ -13,6 +13,8 @@ public partial class App : Application
         UserLocalSettings.LastSettings = Preferences.Default.Get("LastSettings", false);
         StartUp.GetMailList();
         MainPage = new AppShell();
+        
+        
 	}
 
 	

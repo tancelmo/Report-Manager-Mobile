@@ -601,6 +601,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        internal static string Completed {
+            get {
+                return ResourceManager.GetString("Completed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Costumer: .
         /// </summary>
         internal static string Costumer {
@@ -970,6 +979,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manually Insert.
+        /// </summary>
+        internal static string Manually_Insert {
+            get {
+                return ResourceManager.GetString("Manually_Insert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Meter: .
         /// </summary>
         internal static string Meter {
@@ -1083,6 +1101,15 @@ namespace Report_Manager_Mobile.Resources.Languages {
         internal static string SaveCredentials {
             get {
                 return ResourceManager.GetString("SaveCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search a facility.
+        /// </summary>
+        internal static string SearchBoxFacility {
+            get {
+                return ResourceManager.GetString("SearchBoxFacility", resourceCulture);
             }
         }
         

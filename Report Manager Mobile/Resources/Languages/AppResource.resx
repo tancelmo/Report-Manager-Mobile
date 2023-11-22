@@ -297,6 +297,9 @@
   <data name="CompanyName" xml:space="preserve">
     <value>ACCELL SOLUÇÕES PARA ENERGIA E ÁGUA LTDA.</value>
   </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
   <data name="Costumer" xml:space="preserve">
     <value>Costumer: </value>
   </data>
@@ -420,6 +423,9 @@
   <data name="LoginNext" xml:space="preserve">
     <value>Next</value>
   </data>
+  <data name="Manually_Insert" xml:space="preserve">
+    <value>Manually Insert</value>
+  </data>
   <data name="Meter" xml:space="preserve">
     <value>Meter: </value>
   </data>
@@ -458,6 +464,9 @@
   </data>
   <data name="SaveCredentials" xml:space="preserve">
     <value>Save my credentials?</value>
+  </data>
+  <data name="SearchBoxFacility" xml:space="preserve">
+    <value>Search a facility</value>
   </data>
   <data name="ServiceNote" xml:space="preserve">
     <value>SI: </value>
