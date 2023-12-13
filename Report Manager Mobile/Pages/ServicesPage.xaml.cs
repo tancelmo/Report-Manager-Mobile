@@ -110,9 +110,14 @@ public partial class ServicesPage : ContentPage
         Globals.EquipmentType = Data.EquipmentType;
         Globals.EquipmentSN = Data.EquipmentSN;
         Globals.Facility = Data.Facility;
-        
 
-        await Navigation.PushModalAsync(new Create());        
+        //collectionData.SelectedItem = e.PreviousSelection;
+        //collectionData.SelectedItems.Clear();
+       // collectionData.SelectedItem = null;
+
+        await Navigation.PushModalAsync(new Create());
+
+        
     }
 
     private void Search_TextChanged(object sender, TextChangedEventArgs e)
@@ -184,4 +189,5 @@ public partial class ServicesPage : ContentPage
         //EmptyView();
         refreshViewGeneral.IsRefreshing = false;
     }
+
 }

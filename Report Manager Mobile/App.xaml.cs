@@ -10,6 +10,7 @@ public partial class App : Application
 	{
         Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjY3MzkzMUAzMjMyMmUzMDJlMzBkaURSZC9CYk5SY0hET2FlaWlnNDFJUXBQYjNGeW1OdE5wTnFtanhjT3gwPQ==");
         InitializeComponent();
+        //Application.Current.UserAppTheme = AppTheme.Light;
         UserLocalSettings.LastSettings = Preferences.Default.Get("LastSettings", false);
         StartUp.GetMailList();
         MainPage = new AppShell();

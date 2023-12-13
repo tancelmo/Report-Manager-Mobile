@@ -23,7 +23,7 @@ public partial class Settings : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        string result = await DisplayPromptAsync("Insert new Adress", "Enter new Server Adress", AppResource.OkButton, AppResource.CancelButton, "accellsolutions.com", 15, Keyboard.Plain);
+        string result = await DisplayPromptAsync("Insert new Adress", "Enter new Server Adress", AppResource.OkButton, AppResource.CancelButton, "accellsolutions.com", 25, Keyboard.Plain);
         if (result != null)
         {
             await SecureStorage.Default.SetAsync("serverAdress", result);
